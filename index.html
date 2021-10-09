@@ -45,21 +45,22 @@
       </aside>
       <section class="content">
           <div class="menus">
-            <div class="menu">
+            <div class="menu" onclick="aboutOpen()">
               <a href="#about">About Me</a>
             </div>
-              <div class="menu">
+              <div class="menu" onclick="portfolioOpen()">
                 <a href="#portfolio">Portfolio</a>
               </div>
-              <div class="menu">
+              <div class="menu" onclick="contactOpen()">
                 <a href="#contactme">Contact Me</a>
               </div>
           </div>
-          <div class="title" id="about">
-            <h1>ABOUT ME</h1>
+          <div class="title" id="about" onclick="aboutOpen()">
+            <h1 style="float:left">ABOUT ME</h1>
+            <i style="float:right" class="fa fa-arrow-down" aria-hidden="true"></i>
           </div>
-        <div class="pages">
-        <div class="aboutMe">
+        <div class="pages" id="aboutPage" style="display:none">
+        <div class="aboutMe" >
           <h1>Hi, I am Md Hg Tushar from Bangladesh. I am a Full-Stack web developer.</h1>
           <p>I am a full-stack developer. I can design website from scratch and any of design framework maybe I can work like bootstrap or material UI or tailwind CSS etc.</p>
           <p>For frontend framework I Use react and Backend I use Php or Laravel or Nodejs</p>
@@ -85,10 +86,11 @@
           <p>I was full stack developer at Rubidsoft. I have created the site according to the needs of our clients</p>
         </div>
       </div>
-      <div class="title" id="portfolio">
+      <div class="title" id="portfolio" onclick="portfolioOpen()">
         <h1>Portfolio</h1>
+        <i style="float:right" class="fa fa-arrow-down" aria-hidden="true"></i>
       </div>
-      <div class="pages">
+      <div class="pages" id="portfolioPage" style="display:none">
         <div class="portfolio">
           <!-- <div class="portfolioBox">
             <img src="https://zonayed.me/static/devsonket-7c7b56622758f9a393f2787368987d56.jpg" alt="">
@@ -102,10 +104,11 @@
           <p>NOt any Project added</p>
         </div>
       </div>
-      <div class="title" id="contactme">
+      <div class="title" id="contactme" onclick="contactOpen()">
         <h1>Contact me</h1>
+        <i style="float:right" class="fa fa-arrow-down" aria-hidden="true"></i>
       </div>
-      <div class="pages">
+      <div class="pages" id="contactmePage" style="display:none">
         <p>I am interested in working with any company that thinks my skill will be helpful for them. If you are looking for someone like me, please let me know. Or you can just 'say hi' to me.</p>
         <hr>
         <br>
@@ -114,5 +117,40 @@
       </div>
       </section>
     </section>
+    <script type="text/javascript">
+      var aboutPage = document.getElementById('aboutPage');
+          var contactmePage = document.getElementById('contactmePage');
+            var portfolioPage = document.getElementById('portfolioPage');
+      function aboutOpen(){
+        console.log(  aboutPage.style.display)
+        if(aboutPage.style.display == "none"){
+          aboutPage.style.display = "block";
+            portfolioPage.style.display = "none";
+              contactmePage.style.display = "none";
+        }else{
+          aboutPage.style.display = "none";
+        }
+      }
+      function portfolioOpen(){
+        console.log(  portfolioPage.style.display)
+        if(portfolioPage.style.display == "none"){
+          portfolioPage.style.display = "block";
+            contactmePage.style.display = "none";
+              aboutPage.style.display = "none";
+        }else{
+          portfolioPage.style.display = "none";
+        }
+      }
+        function contactOpen(){
+          console.log(  contactmePage.style.display)
+          if(contactmePage.style.display == "none"){
+            contactmePage.style.display = "block";
+              aboutPage.style.display = "none";
+                portfolioPage.style.display = "none";
+          }else{
+            contactmePage.style.display = "none";
+          }
+        }
+    </script>
   </body>
 </html>
