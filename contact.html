@@ -13,27 +13,138 @@
   <body>
     <div class="w-full bg-gray-100 shadow p-2">
       <div class="container mx-auto flex justify-between">
-        <div><h1 class="text-xl">Hobayer Golondaz</h1></div>
-        <div class="flex gap-x-4 items-center">
-          <div>
-            <a href="index.html">About Me</a>
-          </div>
-          <div>
-            <a href="skills.html">Skills & Education</a>
-          </div>
-
-          <div>
-            <a href="">Photo Gallery</a>
-          </div>
-
-          <div>
-            <a href="portfolio.html">Work & Project</a>
-          </div>
-          <div>
-            <a href="contact.html">Contact Details</a>
-          </div>
+        <div class="flex items-center">
+          <button onclick="sidebar()">
+            <i class="fa fa-bars mx-2 text-2xl" aria-hidden="true"></i>
+          </button>
+          <a href="/">
+            <h1 class="text-2xl"><b>Hobayer Golondaz</b></h1></a
+          >
+        </div>
+        <div class="hidden gap-x-4 items-center md:flex">
+          <ul class="m-0">
+            <li class="inline-block m-0">
+              <a
+                href="index.html"
+                class="hover:text-blue-600 hover:border-blue-100 text-indigo-600 rounded duration-300 px-2 border m-0 block font-bold"
+              >
+                <i class="fa fa-id-card-o" aria-hidden="true"></i> About Me</a
+              >
+            </li>
+            <li class="inline-block">
+              <a
+                href="skills.html"
+                class="hover:text-blue-600 hover:border-blue-100 rounded duration-300 px-2 border m-0 block font-bold"
+                ><i class="fa fa-graduation-cap" aria-hidden="true"></i> Skills & Education</a
+              >
+            </li>
+            <li class="inline-block">
+              <a
+                href="portfolio.html"
+                class="hover:text-blue-600 hover:border-blue-100 rounded duration-300 px-2 border m-0 block font-bold"
+                ><i class="fa fa-briefcase" aria-hidden="true"></i> Work & Project</a
+              >
+            </li>
+            <li class="inline-block">
+              <a
+                href="portfolio.html"
+                class="hover:text-blue-600 hover:border-blue-100 rounded duration-300 px-2 border m-0 block font-bold"
+                ><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Blog</a
+              >
+            </li>
+            <li class="inline-block">
+              <a
+                href=""
+                class="hover:text-blue-600 hover:border-blue-100 rounded duration-300 px-2 border m-0 block font-bold"
+                ><i class="fa fa-picture-o" aria-hidden="true"></i> Photo Gallery</a
+              >
+            </li>
+            <li class="inline-block">
+              <a
+                href="portfolio.html"
+                class="hover:text-blue-600 hover:border-blue-100 rounded duration-300 px-2 border m-0 block font-bold"
+                ><i class="fa fa-calendar-o" aria-hidden="true"></i> Time Line</a
+              >
+            </li>
+            <li class="inline-block">
+              <a
+                href="contact.html"
+                class="hover:text-blue-600 hover:border-blue-100 rounded duration-300 px-2 border m-0 block font-bold"
+                ><i class="fa fa-coffee" aria-hidden="true"></i> Contact Details</a
+              >
+            </li>
+          </ul>
         </div>
       </div>
+    </div>
+
+    <div
+      class="w-full md:w-96 absolute bg-white h-screen top-0 duration-200 overflow-hidden"
+      id="sidebar"
+      style="display: none"
+    >
+      <div class="w-full bg-gray-100 shadow p-2">
+        <div class="flex items-center">
+          <button onclick="sidebar()" class="px-2 bg-gray-200 mr-2">
+            <i class="fa fa-times" aria-hidden="true"></i>
+          </button>
+          <a href="/">
+            <h1 class="text-2xl"><b>Hobayer Golondaz</b></h1></a
+          >
+        </div>
+      </div>
+      <ul class="m-0 w-96">
+        <li>
+          <a
+            href="index.html"
+            class="w-full font-thin uppercase flex items-center p-3 my-2 transition-colors duration-200 justify-start bg-gradient-to-l from-gray-200 border-l-4 to-gray-300 border-blue-500 border-blue-500 text-black-500"
+          >
+            <i class="fa fa-id-card-o" aria-hidden="true"></i> About Me</a
+          >
+        </li>
+        <li>
+          <a
+            href="skills.html"
+            class="w-full font-thin uppercase flex items-center p-3 my-2 transition-colors duration-200 justify-start bg-gradient-to-l from-gray-200 border-l-4 to-gray-300 border-blue-500 border-blue-500 text-black-500"
+            ><i class="fa fa-graduation-cap" aria-hidden="true"></i> Skills & Education</a
+          >
+        </li>
+        <li>
+          <a
+            href="portfolio.html"
+            class="w-full font-thin uppercase flex items-center p-3 my-2 transition-colors duration-200 justify-start bg-gradient-to-l from-gray-200 border-l-4 to-gray-300 border-blue-500 border-blue-500 text-black-500"
+            ><i class="fa fa-briefcase" aria-hidden="true"></i> Work & Project</a
+          >
+        </li>
+        <li>
+          <a
+            href="portfolio.html"
+            class="w-full font-thin uppercase flex items-center p-3 my-2 transition-colors duration-200 justify-start bg-gradient-to-l from-gray-200 border-l-4 to-gray-300 border-blue-500 border-blue-500 text-black-500"
+            ><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Blog</a
+          >
+        </li>
+        <li>
+          <a
+            href=""
+            class="w-full font-thin uppercase flex items-center p-3 my-2 transition-colors duration-200 justify-start bg-gradient-to-l from-gray-200 border-l-4 to-gray-300 border-blue-500 border-blue-500 text-black-500"
+            ><i class="fa fa-picture-o" aria-hidden="true"></i> Photo Gallery</a
+          >
+        </li>
+        <li>
+          <a
+            href="portfolio.html"
+            class="w-full font-thin uppercase flex items-center p-3 my-2 transition-colors duration-200 justify-start bg-gradient-to-l from-gray-200 border-l-4 to-gray-300 border-blue-500 border-blue-500 text-black-500"
+            ><i class="fa fa-calendar-o" aria-hidden="true"></i> Time Line</a
+          >
+        </li>
+        <li>
+          <a
+            href="contact.html"
+            class="w-full font-thin uppercase flex items-center p-3 my-2 transition-colors duration-200 justify-start bg-gradient-to-l from-gray-200 border-l-4 to-gray-300 border-blue-500 border-blue-500 text-black-500"
+            ><i class="fa fa-coffee" aria-hidden="true"></i> Contact Details</a
+          >
+        </li>
+      </ul>
     </div>
     <section class="container mx-auto mt-5">
       <div class="shadow p-2 mb-2">
@@ -48,5 +159,15 @@
         <p>content me via email</p>
       </div>
     </section>
+    <script>
+      function sidebar() {
+        const sidebar = document.getElementById('sidebar');
+        if (sidebar.style.display == 'block') {
+          sidebar.style.display = 'none';
+        } else {
+          sidebar.style.display = 'block';
+        }
+      }
+    </script>
   </body>
 </html>
