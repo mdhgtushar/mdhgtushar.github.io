@@ -13,8 +13,13 @@
   <body>
     <div class="w-full bg-gray-100 shadow p-2">
       <div class="container mx-auto flex justify-between">
-        <div><h1 class="text-xl">Hobayer Golondaz</h1></div>
-        <div class="flex gap-x-4 items-center">
+        <div class="flex items-center">
+          <button onclick="alert('hello')">
+            <i class="fa fa-bars mx-2 text-2xl" aria-hidden="true"></i>
+          </button>
+          <h1 class="text-2xl">Hobayer Golondaz</h1>
+        </div>
+        <div class="hidden gap-x-4 items-center md:flex">
           <div>
             <a href="index.html">About Me</a>
           </div>
@@ -35,11 +40,11 @@
         </div>
       </div>
     </div>
-    <section class="container mx-auto mt-5">
-      <div class="flex justify-between">
-        <div class="shadow p-2">
+    <section class="container mx-auto mt-2 p-2">
+      <div class="block md:flex justify-between">
+        <div class="shadow p-2 mb-3">
           <img
-            class="m-0 p-0 w-96"
+            class="m-0 p-0 w-96 mx-auto"
             src="https://avatars.githubusercontent.com/u/81422400?v=4"
             alt=""
           />
@@ -70,12 +75,12 @@
           </div>
         </div>
         <div class="w-full">
-          <div class="shadow ml-2 p-2">
+          <div class="shadow md:ml-2 p-2">
             <h1>ABOUT ME</h1>
           </div>
-          <div class="shadow ml-2 p-2 mt-2">
+          <div class="shadow md:ml-2 p-2 mt-2">
             <h1>Hi, I am Md Hg Tushar from Bangladesh. I am a Full-Stack web developer.</h1>
-            <div class="h-96 overflow-hidden">
+            <div class="md:h-96 overflow-hidden">
               <p>
                 I am a full-stack developer. I can design website from scratch and any of design
                 framework maybe I can work like bootstrap or material UI or tailwind CSS etc. I am a
