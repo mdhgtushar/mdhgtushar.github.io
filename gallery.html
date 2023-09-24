@@ -83,7 +83,7 @@
     </div>
 
     <div
-      class="w-full absolute bg-white h-screen top-0 duration-200 overflow-hidden z-50"
+      class="w-full absolute bg-white h-screen top-0 duration-200 overflow-hidden"
       id="sidebar"
       style="display: none"
     >
@@ -150,73 +150,42 @@
         </li>
       </ul>
     </div>
-    <section class="container mx-auto mt-5">
-      <ol class="relative border-l border-gray-200 dark:border-gray-700">
-        <li class="mb-10 ml-4">
-          <div
-            class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"
-          ></div>
-          <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
-            >July 2005</time
-          >
-          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Born</h3>
-          <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-            Get access to over 20+ pages including a dashboard layout, charts, kanban board,
-            calendar, and pre-order E-commerce & Marketing pages.
-          </p>
-        </li>
-        <li class="mb-10 ml-4">
-          <div
-            class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"
-          ></div>
-          <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
-            >january 2009</time
-          >
-          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-            Going to Bagua govt primary school
-          </h3>
-          <p class="text-base font-normal text-gray-500 dark:text-gray-400">
-            All of the pages and components are first designed in Figma and we keep a parity between
-            the two versions even as we update the project.
-          </p>
-        </li>
-        <li class="mb-10 ml-4">
-          <div
-            class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"
-          ></div>
-          <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
-            >january 2010</time
-          >
-          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-            Admitted in Adarsha shisho niketon
-          </h3>
-          <p class="text-base font-normal text-gray-500 dark:text-gray-400">
-            Get started with dozens of web components and interactive elements built on top of
-            Tailwind CSS.
-          </p>
-        </li>
-        <li class="ml-4">
-          <div
-            class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"
-          ></div>
-          <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
-            >january 2011</time
-          >
-          <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Class Shisho(play)</h3>
-          <p class="text-base font-normal text-gray-500 dark:text-gray-400">
-            Get started with dozens of web components and interactive elements built on top of
-            Tailwind CSS.
-          </p>
-        </li>
-      </ol>
+    <section class="container mx-auto mt-2">
+      <div class="block md:flex justify-center flex-col">
+        <div class="w-full">
+          <div class="w-full md:w-96 shadow mb-3 border mx-auto">
+            <img
+              class="m-0 p-1 w-full mx-auto"
+              src="https://avatars.githubusercontent.com/u/81422400?v=4"
+              alt=""
+            />
+
+            <div class="profileInfo bg-gray-100">
+              <div class="border-gray-600">
+                <div class="p-2">
+                  <h1 class="text-lg font-semibold text-gray-900 dark:text-white">
+                    <b>Gafargaon Islamia govt High School</b>
+                  </h1>
+                  <p class="text-base font-normal text-gray-500 dark:text-gray-400">15 days ago</p>
+                  <p class="text-base font-normal text-gray-500 dark:text-gray-400 pb-2">
+                    Iftar party at school as a expired student :')
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <script>
       function sidebar() {
         const sidebar = document.getElementById('sidebar');
         if (sidebar.style.display == 'block') {
           sidebar.style.display = 'none';
+          document.body.style.overflow = 'scroll';
         } else {
           sidebar.style.display = 'block';
+          document.body.style.overflow = 'hidden';
         }
       }
     </script>
