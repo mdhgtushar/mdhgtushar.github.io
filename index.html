@@ -448,62 +448,58 @@
         </a>
       </div>
     </section>
-
     <section id="footer" class="bg-gray-900 text-white py-10">
       <div class="container mx-auto px-6">
-        <div class="flex">
+        <!-- Footer Grid Layout -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          
           <!-- Personal Info -->
-          <div class="flex-1">
+          <div>
             <h2 class="text-xl font-bold">HOBAYER GOLONDAZ</h2>
             <h3 class="text-lg text-gray-400">Full-Stack Web Developer</h3>
             <p class="text-sm text-gray-500 mt-2">
               I build high-quality web applications with modern technologies.
             </p>
-
-            <p class="mt-4 flex space-x-3">
-              <i class="fa fa-facebook text-gray-400"></i>
-              <i class="fa fa-linkedin text-gray-400"></i>
-              <i class="fa fa-twitter text-gray-400"></i>
-              <i class="fa fa-github text-gray-400"></i>
-            </p>
+            <div class="mt-4 flex space-x-4">
+              <a href="#" class="text-gray-400 hover:text-white"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="text-gray-400 hover:text-white"><i class="fa fa-linkedin"></i></a>
+              <a href="#" class="text-gray-400 hover:text-white"><i class="fa fa-twitter"></i></a>
+              <a href="#" class="text-gray-400 hover:text-white"><i class="fa fa-github"></i></a>
+            </div>
           </div>
-
-          <div class="flex text-right">
-            <!-- Contact Me -->
-            <div class="w-64">
-              <h3 class="text-lg font-semibold">Contact</h3>
-              <ul class="space-y-2 text-sm text-gray-400">
-                <li>📍 123 Business Avenue, Tech City</li>
-                <li>📞 +1 234 567 890</li>
-                <li>✉️ info@rubidsoft.com</li>
-              </ul>
-              <p class="text-gray-400 text-sm">
-                The easiest way to contact me is just to take your phone and
-                call me.
-              </p>
-              <a
-                href="tel:000000"
-                class="mt-3 inline-block bg-green-600 px-4 py-2 rounded-lg text-white font-semibold"
-              >
-                <i class="fa fa-phone"></i> Call Me
-              </a>
-            </div>
-            <!-- Resume Download -->
-            <div class="w-64">
-              <h3 class="text-lg font-semibold">Resume</h3>
-              <p class="text-gray-400 text-sm">
-                Download my CV to know more about me.
-              </p>
-              <a
-                href="/cv.pdf"
-                class="mt-3 inline-block bg-blue-600 px-4 py-2 rounded-lg text-white font-semibold"
-              >
-                <i class="fa fa-download"></i> Download CV
-              </a>
-            </div>
-
-            <!-- Know Me -->
-            <div class="w-44 text-right">
+    
+          <!-- Contact Me -->
+          <div>
+            <h3 class="text-lg font-semibold">Contact</h3>
+            <ul class="space-y-2 text-sm text-gray-400">
+              <li>📍 123 Business Avenue, Tech City</li>
+              <li>📞 +1 234 567 890</li>
+              <li>✉️ info@rubidsoft.com</li>
+            </ul>
+            <p class="text-gray-400 text-sm mt-2">
+              The easiest way to contact me is just to take your phone and call me.
+            </p>
+            <a href="tel:000000"
+              class="mt-3 inline-block bg-green-600 px-4 py-2 rounded-lg text-white font-semibold">
+              <i class="fa fa-phone"></i> Call Me
+            </a>
+          </div>
+    
+          <!-- Resume -->
+          <div>
+            <h3 class="text-lg font-semibold">Resume</h3>
+            <p class="text-gray-400 text-sm">
+              Download my CV to know more about me.
+            </p>
+            <a href="/cv.pdf"
+              class="mt-3 inline-block bg-blue-600 px-4 py-2 rounded-lg text-white font-semibold">
+              <i class="fa fa-download"></i> Download CV
+            </a>
+          </div>
+    
+          <!-- Quick Links -->
+          <div class="flex justify-between space-x-8">
+            <div>
               <h3 class="text-lg font-semibold">Know Me</h3>
               <ul class="text-gray-400 text-sm space-y-2">
                 <li><a href="#about">About Me</a></li>
@@ -513,9 +509,8 @@
                 <li><a href="#work">My Work</a></li>
               </ul>
             </div>
-
-            <!-- Projects -->
-            <div class="w-44 text-right">
+    
+            <div>
               <h3 class="text-lg font-semibold">Projects</h3>
               <ul class="text-gray-400 text-sm space-y-2">
                 <li><a href="#project1">Project 1</a></li>
@@ -526,13 +521,16 @@
               </ul>
             </div>
           </div>
+    
         </div>
-
+    
+        <!-- Copyright -->
         <div class="text-center text-gray-500 mt-10 text-sm">
           &copy; 2025 Hobayer Golondaz. All Rights Reserved.
         </div>
       </div>
     </section>
+    
 
     <script>
       function sidebar() {
