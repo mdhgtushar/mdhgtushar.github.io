@@ -11,376 +11,324 @@
     />
   </head>
   <body>
-    <div class="w-full bg-gray-100 shadow p-2">
-      <div class="container mx-auto flex justify-between">
-        <div class="flex items-center">
-          <button onclick="sidebar()" class="md:hidden">
-            <i class="fa fa-bars mx-2 text-2xl" aria-hidden="true"></i>
-          </button>
-          <a href="/">
-            <h1
-              class="text-2xl font-semibold mx-2 uppercase text-gray-600 hover:text-black tracking-widest duration-200"
+    <section id="header">
+      <div class="shadow">
+        <div class="bg-gray-900 text-white">
+          <div class="container mx-auto py-2">
+            <div class="flex justify-between">
+              <div>
+                <p>Emai: mdhgtushar@gmail.com</p>
+              </div>
+              <div>
+                <p class="text-base font-normal text-white">
+                  <i class="fa fa-facebook mx-2" aria-hidden="true"></i>
+                  <i class="fa fa-linkedin mx-2" aria-hidden="true"></i>
+                  <i class="fa fa-twitter mx-2" aria-hidden="true"></i>
+                  <i class="fa fa-github mx-2" aria-hidden="true"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container mx-auto py-5">
+          <div class="flex justify-between">
+            <div class="">
+              <button onclick="sidebar()" class="md:hidden">
+                <i class="fa fa-bars mx-2 text-2xl" aria-hidden="true"></i>
+              </button>
+              <a href="index.html">
+                <h1
+                  class="text-2xl font-semibold mr-2 uppercase hover:text-gray-600 text-black tracking-widest duration-200"
+                >
+                  <b>Hobayer Golondaz</b>
+                </h1></a
+              >
+              <p>Full-Stack Web Developer</p>
+            </div>
+            <div class="flex text-white">
+              <div class="bg-gray-800 p-5 mr-2">Know More</div>
+              <div class="bg-gray-800 p-5">Book an appoinment</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="border-t bg-gray-800 py-2 text-white">
+          <div class="container mx-auto hidden gap-x-4 items-center md:flex">
+           <div class="flex justify-between w-full">
+            <div>
+              <ul class="m-0">
+                <li class="inline-block m-0">
+                  <a
+                    href="index.html"
+                    class="text-blue-600 bg-blue-100  duration-300 px-4 inline-block py-2 font-semibold border-l-4  border-blue-600"                >
+                    <i class="fa fa-id-card-o" aria-hidden="true"></i> About Me</a>
+                </li>
+                <li class="inline-block">
+                  <a
+                    href="skills.html"
+                    class="hover:text-blue-600 hover:bg-blue-100 text-white duration-300 px-4 inline-block py-2 font-semibold border-l-4 border-transparent hover:border-blue-600"
+                  >
+                    <i class="fa fa-graduation-cap" aria-hidden="true"></i> Skills & Education</a>
+                </li>
+                <li class="inline-block">
+                  <a
+                    href="portfolio.html"
+                    class="hover:text-blue-600 hover:bg-blue-100 text-white duration-300 px-4 inline-block py-2 font-semibold border-l-4 border-transparent hover:border-blue-600"
+                  >
+                    <i class="fa fa-briefcase" aria-hidden="true"></i> Work & Project</a>
+                </li>
+                <li class="inline-block">
+                  <a
+                    href="blog.html"
+                    class="hover:text-blue-600 hover:bg-blue-100 text-white duration-300 px-4 inline-block py-2 font-semibold border-l-4 border-transparent hover:border-blue-600"
+                  >
+                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Blog</a>
+                </li>
+                <li class="inline-block">
+                  <a
+                    href="gallery.html"
+                    class="hover:text-blue-600 hover:bg-blue-100 text-white duration-300 px-4 inline-block py-2 font-semibold border-l-4 border-transparent hover:border-blue-600"
+                  >
+                    <i class="fa fa-picture-o" aria-hidden="true"></i> Gallery</a>
+                </li>
+                <li class="inline-block">
+                  <a
+                    href="timeline.html"
+                    class="hover:text-blue-600 hover:bg-blue-100 text-white duration-300 px-4 inline-block py-2 font-semibold border-l-4 border-transparent hover:border-blue-600"
+                  >
+                    <i class="fa fa-calendar-o" aria-hidden="true"></i> Time Line</a>
+                </li> 
+              </ul>
+            </div>
+            <div>
+             <ul>
+              <li class="inline-block">
+                <a
+                  href="contact.html"
+                  class="hover:text-blue-600 hover:bg-blue-100 text-white duration-300 px-4 inline-block py-2 font-semibold border-l-4 border-transparent hover:border-blue-600"
+                >
+                  <i class="fa fa-coffee" aria-hidden="true"></i> Contact Details</a>
+              </li>
+            </ul>
+            </div>
+           </div>
+          </div>
+        </div>
+        
+        
+      </div>
+
+      <div
+        class="w-full absolute bg-white h-screen top-0 duration-200 overflow-hidden"
+        id="sidebar"
+        style="display: none"
+      >
+        <div class="w-full bg-gray-100 shadow p-2">
+          <div class="flex items-center">
+            <button onclick="sidebar()" class="px-2 bg-gray-200 mr-2">
+              <i class="fa fa-times" aria-hidden="true"></i>
+            </button>
+            <a href="/">
+              <h1 class="text-2xl font-semibold"><b>Hobayer Golondaz</b></h1></a
             >
-              <b>Hobayer Golondaz</b>
-            </h1></a
-          >
+          </div>
         </div>
-        <div class="hidden gap-x-4 items-center md:flex">
-          <ul class="m-0">
-            <li class="inline-block m-0">
-              <a
-                href="index.html"
-                class="hover:text-blue-600 hover:border-blue-100 text-indigo-600 rounded duration-300 px-2 border text-sm font-semibold text-gray-900 "
-              >
-                <i class="fa fa-id-card-o" aria-hidden="true"></i> About Me</a
-              >
-            </li>
-            <li class="inline-block">
-              <a
-                href="skills.html"
-                class="hover:text-blue-600 hover:border-blue-100 rounded duration-300 px-2 border text-sm font-semibold text-gray-900 "
-                ><i class="fa fa-graduation-cap" aria-hidden="true"></i> Skills & Education</a
-              >
-            </li>
-            <li class="inline-block">
-              <a
-                href="portfolio.html"
-                class="hover:text-blue-600 hover:border-blue-100 rounded duration-300 px-2 border text-sm font-semibold text-gray-900 "
-                ><i class="fa fa-briefcase" aria-hidden="true"></i> Work & Project</a
-              >
-            </li>
-            <li class="inline-block">
-              <a
-                href="blog.html"
-                class="hover:text-blue-600 hover:border-blue-100 rounded duration-300 px-2 border text-sm font-semibold text-gray-900 "
-                ><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Blog</a
-              >
-            </li>
-            <li class="inline-block">
-              <a
-                href="gallery.html"
-                class="hover:text-blue-600 hover:border-blue-100 rounded duration-300 px-2 border text-sm font-semibold text-gray-900 "
-                ><i class="fa fa-picture-o" aria-hidden="true"></i> Gallery</a
-              >
-            </li>
-            <li class="inline-block">
-              <a
-                href="timeline.html"
-                class="hover:text-blue-600 hover:border-blue-100 rounded duration-300 px-2 border text-sm font-semibold text-gray-900 "
-                ><i class="fa fa-calendar-o" aria-hidden="true"></i> Time Line</a
-              >
-            </li>
-            <li class="inline-block">
-              <a
-                href="contact.html"
-                class="hover:text-blue-600 hover:border-blue-100 rounded duration-300 px-2 border text-sm font-semibold text-gray-900 "
-                ><i class="fa fa-coffee" aria-hidden="true"></i> Contact Details</a
-              >
-            </li>
-          </ul>
-        </div>
+        <ul class="m-2">
+          <li>
+            <a
+              href="index.html"
+              class="w-full font-thin uppercase flex items-center p-3 my-2 transition-colors duration-200 justify-start bg-gradient-to-l from-gray-200 border-l-4 to-gray-300 border-blue-500 border-blue-500 text-black-500"
+            >
+              <i class="fa fa-id-card-o mr-3" aria-hidden="true"></i> About
+              Me</a
+            >
+          </li>
+          <li>
+            <a
+              href="skills.html"
+              class="w-full font-thin uppercase flex items-center p-3 my-2 transition-colors duration-200 justify-start bg-gradient-to-l from-gray-200 border-l-4 to-gray-300 border-blue-500 border-blue-500 text-black-500"
+              ><i class="fa fa-graduation-cap mr-3" aria-hidden="true"></i>
+              Skills & Education</a
+            >
+          </li>
+          <li>
+            <a
+              href="portfolio.html"
+              class="w-full font-thin uppercase flex items-center p-3 my-2 transition-colors duration-200 justify-start bg-gradient-to-l from-gray-200 border-l-4 to-gray-300 border-blue-500 border-blue-500 text-black-500"
+              ><i class="fa fa-briefcase mr-3" aria-hidden="true"></i> Work &
+              Project</a
+            >
+          </li>
+          <li>
+            <a
+              href="blog.html"
+              class="w-full font-thin uppercase flex items-center p-3 my-2 transition-colors duration-200 justify-start bg-gradient-to-l from-gray-200 border-l-4 to-gray-300 border-blue-500 border-blue-500 text-black-500"
+              ><i class="fa fa-pencil-square-o mr-3" aria-hidden="true"></i>
+              Blog</a
+            >
+          </li>
+          <li>
+            <a
+              href="gallery.html"
+              class="w-full font-thin uppercase flex items-center p-3 my-2 transition-colors duration-200 justify-start bg-gradient-to-l from-gray-200 border-l-4 to-gray-300 border-blue-500 border-blue-500 text-black-500"
+              ><i class="fa fa-picture-o mr-3" aria-hidden="true"></i>
+              Gallery</a
+            >
+          </li>
+          <li>
+            <a
+              href="timeline.html"
+              class="w-full font-thin uppercase flex items-center p-3 my-2 transition-colors duration-200 justify-start bg-gradient-to-l from-gray-200 border-l-4 to-gray-300 border-blue-500 border-blue-500 text-black-500"
+              ><i class="fa fa-calendar-o mr-3" aria-hidden="true"></i> Time
+              Line</a
+            >
+          </li>
+          <li>
+            <a
+              href="contact.html"
+              class="w-full font-thin uppercase flex items-center p-3 my-2 transition-colors duration-200 justify-start bg-gradient-to-l from-gray-200 border-l-4 to-gray-300 border-blue-500 border-blue-500 text-black-500"
+              ><i class="fa fa-coffee mr-3" aria-hidden="true"></i> Contact
+              Details</a
+            >
+          </li>
+        </ul>
       </div>
-    </div>
+    </section>
 
-    <div
-      class="w-full absolute bg-white h-screen top-0 duration-200 overflow-hidden"
-      id="sidebar"
-      style="display: none"
-    >
-      <div class="w-full bg-gray-100 shadow p-2">
-        <div class="flex items-center">
-          <button onclick="sidebar()" class="px-2 bg-gray-200 mr-2">
-            <i class="fa fa-times" aria-hidden="true"></i>
-          </button>
-          <a href="/">
-            <h1 class="text-2xl font-semibold"><b>Hobayer Golondaz</b></h1></a
-          >
+    <section class="container mx-auto mt-5 p-4">
+      <!-- Section Title -->
+      <div class="shadow-md p-4 mb-6 bg-white rounded-lg">
+        <h1 class="text-2xl font-bold text-gray-800 flex items-center gap-2">
+          🚀 WORK AND PROJECTS
+        </h1>
+      </div>
+    
+      <!-- Project 1: Trading and Earning AI v1 -->
+      <div class="shadow-md flex flex-col md:flex-row items-center bg-gray-50 p-6 rounded-lg mb-6">
+        <div class="md:w-3/5 p-4">
+          <h3 class="text-xl font-semibold text-gray-900">🤖 Trading and Earning AI v1</h3>
+          <p class="text-gray-600 mt-2">
+            Analyzing the benefits of the project and planning how to execute the project steps.
+          </p>
+          <a href="https://mdhgtushar.github.io/onnopurna/" target="_blank" class="inline-flex items-center mt-4 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
+            Read more 📖
+          </a>
+        </div>
+        <div class="md:w-2/5 flex justify-center p-4">
+          <img class="w-40 h-40 rounded-full" src="https://avatars.githubusercontent.com/u/81422400?v=4" alt="Project Image" />
         </div>
       </div>
-      <ul class="m-2">
-        <li>
-          <a
-            href="index.html"
-            class="w-full font-thin uppercase flex items-center p-3 my-2 transition-colors duration-200 justify-start bg-gradient-to-l from-gray-200 border-l-4 to-gray-300 border-blue-500 border-blue-500 text-black-500"
-          >
-            <i class="fa fa-id-card-o mr-3" aria-hidden="true"></i> About Me</a
-          >
-        </li>
-        <li>
-          <a
-            href="skills.html"
-            class="w-full font-thin uppercase flex items-center p-3 my-2 transition-colors duration-200 justify-start bg-gradient-to-l from-gray-200 border-l-4 to-gray-300 border-blue-500 border-blue-500 text-black-500"
-            ><i class="fa fa-graduation-cap mr-3" aria-hidden="true"></i> Skills & Education</a
-          >
-        </li>
-        <li>
-          <a
-            href="portfolio.html"
-            class="w-full font-thin uppercase flex items-center p-3 my-2 transition-colors duration-200 justify-start bg-gradient-to-l from-gray-200 border-l-4 to-gray-300 border-blue-500 border-blue-500 text-black-500"
-            ><i class="fa fa-briefcase mr-3" aria-hidden="true"></i> Work & Project</a
-          >
-        </li>
-        <li>
-          <a
-            href="blog.html"
-            class="w-full font-thin uppercase flex items-center p-3 my-2 transition-colors duration-200 justify-start bg-gradient-to-l from-gray-200 border-l-4 to-gray-300 border-blue-500 border-blue-500 text-black-500"
-            ><i class="fa fa-pencil-square-o mr-3" aria-hidden="true"></i> Blog</a
-          >
-        </li>
-        <li>
-          <a
-            href="gallery.html"
-            class="w-full font-thin uppercase flex items-center p-3 my-2 transition-colors duration-200 justify-start bg-gradient-to-l from-gray-200 border-l-4 to-gray-300 border-blue-500 border-blue-500 text-black-500"
-            ><i class="fa fa-picture-o mr-3" aria-hidden="true"></i> Gallery</a
-          >
-        </li>
-        <li>
-          <a
-            href="timeline.html"
-            class="w-full font-thin uppercase flex items-center p-3 my-2 transition-colors duration-200 justify-start bg-gradient-to-l from-gray-200 border-l-4 to-gray-300 border-blue-500 border-blue-500 text-black-500"
-            ><i class="fa fa-calendar-o mr-3" aria-hidden="true"></i> Time Line</a
-          >
-        </li>
-        <li>
-          <a
-            href="contact.html"
-            class="w-full font-thin uppercase flex items-center p-3 my-2 transition-colors duration-200 justify-start bg-gradient-to-l from-gray-200 border-l-4 to-gray-300 border-blue-500 border-blue-500 text-black-500"
-            ><i class="fa fa-coffee mr-3" aria-hidden="true"></i> Contact Details</a
-          >
-        </li>
-      </ul>
-    </div>
-    <section class="container mx-auto mt-5 p-2">
-      <div class="shadow p-2 mb-5">
-        <h1 class="text-xl">WORK AND PROJECTS</h1>
+    
+      <!-- Grid Layout for Other Projects -->
+      <div class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+        <!-- Project 2 -->
+        <div class="shadow-md bg-white p-4 rounded-lg">
+          <h3 class="text-lg font-semibold text-gray-900">🏢 RubidSoft Company Operations</h3>
+          <p class="text-gray-600 mt-2">Planning company workflows and execution strategies.</p>
+          <a href="https://mdhgtushar.github.io/rubidsoft/" target="_blank" class="block mt-4 text-blue-600 hover:underline">Read more ➡️</a>
+        </div>
+        <!-- Project 3 -->
+        <div class="shadow-md bg-white p-4 rounded-lg">
+          <h3 class="text-lg font-semibold text-gray-900">🌐 Personal Website Kit</h3>
+          <p class="text-gray-600 mt-2">Creating a template for personal website development.</p>
+          <a href="https://mdhgtushar.github.io/" target="_blank" class="block mt-4 text-blue-600 hover:underline">Read more ➡️</a>
+        </div>
+        <!-- Project 4 -->
+        <div class="shadow-md bg-white p-4 rounded-lg">
+          <h3 class="text-lg font-semibold text-gray-900">🏫 School Management System</h3>
+          <p class="text-gray-600 mt-2">Developing a school management and result processing system.</p>
+          <a href="https://mdhgtushar.github.io/academyms/" target="_blank" class="block mt-4 text-blue-600 hover:underline">Read more ➡️</a>
+        </div>
+        <!-- Project 5 -->
+        <div class="shadow-md bg-white p-4 rounded-lg">
+          <h3 class="text-lg font-semibold text-gray-900">📸 Photographer Platform</h3>
+          <p class="text-gray-600 mt-2">Building an online photography platform for professionals.</p>
+          <a href="#" target="_blank" class="block mt-4 text-blue-600 hover:underline">Read more ➡️</a>
+        </div>
       </div>
+    </section>
+    
+    <section id="footer" class="bg-gray-900 text-white py-10">
+      <div class="container mx-auto px-6">
+        <div class="flex">
+          <!-- Personal Info -->
+          <div class="flex-1">
+            <h2 class="text-xl font-bold">HOBAYER GOLONDAZ</h2>
+            <h3 class="text-lg text-gray-400">Full-Stack Web Developer</h3>
+            <p class="text-sm text-gray-500 mt-2">
+              I build high-quality web applications with modern technologies.
+            </p>
 
-      <div class="shadow md:flex items-center bg-gray-100 h-96 mb-5 overflow-hidden">
-        <div class="bg-gray-100 p-8 overflow-hidden py-3 w-full">
-          <div class="mb-2">
-            <h3 class="text-2xl font-semibold text-gray-900 ">
-              Trading and Earning AI v1
-            </h3>
-            <p class="text-base font-normal text-gray-500">
-              Analysing the benifits of the project and planning how to axecute the project steps
-              Analysing the benifits of the project and planning how to axecute the project steps
-              Analysing the benifits of the project and planning how to axecute the project steps
-              Analysing the benifits of the project and planning how to axecute the project steps
+            <p class="mt-4 flex space-x-3">
+              <i class="fa fa-facebook text-gray-400"></i>
+              <i class="fa fa-linkedin text-gray-400"></i>
+              <i class="fa fa-twitter text-gray-400"></i>
+              <i class="fa fa-github text-gray-400"></i>
             </p>
           </div>
-          <div>
-            <a
-              href="https://mdhgtushar.github.io/onnopurna/"
-              target="_blank"
-              class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 "
-            >
-              Read more
 
-              <svg
-                class="w-3 h-3 ml-2"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 14 10"
+          <div class="flex text-right">
+            <!-- Contact Me -->
+            <div class="w-64">
+              <h3 class="text-lg font-semibold">Contact</h3>
+              <ul class="space-y-2 text-sm text-gray-400">
+                <li>📍 123 Business Avenue, Tech City</li>
+                <li>📞 +1 234 567 890</li>
+                <li>✉️ info@rubidsoft.com</li>
+              </ul>
+              <p class="text-gray-400 text-sm">
+                The easiest way to contact me is just to take your phone and
+                call me.
+              </p>
+              <a
+                href="tel:000000"
+                class="mt-3 inline-block bg-green-600 px-4 py-2 rounded-lg text-white font-semibold"
               >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M1 5h12m0 0L9 1m4 4L9 9"
-                />
-              </svg>
-            </a>
+                <i class="fa fa-phone"></i> Call Me
+              </a>
+            </div>
+            <!-- Resume Download -->
+            <div class="w-64">
+              <h3 class="text-lg font-semibold">Resume</h3>
+              <p class="text-gray-400 text-sm">
+                Download my CV to know more about me.
+              </p>
+              <a
+                href="/cv.pdf"
+                class="mt-3 inline-block bg-blue-600 px-4 py-2 rounded-lg text-white font-semibold"
+              >
+                <i class="fa fa-download"></i> Download CV
+              </a>
+            </div>
+
+            <!-- Know Me -->
+            <div class="w-44 text-right">
+              <h3 class="text-lg font-semibold">Know Me</h3>
+              <ul class="text-gray-400 text-sm space-y-2">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#objective">My Objective</a></li>
+                <li><a href="#skills">My Skills</a></li>
+                <li><a href="#education">My Education</a></li>
+                <li><a href="#work">My Work</a></li>
+              </ul>
+            </div>
+
+            <!-- Projects -->
+            <div class="w-44 text-right">
+              <h3 class="text-lg font-semibold">Projects</h3>
+              <ul class="text-gray-400 text-sm space-y-2">
+                <li><a href="#project1">Project 1</a></li>
+                <li><a href="#project2">Project 2</a></li>
+                <li><a href="#project3">Project 3</a></li>
+                <li><a href="#project4">Project 4</a></li>
+                <li><a href="#project5">Project 5</a></li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div class="overflow-hidden">
-          <img class="mx-auto" src="https://avatars.githubusercontent.com/u/81422400?v=4" alt="" />
-        </div>
-      </div>
 
-      <div class="my-2">
-        <div class="md:grid gap-4 grid-cols-4">
-          <div class="shadow mb-5 border">
-            <div class="md:h-44 overflow-hidden">
-              <!-- <img
-                class="mx-auto"
-                src="https://avatars.githubusercontent.com/u/81422400?v=4"
-                alt=""
-              /> -->
-            </div>
-            <div class="p-2 overflow-hidden py-3">
-              <div class="mb-2">
-                <h3 class="text-lg font-semibold text-gray-900 ">
-                  Rubidsoft Company Operations initial
-                </h3>
-                <p class="text-base font-normal text-gray-500">
-                  Analysing the benifits of the project and planning how to axecute the project
-                  steps
-                </p>
-              </div>
-              <div>
-                <a
-                  href="https://mdhgtushar.github.io/rubidsoft/"
-                  target="_blank"
-                  class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 "
-                >
-                  Read more
-
-                  <svg
-                    class="w-3 h-3 ml-2"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 14 10"
-                  >
-                    <path
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M1 5h12m0 0L9 1m4 4L9 9"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="shadow mb-5 border">
-            <div class="md:h-44 overflow-hidden">
-              <!-- <img
-                class="mx-auto"
-                src="https://avatars.githubusercontent.com/u/81422400?v=4"
-                alt=""
-              /> -->
-            </div>
-            <div class="p-2 overflow-hidden py-3">
-              <div class="mb-2">
-                <h3 class="text-lg font-semibold text-gray-900 ">
-                  Personal Website Development Kit v1
-                </h3>
-                <p class="text-base font-normal text-gray-500">
-                  Analysing the benifits of the project and planning how to axecute the project
-                  steps
-                </p>
-              </div>
-              <div>
-                <a
-                href="https://mdhgtushar.github.io/"
-                target="_blank"
-                  class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 "
-                >
-                  Read more
-
-                  <svg
-                    class="w-3 h-3 ml-2"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 14 10"
-                  >
-                    <path
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M1 5h12m0 0L9 1m4 4L9 9"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="shadow mb-5 border">
-            <div class="md:h-44 overflow-hidden">
-              <!-- <img
-                class="mx-auto"
-                src="https://avatars.githubusercontent.com/u/81422400?v=4"
-                alt=""
-              /> -->
-            </div>
-            <div class="p-2 overflow-hidden py-3">
-              <div class="mb-2">
-                <h3 class="text-lg font-semibold text-gray-900 ">
-                  School Management System v1
-                </h3>
-                <p class="text-base font-normal text-gray-500">
-                  Analysing the benifits of the project and planning how to axecute the project
-                  steps
-                </p>
-              </div>
-              <div>
-                <a
-                  href="https://mdhgtushar.github.io/academyms/"
-                  target="_blank"
-                  class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 "
-                >
-                  Read more
-
-                  <svg
-                    class="w-3 h-3 ml-2"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 14 10"
-                  >
-                    <path
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M1 5h12m0 0L9 1m4 4L9 9"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="shadow mb-5 border">
-            <div class="md:h-44 overflow-hidden">
-              <!-- <img
-                class="mx-auto"
-                src="https://avatars.githubusercontent.com/u/81422400?v=4"
-                alt=""
-              /> -->
-            </div>
-            <div class="p-2 overflow-hidden py-3">
-              <div class="mb-2">
-                <h3 class="text-lg font-semibold text-gray-900 ">
-                  Photographer Platform v1
-                </h3>
-                <p class="text-base font-normal text-gray-500">
-                  Analysing the benifits of the project and planning how to axecute the project
-                  steps
-                </p>
-              </div>
-              <div>
-                <a
-                  href="https://mdhgtushar.github.io/photographer/"
-                  target="_blank"
-                  class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 "
-                >
-                  Read more
-
-                  <svg
-                    class="w-3 h-3 ml-2"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 14 10"
-                  >
-                    <path
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M1 5h12m0 0L9 1m4 4L9 9"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
+        <div class="text-center text-gray-500 mt-10 text-sm">
+          &copy; 2025 Hobayer Golondaz. All Rights Reserved.
         </div>
       </div>
     </section>

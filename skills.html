@@ -11,175 +11,361 @@
     />
   </head>
   <body>
-    <div class="w-full bg-gray-100 shadow p-2">
-      <div class="container mx-auto flex justify-between">
-        <div class="flex items-center">
-          <button onclick="sidebar()" class="md:hidden">
-            <i class="fa fa-bars mx-2 text-2xl" aria-hidden="true"></i>
-          </button>
-          <a href="/">
-            <h1
-              class="text-2xl font-semibold mx-2 uppercase text-gray-600 hover:text-black tracking-widest duration-200"
-            >
-              <b>Hobayer Golondaz</b>
-            </h1></a
-          >
+    <section id="header">
+      <div class="shadow">
+        <div class="bg-gray-900 text-white">
+          <div class="container mx-auto py-2">
+            <div class="flex justify-between items-center">
+              <div class="flex">
+                <p class="pr-3">✉️ info@rubidsoft.com</p>
+                <p>📞 +1 234 567 890</p>
+              </div>
+              <div>
+                <p class="text-sm font-normal text-white">
+                  <a href="https://facebook.com" target="_blank">
+                    <i
+                      class="fa fa-facebook text-white bg-blue-600 rounded mx-1 p-1 px-2 text-sm"
+                      aria-hidden="true"
+                    ></i>
+                  </a>
+                  <a href="https://linkedin.com" target="_blank">
+                    <i
+                      class="fa fa-linkedin text-white bg-blue-700 rounded mx-1 p-1 px-2 text-sm"
+                      aria-hidden="true"
+                    ></i>
+                  </a>
+                  <a href="https://twitter.com" target="_blank">
+                    <i
+                      class="fa fa-twitter text-white bg-blue-400 rounded mx-1 p-1 px-2 text-sm"
+                      aria-hidden="true"
+                    ></i>
+                  </a>
+                  <a href="https://github.com" target="_blank">
+                    <i
+                      class="fa fa-github text-white bg-gray-900 rounded mx-1 p-1 px-2 text-sm border"
+                      aria-hidden="true"
+                    ></i>
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="hidden gap-x-4 items-center md:flex">
-          <ul class="m-0">
-            <li class="inline-block m-0">
-              <a
-                href="index.html"
-                class="hover:text-blue-600 hover:border-blue-100 text-indigo-600 rounded duration-300 px-2 border text-sm font-semibold text-gray-900"
+        <div class="container mx-auto py-5">
+          <div class="flex justify-between">
+            <div class="">
+              <button onclick="sidebar()" class="md:hidden">
+                <i class="fa fa-bars mx-2 text-2xl" aria-hidden="true"></i>
+              </button>
+              <a href="index.html">
+                <h1
+                  class="text-2xl font-semibold mr-2 uppercase hover:text-gray-600 text-black tracking-widest duration-200"
+                >
+                  <b>🚀 HOBAYER GOLONDAZ</b>
+                </h1></a
               >
-                <i class="fa fa-id-card-o" aria-hidden="true"></i> About Me</a
-              >
-            </li>
-            <li class="inline-block">
-              <a
-                href="skills.html"
-                class="hover:text-blue-600 hover:border-blue-100 rounded duration-300 px-2 border text-sm font-semibold text-gray-900"
-                ><i class="fa fa-graduation-cap" aria-hidden="true"></i> Skills
-                & Education</a
-              >
-            </li>
-            <li class="inline-block">
-              <a
-                href="portfolio.html"
-                class="hover:text-blue-600 hover:border-blue-100 rounded duration-300 px-2 border text-sm font-semibold text-gray-900"
-                ><i class="fa fa-briefcase" aria-hidden="true"></i> Work &
-                Project</a
-              >
-            </li>
-            <li class="inline-block">
-              <a
-                href="blog.html"
-                class="hover:text-blue-600 hover:border-blue-100 rounded duration-300 px-2 border text-sm font-semibold text-gray-900"
-                ><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-                Blog</a
-              >
-            </li>
-            <li class="inline-block">
-              <a
-                href="gallery.html"
-                class="hover:text-blue-600 hover:border-blue-100 rounded duration-300 px-2 border text-sm font-semibold text-gray-900"
-                ><i class="fa fa-picture-o" aria-hidden="true"></i> Gallery</a
-              >
-            </li>
-            <li class="inline-block">
-              <a
-                href="timeline.html"
-                class="hover:text-blue-600 hover:border-blue-100 rounded duration-300 px-2 border text-sm font-semibold text-gray-900"
-                ><i class="fa fa-calendar-o" aria-hidden="true"></i> Time
-                Line</a
-              >
-            </li>
-            <li class="inline-block">
-              <a
-                href="contact.html"
-                class="hover:text-blue-600 hover:border-blue-100 rounded duration-300 px-2 border text-sm font-semibold text-gray-900"
-                ><i class="fa fa-coffee" aria-hidden="true"></i> Contact
-                Details</a
-              >
-            </li>
-          </ul>
+              <p>👨‍💻 Full-Stack Web Developer SAAS specilized</p>
+            </div>
+            <div class="flex text-white">
+              <div class="bg-gray-800 p-5 mr-2">Know More</div>
+              <div class="bg-gray-800 p-5">Book an appoinment</div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
 
-    <div
-      class="w-full absolute bg-white h-screen top-0 duration-200 overflow-hidden"
-      id="sidebar"
-      style="display: none"
-    >
-      <div class="w-full bg-gray-100 shadow p-2">
-        <div class="flex items-center">
-          <button onclick="sidebar()" class="px-2 bg-gray-200 mr-2">
-            <i class="fa fa-times" aria-hidden="true"></i>
-          </button>
-          <a href="/">
-            <h1 class="text-2xl font-semibold"><b>Hobayer Golondaz</b></h1></a
-          >
+        <div class="border-t bg-gray-800 py-2 text-white">
+          <div class="container mx-auto hidden gap-x-4 items-center md:flex">
+            <div class="flex justify-between w-full">
+              <div>
+                <ul class="m-0">
+                  <li class="inline-block m-0">
+                    <a
+                      href="index.html"
+                      class="text-blue-600 bg-blue-100 duration-300 px-4 inline-block py-2 font-semibold border-l-4 border-blue-600"
+                    >
+                      🆔 About Me</a
+                    >
+                  </li>
+                  <li class="inline-block">
+                    <a
+                      href="skills.html"
+                      class="hover:text-blue-600 hover:bg-blue-100 text-white duration-300 px-4 inline-block py-2 font-semibold border-l-4 border-transparent hover:border-blue-600"
+                    >
+                      🎓 Skills & Education</a
+                    >
+                  </li>
+                  <li class="inline-block">
+                    <a
+                      href="portfolio.html"
+                      class="hover:text-blue-600 hover:bg-blue-100 text-white duration-300 px-4 inline-block py-2 font-semibold border-l-4 border-transparent hover:border-blue-600"
+                    >
+                      💼 Work & Project</a
+                    >
+                  </li>
+                  <li class="inline-block">
+                    <a
+                      href="blog.html"
+                      class="hover:text-blue-600 hover:bg-blue-100 text-white duration-300 px-4 inline-block py-2 font-semibold border-l-4 border-transparent hover:border-blue-600"
+                    >
+                      ✍️ Blog</a
+                    >
+                  </li>
+                  <li class="inline-block">
+                    <a
+                      href="gallery.html"
+                      class="hover:text-blue-600 hover:bg-blue-100 text-white duration-300 px-4 inline-block py-2 font-semibold border-l-4 border-transparent hover:border-blue-600"
+                    >
+                      🖼️ Gallery</a
+                    >
+                  </li>
+                  <li class="inline-block">
+                    <a
+                      href="timeline.html"
+                      class="hover:text-blue-600 hover:bg-blue-100 text-white duration-300 px-4 inline-block py-2 font-semibold border-l-4 border-transparent hover:border-blue-600"
+                    >
+                      📅 Time Line</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <ul>
+                  <li class="inline-block">
+                    <a
+                      href="contact.html"
+                      class="hover:text-blue-600 hover:bg-blue-100 text-white duration-300 px-4 inline-block py-2 font-semibold border-l-4 border-transparent hover:border-blue-600"
+                    >
+                      ☕ Contact Details</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <ul class="m-2">
-        <li>
-          <a
-            href="index.html"
-            class="w-full font-thin uppercase flex items-center p-3 my-2 transition-colors duration-200 justify-start bg-gradient-to-l from-gray-200 border-l-4 to-gray-300 border-blue-500 border-blue-500 text-black-500"
-          >
-            <i class="fa fa-id-card-o mr-3" aria-hidden="true"></i> About Me</a
-          >
-        </li>
-        <li>
-          <a
-            href="skills.html"
-            class="w-full font-thin uppercase flex items-center p-3 my-2 transition-colors duration-200 justify-start bg-gradient-to-l from-gray-200 border-l-4 to-gray-300 border-blue-500 border-blue-500 text-black-500"
-            ><i class="fa fa-graduation-cap mr-3" aria-hidden="true"></i> Skills
-            & Education</a
-          >
-        </li>
-        <li>
-          <a
-            href="portfolio.html"
-            class="w-full font-thin uppercase flex items-center p-3 my-2 transition-colors duration-200 justify-start bg-gradient-to-l from-gray-200 border-l-4 to-gray-300 border-blue-500 border-blue-500 text-black-500"
-            ><i class="fa fa-briefcase mr-3" aria-hidden="true"></i> Work &
-            Project</a
-          >
-        </li>
-        <li>
-          <a
-            href="blog.html"
-            class="w-full font-thin uppercase flex items-center p-3 my-2 transition-colors duration-200 justify-start bg-gradient-to-l from-gray-200 border-l-4 to-gray-300 border-blue-500 border-blue-500 text-black-500"
-            ><i class="fa fa-pencil-square-o mr-3" aria-hidden="true"></i>
-            Blog</a
-          >
-        </li>
-        <li>
-          <a
-            href="gallery.html"
-            class="w-full font-thin uppercase flex items-center p-3 my-2 transition-colors duration-200 justify-start bg-gradient-to-l from-gray-200 border-l-4 to-gray-300 border-blue-500 border-blue-500 text-black-500"
-            ><i class="fa fa-picture-o mr-3" aria-hidden="true"></i> Gallery</a
-          >
-        </li>
-        <li>
-          <a
-            href="timeline.html"
-            class="w-full font-thin uppercase flex items-center p-3 my-2 transition-colors duration-200 justify-start bg-gradient-to-l from-gray-200 border-l-4 to-gray-300 border-blue-500 border-blue-500 text-black-500"
-            ><i class="fa fa-calendar-o mr-3" aria-hidden="true"></i> Time
-            Line</a
-          >
-        </li>
-        <li>
-          <a
-            href="contact.html"
-            class="w-full font-thin uppercase flex items-center p-3 my-2 transition-colors duration-200 justify-start bg-gradient-to-l from-gray-200 border-l-4 to-gray-300 border-blue-500 border-blue-500 text-black-500"
-            ><i class="fa fa-coffee mr-3" aria-hidden="true"></i> Contact
-            Details</a
-          >
-        </li>
-      </ul>
-    </div>
-    <section class="container md:mx-auto">
-      <div class="m-2 md:mt-5">
-        <div class="shadow p-2 mb-2">
-          <h1 class="text-xl bold">My Experiences</h1>
-          <h4>Web developer at Rubidsoft(2018 – 2020)</h4>
-          <p>
-            I was full stack developer at Rubidsoft. I have created the site
-            according to the needs of our clients
-          </p>
+
+      <div
+        class="w-full absolute bg-white h-screen top-0 duration-200 overflow-hidden"
+        id="sidebar"
+        style="display: none"
+      >
+        <div class="w-full bg-gray-100 shadow p-2">
+          <div class="flex items-center">
+            <button onclick="sidebar()" class="px-2 bg-gray-200 mr-2">
+              <i class="fa fa-times" aria-hidden="true"></i>
+            </button>
+            <a href="/">
+              <h1 class="text-2xl font-semibold"><b>Hobayer Golondaz</b></h1></a
+            >
+          </div>
         </div>
-        <div class="shadow p-2 mb-2">
-          <h1 class="text-xl bold">Extra Skills</h1>
-          <p>Business Planning</p>
-          <p>Full-Stack Web Development</p>
-          <p>Cyber Security</p>
-          <p>Graphic Design & Animation</p>
-          <p>Photo and Videography</p>
+        <ul class="m-2">
+          <li>
+            <a
+              href="index.html"
+              class="w-full font-thin uppercase flex items-center p-3 my-2 transition-colors duration-200 justify-start bg-gradient-to-l from-gray-200 border-l-4 to-gray-300 border-blue-500 border-blue-500 text-black-500"
+            >
+              <i class="fa fa-id-card-o mr-3" aria-hidden="true"></i> About
+              Me</a
+            >
+          </li>
+          <li>
+            <a
+              href="skills.html"
+              class="w-full font-thin uppercase flex items-center p-3 my-2 transition-colors duration-200 justify-start bg-gradient-to-l from-gray-200 border-l-4 to-gray-300 border-blue-500 border-blue-500 text-black-500"
+              ><i class="fa fa-graduation-cap mr-3" aria-hidden="true"></i>
+              Skills & Education</a
+            >
+          </li>
+          <li>
+            <a
+              href="portfolio.html"
+              class="w-full font-thin uppercase flex items-center p-3 my-2 transition-colors duration-200 justify-start bg-gradient-to-l from-gray-200 border-l-4 to-gray-300 border-blue-500 border-blue-500 text-black-500"
+              ><i class="fa fa-briefcase mr-3" aria-hidden="true"></i> Work &
+              Project</a
+            >
+          </li>
+          <li>
+            <a
+              href="blog.html"
+              class="w-full font-thin uppercase flex items-center p-3 my-2 transition-colors duration-200 justify-start bg-gradient-to-l from-gray-200 border-l-4 to-gray-300 border-blue-500 border-blue-500 text-black-500"
+              ><i class="fa fa-pencil-square-o mr-3" aria-hidden="true"></i>
+              Blog</a
+            >
+          </li>
+          <li>
+            <a
+              href="gallery.html"
+              class="w-full font-thin uppercase flex items-center p-3 my-2 transition-colors duration-200 justify-start bg-gradient-to-l from-gray-200 border-l-4 to-gray-300 border-blue-500 border-blue-500 text-black-500"
+              ><i class="fa fa-picture-o mr-3" aria-hidden="true"></i>
+              Gallery</a
+            >
+          </li>
+          <li>
+            <a
+              href="timeline.html"
+              class="w-full font-thin uppercase flex items-center p-3 my-2 transition-colors duration-200 justify-start bg-gradient-to-l from-gray-200 border-l-4 to-gray-300 border-blue-500 border-blue-500 text-black-500"
+              ><i class="fa fa-calendar-o mr-3" aria-hidden="true"></i> Time
+              Line</a
+            >
+          </li>
+          <li>
+            <a
+              href="contact.html"
+              class="w-full font-thin uppercase flex items-center p-3 my-2 transition-colors duration-200 justify-start bg-gradient-to-l from-gray-200 border-l-4 to-gray-300 border-blue-500 border-blue-500 text-black-500"
+              ><i class="fa fa-coffee mr-3" aria-hidden="true"></i> Contact
+              Details</a
+            >
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="container mx-auto space-y-5 my-10">
+
+      <div>
+        <h2>Bagua Govt Primary School</h2>
+        <h2>Gafargaon Adarsha Shishu niketon</h2>
+        <h2>Gafargaon Islamia Govt High School</h2>
+        <h2>Gafargaon Govt College</h2>
+        <h2>International Islami University of Science and technologies Bangladesh</h2>
+      </div>
+
+      <!-- Experience Section -->
+      <div class="shadow-lg p-5 rounded-lg bg-white">
+          <h1 class="text-2xl font-bold text-blue-600 mb-3">🚀 My Experiences</h1>
+
+          <div class="mb-4">
+              <h2 class="text-lg font-semibold">💻 Freelance Full Stack Developer (2018 – 2020)</h2>
+              <p class="text-gray-600">
+                  Worked at <span class="font-bold">RubidSoft</span>, creating websites tailored to client needs.
+              </p>
+          </div>
+
+          <div class="mb-4">
+              <h2 class="text-lg font-semibold">🌐 Web Developer at Arifnet (2018 – 2020)</h2>
+              <p class="text-gray-600">
+                  Developed dynamic and responsive web solutions to enhance digital presence.
+              </p>
+          </div>
+
+          <div>
+              <h2 class="text-lg font-semibold">🛠 Web Developer at RubidSoft (2018 – 2020)</h2>
+              <p class="text-gray-600">
+                  Built and optimized web applications with modern technologies.
+              </p>
+          </div>
+      </div>
+
+      <!-- Skills Section -->
+      <div class="shadow-lg p-5 rounded-lg bg-white">
+          <h1 class="text-2xl font-bold text-green-600 mb-3">💡 Extra Skills</h1>
+          <ul class="list-disc pl-5 text-gray-600">
+              <li>📈 Business Planning</li>
+              <li>🔧 Full-Stack Web Development</li>
+          </ul>
+      </div>
+
+      <!-- Tech Stack Section -->
+      <div class="shadow-lg p-5 rounded-lg bg-white">
+          <h1 class="text-2xl font-bold text-purple-600 mb-3">🖥️ Full Stack Development</h1>
+          <div class="grid grid-cols-4 gap-3 text-center text-white font-semibold">
+              <div class="p-3 bg-green-500 rounded-lg">⚛️ Javascript</div>
+              <div class="p-3 bg-blue-500 rounded-lg">⚛️ React.js</div>
+              <div class="p-3 bg-green-500 rounded-lg">🌿 Node.js</div>
+              <div class="p-3 bg-yellow-500 rounded-lg">📦 MongoDB</div>
+          </div>
+      </div>
+
+  </section>
+    
+    
+    <section id="footer" class="bg-gray-900 text-white py-10">
+      <div class="container mx-auto px-6">
+        <div class="flex">
+          <!-- Personal Info -->
+          <div class="flex-1">
+            <h2 class="text-xl font-bold">HOBAYER GOLONDAZ</h2>
+            <h3 class="text-lg text-gray-400">Full-Stack Web Developer</h3>
+            <p class="text-sm text-gray-500 mt-2">
+              I build high-quality web applications with modern technologies.
+            </p>
+
+            <p class="mt-4 flex space-x-3">
+              <i class="fa fa-facebook text-gray-400"></i>
+              <i class="fa fa-linkedin text-gray-400"></i>
+              <i class="fa fa-twitter text-gray-400"></i>
+              <i class="fa fa-github text-gray-400"></i>
+            </p>
+          </div>
+
+          <div class="flex text-right">
+            <!-- Contact Me -->
+            <div class="w-64">
+              <h3 class="text-lg font-semibold">Contact</h3>
+              <ul class="space-y-2 text-sm text-gray-400">
+                <li>📍 123 Business Avenue, Tech City</li>
+                <li>📞 +1 234 567 890</li>
+                <li>✉️ info@rubidsoft.com</li>
+              </ul>
+              <p class="text-gray-400 text-sm">
+                The easiest way to contact me is just to take your phone and
+                call me.
+              </p>
+              <a
+                href="tel:000000"
+                class="mt-3 inline-block bg-green-600 px-4 py-2 rounded-lg text-white font-semibold"
+              >
+                <i class="fa fa-phone"></i> Call Me
+              </a>
+            </div>
+            <!-- Resume Download -->
+            <div class="w-64">
+              <h3 class="text-lg font-semibold">Resume</h3>
+              <p class="text-gray-400 text-sm">
+                Download my CV to know more about me.
+              </p>
+              <a
+                href="/cv.pdf"
+                class="mt-3 inline-block bg-blue-600 px-4 py-2 rounded-lg text-white font-semibold"
+              >
+                <i class="fa fa-download"></i> Download CV
+              </a>
+            </div>
+
+            <!-- Know Me -->
+            <div class="w-44 text-right">
+              <h3 class="text-lg font-semibold">Know Me</h3>
+              <ul class="text-gray-400 text-sm space-y-2">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#objective">My Objective</a></li>
+                <li><a href="#skills">My Skills</a></li>
+                <li><a href="#education">My Education</a></li>
+                <li><a href="#work">My Work</a></li>
+              </ul>
+            </div>
+
+            <!-- Projects -->
+            <div class="w-44 text-right">
+              <h3 class="text-lg font-semibold">Projects</h3>
+              <ul class="text-gray-400 text-sm space-y-2">
+                <li><a href="#project1">Project 1</a></li>
+                <li><a href="#project2">Project 2</a></li>
+                <li><a href="#project3">Project 3</a></li>
+                <li><a href="#project4">Project 4</a></li>
+                <li><a href="#project5">Project 5</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center text-gray-500 mt-10 text-sm">
+          &copy; 2025 Hobayer Golondaz. All Rights Reserved.
         </div>
       </div>
     </section>
+
     <script>
       function sidebar() {
         const sidebar = document.getElementById("sidebar");
