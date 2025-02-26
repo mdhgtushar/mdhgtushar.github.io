@@ -16,11 +16,15 @@
         <div class="bg-gray-900 text-white">
           <div class="container mx-auto p-2 md:p-0 md:py-2">
             <div class="flex justify-between items-center">
-              <div class="md:flex">
-                <p class="pr-3">✉️ info@rubidsoft.com</p>
-                <p>📞 +1 234 567 890</p>
+              <div class="md:flex text-sm">
+               <div>
+                <a href="mailto:mdhgtushar@gmail.com" class="inline-block">✉️ mdhgtushar@gmail.com</a>
+               </div>
+                <div>
+                  <a href="tel:8801302855453" class="inline-block">📞 +880 1302855453</a>
+                </div>
               </div>
-              <div>
+              <div class="">
                 <p class="text-sm font-normal text-white">
                   <a href="https://facebook.com" target="_blank">
                     <i
@@ -53,10 +57,7 @@
         </div>
         <div class="container mx-auto py-5">
           <div class="flex justify-between">
-            <div class="flex">
-              <button onclick="sidebar()" class="md:hidden">
-                <i class="fa fa-bars mx-2 text-2xl" aria-hidden="true"></i>
-              </button>
+            <div class="flex justify-between w-full px-2 items-center md:w-auto md:px-0">
               <div>
                 <a href="index.html">
                   <h1
@@ -67,6 +68,10 @@
                 >
                 <p class="text-sm">👨‍💻 Full-Stack Web Developer SAAS specilized</p>
               </div>
+              
+              <button onclick="sidebar()" class="md:hidden">
+                <i class="fa fa-bars mx-2 text-2xl" aria-hidden="true"></i>
+              </button>
             </div>
             <div class="md:flex text-white hidden">
               <div class="bg-gray-800 p-5 mr-2">Know More</div>
@@ -226,150 +231,85 @@
 
     <section id="content">
       <div class="container mx-auto my-5">
-        <div class="block md:flex justify-between gap-4">
-          <!-- About Me Section (Right) -->
-          <div class="w-full py-6 mb-6 bg-white border-r-4 border-gray-600">
-            <div class="flex flex-col md:flex-row items-center">
-              <!-- About Text -->
-              <div class="md:w-2/3 w-full md:text-center md:text-left p-5 md:p-0">
-                <h2 class="text-3xl font-bold text-gray-900 mb-3">
-                  👋 Hey, I'm Tushar!
-                </h2>
-                <p class="text-lg text-gray-700 mb-4">
-                  🚀 A passionate
-                  <span class="font-semibold text-blue-600"
-                    >Full-Stack Web Developer</span
-                  >
-                  from Bangladesh 🇧🇩. I specialize in building modern,
-                  high-performance web applications using the latest
-                  technologies.
-                </p>
-                <p class="text-lg text-gray-700 mb-4">
-                  💡 I love solving problems, creating digital experiences, and
-                  constantly learning new skills. My goal is to build impactful
-                  solutions that help businesses and individuals succeed online.
-                </p>
-                <!-- Skills & Signature -->
-                <div class="my-6 text-left">
-                  <h3 class="text-xl font-semibold text-gray-900 mb-2">
-                    🔥 Skills & Expertise
-                  </h3>
-                  <div class="flex flex-wrap gap-3">
-                    <span
-                      class="px-3 py-1 bg-blue-100 text-blue-600 font-semibold rounded"
-                      >💻 MERN Stack</span
-                    >
-                    <span
-                      class="px-3 py-1 bg-green-100 text-green-600 font-semibold rounded"
-                      >⚡ Tailwind CSS</span
-                    >
-                    <span
-                      class="px-3 py-1 bg-yellow-100 text-yellow-600 font-semibold rounded"
-                      >🛠 API Development</span
-                    >
-                    <span
-                      class="px-3 py-1 bg-purple-100 text-purple-600 font-semibold rounded"
-                      >🎨 UI/UX Design</span
-                    >
-                    <span
-                      class="px-3 py-1 bg-red-100 text-red-600 font-semibold rounded"
-                      >📊 Data Analysis</span
-                    >
+        <div class="flex flex-col md:flex-row justify-between gap-4">
+          <!-- Profile Section (Will show first in mobile) -->
+          <div class="p-4 mb-4 w-full max-w-xs order-1 md:order-2">
+              <div class="flex justify-center mb-6">
+                  <img class="w-full border-4 border-gray-200" src="https://avatars.githubusercontent.com/u/81422400?v=4" alt="Hobayer Golondaz" />
+              </div>
+      
+              <div class="text-center mb-4">
+                  <h1 class="text-xl font-semibold text-gray-900 mb-2">🚀 HOBAYER GOLONDAZ</h1>
+                  <div class="text-center">
+                      <p class="text-base font-normal text-black-500">
+                          <i class="fa fa-facebook bg-blue-500 text-white rounded-full mx-1 text-sm py-1 p-2"></i>
+                          <i class="fa fa-linkedin bg-blue-700 text-white rounded-full mx-1 text-sm py-1 p-2"></i>
+                          <i class="fa fa-twitter bg-blue-400 text-white rounded-full mx-1 text-sm py-1 p-2"></i>
+                          <i class="fa fa-github bg-gray-900 text-white rounded-full mx-1 text-sm py-1 p-2"></i>
+                      </p>
                   </div>
-                </div>
-
-                <p class="text-lg text-gray-700 mb-4">
-                  🎯 When I'm not coding, I enjoy 📚 reading, ✈️ traveling, and
-                  ☕ sipping coffee while brainstorming ideas.
-                </p>
               </div>
-            </div>
-
-            <!-- Signature -->
-            <div class="mt-6 text-left p-5 md:p-0">
-              <img src="sign.jpg" alt="Signature" class="h-12 mb-2" />
-              <h3 class="text-xl font-semibold text-gray-900">
-                HOBAYER GOLONDAZ
-              </h3>
-            </div>
-          </div>
-
-          <!-- Profile Section (Left) -->
-          <div class="p-4 mb-4 w-full max-w-xs">
-            <div class="flex justify-center mb-6">
-              <img
-                class="w-full border-4 border-gray-200"
-                src="https://avatars.githubusercontent.com/u/81422400?v=4"
-                alt="Hobayer Golondaz"
-              />
-            </div>
-
-            <div class="text-center mb-4">
-              <h1 class="text-xl font-semibold text-gray-900 mb-2">
-                🚀 HOBAYER GOLONDAZ
-              </h1>
-              <div class="text-center">
-                <p class="text-base font-normal text-black-500">
-                  <i
-                    class="fa fa-facebook bg-blue-500 text-white rounded-full mx-1 text-sm py-1 p-2"
-                    aria-hidden="true"
-                  ></i>
-                  <i
-                    class="fa fa-linkedin bg-blue-700 text-white rounded-full mx-1 text-sm py-1 p-2"
-                    aria-hidden="true"
-                  ></i>
-                  <i
-                    class="fa fa-twitter bg-blue-400 text-white rounded-full mx-1 text-sm py-1 p-2"
-                    aria-hidden="true"
-                  ></i>
-                  <i
-                    class="fa fa-github bg-gray-900 text-white rounded-full mx-1 text-sm py-1 p-2"
-                    aria-hidden="true"
-                  ></i>
-                </p>
-              </div>
-            </div>
-            <p class="text-base text-gray-500"></p>
-            <p class="text-base text-gray-500"></p>
-
-            <div>
-              <ul class="space-y-2 text-sm text-gray-600">
-                <li class="flex items-center">
-                  <span class="mr-2">👨‍💻</span> Full-Stack Web Developer
-                </li>
-                <li class="flex items-center">
-                  <span class="mr-2">💼</span> Founder and CEO at
-                  <a
-                    href="https://mdhgtushar.github.io/rubidsoft/"
-                    target="_blank"
-                    class="text-blue-500 pl-1"
-                  >
-                    RubidSoft
+      
+              <div>
+                  <ul class="space-y-2 text-sm text-gray-600">
+                      <li class="flex items-center"><span class="mr-2">👨‍💻</span> Full-Stack Web Developer</li>
+                      <li class="flex items-center">
+                          <span class="mr-2">💼</span> Founder and CEO at 
+                          <a href="https://mdhgtushar.github.io/rubidsoft/" target="_blank" class="text-blue-500 pl-1">RubidSoft</a>
+                      </li>
+                      <li class="flex items-center"><span class="mr-2">📍</span> 123 Business Avenue, Tech City</li>
+                      <li class="flex items-center"><span class="mr-2">📞</span> +1 234 567 890</li>
+                      <li class="flex items-center"><span class="mr-2">✉️</span> info@rubidsoft.com</li>
+                  </ul>
+                  <h3 class="text-lg font-semibold">Resume</h3>
+                  <p class="text-gray-400 text-sm">Download my CV to know more about me.</p>
+                  <a href="/cv.pdf" class="mt-3 mb-4 inline-block bg-blue-600 px-4 py-2 rounded-lg text-white font-semibold">
+                      <i class="fa fa-download"></i> Download CV
                   </a>
-                </li>
-                <li class="flex items-center">
-                  <span class="mr-2">📍</span> 123 Business Avenue, Tech City
-                </li>
-                <li class="flex items-center">
-                  <span class="mr-2">📞</span> +1 234 567 890
-                </li>
-                <li class="flex items-center">
-                  <span class="mr-2">✉️</span> info@rubidsoft.com
-                </li>
-              </ul>
-              <h3 class="text-lg font-semibold">Resume</h3>
-              <p class="text-gray-400 text-sm">
-                Download my CV to know more about me.
-              </p>
-              <a
-                href="/cv.pdf"
-                class="mt-3 mb-4 inline-block bg-blue-600 px-4 py-2 rounded-lg text-white font-semibold"
-              >
-                <i class="fa fa-download"></i> Download CV
-              </a>
-            </div>
+              </div>
           </div>
-        </div>
+      
+          <!-- About Me Section (Will show after profile in mobile) -->
+          <div class="w-full py-6 mb-6 bg-white border-r-4 border-gray-600 order-2 md:order-1">
+              <div class="flex flex-col md:flex-row items-center">
+                  <!-- About Text -->
+                  <div class="md:w-2/3 w-full md:text-center md:text-left p-5 md:p-0">
+                      <h2 class="text-3xl font-bold text-gray-900 mb-3">👋 Hey, I'm Tushar!</h2>
+                      <p class="text-lg text-gray-700 mb-4">
+                          🚀 A passionate <span class="font-semibold text-blue-600">Full-Stack Web Developer</span> from Bangladesh 🇧🇩. 
+                          I specialize in building modern, high-performance web applications using the latest technologies.
+                      </p>
+                      <p class="text-lg text-gray-700 mb-4">
+                          💡 I love solving problems, creating digital experiences, and constantly learning new skills. 
+                          My goal is to build impactful solutions that help businesses and individuals succeed online.
+                      </p>
+      
+                      <!-- Skills & Signature -->
+                      <div class="my-6 text-left">
+                          <h3 class="text-xl font-semibold text-gray-900 mb-2">🔥 Skills & Expertise</h3>
+                          <div class="flex flex-wrap gap-3">
+                              <span class="px-3 py-1 bg-blue-100 text-blue-600 font-semibold rounded">💻 MERN Stack</span>
+                              <span class="px-3 py-1 bg-green-100 text-green-600 font-semibold rounded">⚡ Tailwind CSS</span>
+                              <span class="px-3 py-1 bg-yellow-100 text-yellow-600 font-semibold rounded">🛠 API Development</span>
+                              <span class="px-3 py-1 bg-purple-100 text-purple-600 font-semibold rounded">🎨 UI/UX Design</span>
+                              <span class="px-3 py-1 bg-red-100 text-red-600 font-semibold rounded">📊 Data Analysis</span>
+                          </div>
+                      </div>
+      
+                      <p class="text-lg text-gray-700 mb-4">
+                          🎯 When I'm not coding, I enjoy 📚 reading, ✈️ traveling, and ☕ sipping coffee while brainstorming ideas.
+                      </p>
+                  </div>
+              </div>
+      
+              <!-- Signature -->
+              <div class="mt-6 text-left p-5 md:p-0">
+                  <img src="sign.jpg" alt="Signature" class="h-12 mb-2" />
+                  <h3 class="text-xl font-semibold text-gray-900">HOBAYER GOLONDAZ</h3>
+              </div>
+          </div>
+      </div>
+      
 
         <!-- My Objective Section -->
         <div class="mt-10 p-2 md:p-0">
@@ -472,14 +412,14 @@
           <div>
             <h3 class="text-lg font-semibold">Contact</h3>
             <ul class="space-y-2 text-sm text-gray-400">
-              <li>📍 123 Business Avenue, Tech City</li>
-              <li>📞 +1 234 567 890</li>
-              <li>✉️ info@rubidsoft.com</li>
+              <li>📍 138 Jonmejoy Gafargaon, Mymensingh</li>
+              <li>📞 +880 1302855453</li>
+              <li>✉️ mdhgtushar@gmail.com</li>
             </ul>
             <p class="text-gray-400 text-sm mt-2">
               The easiest way to contact me is just to take your phone and call me.
             </p>
-            <a href="tel:000000"
+            <a href="tel:8801302855453"
               class="mt-3 inline-block bg-green-600 px-4 py-2 rounded-lg text-white font-semibold">
               <i class="fa fa-phone"></i> Call Me
             </a>
