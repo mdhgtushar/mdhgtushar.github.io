@@ -16,36 +16,57 @@
         body {
             font-family: 'Inter', sans-serif;
             scroll-behavior: smooth;
+            background-color: #f8fafc; /* Subtle light background */
         }
         .sticky-nav {
             position: fixed;
             top: 0;
             width: 100%;
             z-index: 1000;
-            background-color: rgba(255, 255, 255, 0.95); /* Slightly transparent background */
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Subtle shadow */
-            backdrop-filter: blur(5px); /* Blur effect for modern feel */
+            background-color: rgba(255, 255, 255, 0.98); /* Less transparent background */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* More pronounced shadow */
+            backdrop-filter: blur(8px); /* Stronger blur effect */
             transition: all 0.3s ease-in-out;
         }
-        .nav-link.active {
-            color: #2563eb; /* Tailwind blue-600 */
-            font-weight: 600;
+        .nav-link {
+            padding: 0.5rem 1rem; /* Tailwind px-4 py-2 */
+            border-radius: 9999px; /* Tailwind rounded-full */
+            font-weight: 500; /* Tailwind font-medium */
+            transition: all 0.3s ease-in-out; /* Smooth transitions */
+            color: #4b5563; /* gray-700 */
+            text-decoration: none; /* Remove default underline */
+            position: relative; /* For potential future enhancements */
+            display: inline-block; /* Ensure padding works correctly */
         }
+        .nav-link:hover {
+            background-color: #eff6ff; /* blue-50 */
+            color: #1d4ed8; /* blue-700 */
+        }
+        .nav-link.active {
+            background-color: #dbeafe; /* blue-100 */
+            color: #1d4ed8; /* blue-700 */
+            font-weight: 600; /* Tailwind font-semibold */
+            box-shadow: 0 2px 5px rgba(37, 99, 235, 0.1); /* Subtle shadow for active button */
+        }
+        /* Remove the ::after pseudo-element for active state */
+        .nav-link.active::after {
+            content: none;
+        }
+
         /* Custom scrollbar for better aesthetics */
         ::-webkit-scrollbar {
-            width: 8px;
-            height: 8px;
+            width: 10px; /* Slightly wider */
         }
         ::-webkit-scrollbar-track {
-            background: #f1f1f1;
+            background: #e2e8f0; /* light gray track */
             border-radius: 10px;
         }
         ::-webkit-scrollbar-thumb {
-            background: #888;
+            background: #94a3b8; /* medium gray thumb */
             border-radius: 10px;
         }
         ::-webkit-scrollbar-thumb:hover {
-            background: #555;
+            background: #64748b; /* darker gray on hover */
         }
 
         /* Animations */
@@ -60,6 +81,15 @@
             }
         }
 
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
         .animate-name {
             animation: fadeInUp 1s ease-out forwards;
         }
@@ -71,19 +101,27 @@
 
         .animated-section {
             opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+            transform: translateY(30px); /* More pronounced initial displacement */
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out; /* Slower transition */
         }
 
         .animated-section.is-visible {
             opacity: 1;
             transform: translateY(0);
         }
+
         /* Specific style for highlighted service */
         .highlighted-service {
-            background-color: #dbeafe; /* blue-100 */
-            border: 2px solid #60a5fa; /* blue-400 */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #e0f2fe; /* blue-50 */
+            border: 2px solid #3b82f6; /* blue-500 */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Stronger shadow */
+            transform: scale(1.02); /* Slightly larger on highlight */
+        }
+        .highlighted-service h3 {
+            color: #1e40af; /* Darker blue for highlighted title */
+        }
+        .highlighted-service p {
+            color: #1f2937; /* Darker text for highlighted service */
         }
 
         /* Skill Icon Styling */
@@ -92,7 +130,7 @@
             align-items: center;
         }
         .skill-item i {
-            color: #3b82f6; /* blue-500 */
+            color: #2563eb; /* blue-600 */
             margin-right: 0.75rem;
             width: 1.25rem; /* Fixed width for alignment */
             text-align: center;
@@ -101,78 +139,110 @@
         /* Project Card Styling */
         .project-card {
             background-color: white;
-            padding: 2rem;
-            border-radius: 0.5rem; /* rounded-lg */
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-md */
+            padding: 2.5rem; /* Slightly more padding */
+            border-radius: 0.75rem; /* More rounded corners */
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12); /* Stronger initial shadow */
             transition: all 0.3s ease-in-out;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            border: 1px solid #e2e8f0; /* Subtle border */
         }
         .project-card:hover {
-            transform: translateY(-0.25rem); /* hover:-translate-y-1 */
-            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* hover:shadow-lg */
+            transform: translateY(-0.5rem); /* More pronounced lift */
+            box-shadow: 0 16px 24px rgba(0, 0, 0, 0.18); /* Even stronger shadow on hover */
         }
-        /* Adjusted project card h3 for responsive font size */
         .project-card h3 {
-            font-size: 1.375rem; /* text-xl for smaller screens, adjusted in HTML for larger */
-            font-weight: 600; /* font-semibold */
+            font-size: 1.5rem; /* Larger project titles */
+            font-weight: 700; /* Bolder */
             color: #1d4ed8; /* blue-700 */
-            margin-bottom: 1rem;
+            margin-bottom: 1.25rem; /* More space */
             display: flex;
             align-items: center;
         }
         .project-card h3 i {
-            margin-right: 0.75rem; /* mr-3 */
+            margin-right: 1rem; /* More space for icon */
             color: #2563eb; /* blue-600 */
+            font-size: 1.75rem; /* Larger icons */
         }
         .project-card ul {
-            list-style: none; /* Remove default list style */
+            list-style: none;
             padding-left: 0;
         }
         .project-card ul li {
             display: flex;
             align-items: center;
-            margin-bottom: 0.5rem;
-            color: #4b5563; /* gray-700 */
+            margin-bottom: 0.75rem; /* More vertical space */
+            color: #475569; /* slate-700 */
             font-size: 1.125rem; /* text-lg */
+            line-height: 1.5;
         }
         .project-card ul li i {
             color: #22c55e; /* green-500 */
             margin-right: 0.75rem;
+            font-size: 1.125rem; /* Consistent icon size */
+        }
+        .service-box {
+            background-color: white;
+            padding: 1.75rem; /* Consistent padding */
+            border-radius: 0.6rem; /* Slightly more rounded */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease-in-out;
+            border: 1px solid #e2e8f0;
+        }
+        .service-box:hover {
+            transform: translateY(-0.35rem); /* Lift slightly more */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+        }
+        .service-box h3 {
+            font-size: 1.25rem; /* Slightly larger service titles */
+            font-weight: 600;
+            color: #2563eb; /* blue-600 */
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+        }
+        .service-box h3 i {
+            margin-right: 0.6rem;
+            color: #3b82f6; /* blue-500 */
+        }
+        .service-box p {
+            font-size: 0.95rem; /* Slightly smaller service descriptions */
+            line-height: 1.6;
+            color: #475569; /* slate-700 */
         }
     </style>
 </head>
 <body class="text-gray-800">
 
     <!-- Hero Section -->
-    <header id="home" class="min-h-screen flex items-center justify-center text-center bg-gradient-to-br from-blue-50 to-gray-50 p-6 sm:p-8 md:p-12 lg:p-16">
-        <div class="space-y-4">
-            <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 leading-tight animate-name">
+    <header id="home" class="min-h-screen flex items-center justify-center text-center p-6 sm:p-8 md:p-12 lg:p-16 relative overflow-hidden bg-gradient-to-tr from-blue-100 to-pink-200">
+        <div class="space-y-6 z-10">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-gray-900 leading-tight animate-name drop-shadow-lg">
                 Hobayer Golondaz Tushar
             </h1>
-            <p class="text-xl sm:text-2xl md:text-3xl font-medium text-blue-600 animate-title">
+            <p class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-blue-700 animate-title">
                 Full-Stack Web Developer
             </p>
-            <div class="text-base sm:text-lg text-gray-700 flex flex-wrap justify-center gap-x-4 gap-y-2 mt-4">
+            <div class="text-base sm:text-lg text-gray-700 flex flex-wrap justify-center gap-x-6 gap-y-3 mt-6">
                 <p class="flex items-center">
-                    <i class="fas fa-phone-alt text-blue-500 mr-1"></i><a href="tel:+8801302855453" class="hover:text-blue-600 transition-colors duration-200">+880 1302855453</a>
+                    <i class="fas fa-phone-alt text-blue-500 mr-2"></i><a href="tel:+8801302855453" class="hover:text-blue-700 transition-colors duration-200">+880 1302855453</a>
                 </p>
                 <p class="flex items-center">
-                    <i class="fas fa-envelope text-blue-500 mr-1"></i><a href="mailto:mdhgtushar@gmail.com" class="hover:text-blue-600 transition-colors duration-200">mdhgtushar@gmail.com</a>
+                    <i class="fas fa-envelope text-blue-500 mr-2"></i><a href="mailto:mdhgtushar@gmail.com" class="hover:text-blue-700 transition-colors duration-200">mdhgtushar@gmail.com</a>
                 </p>
                 <p class="flex items-center">
-                    <i class="fas fa-map-marker-alt text-blue-500 mr-1"></i>Gafargaon, Mymensingh, Bangladesh.
+                    <i class="fas fa-map-marker-alt text-blue-500 mr-2"></i>Gafargaon, Mymensingh, Bangladesh.
                 </p>
             </div>
-            <div class="flex flex-wrap justify-center gap-4 mt-6">
-                <a href="https://mdhgtushar.github.io" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 transition-colors duration-200 text-lg sm:text-xl font-medium flex items-center">
+            <div class="flex flex-wrap justify-center gap-6 mt-8">
+                <a href="https://mdhgtushar.github.io" target="_blank" rel="noopener noreferrer" class="bg-blue-600 text-white px-6 py-3 rounded-full text-lg sm:text-xl font-medium flex items-center shadow-lg hover:bg-blue-700 transition-colors duration-300 transform hover:scale-105">
                     <i class="fas fa-briefcase mr-2"></i>Portfolio
                 </a>
-                <a href="https://github.com/mdhgtushar" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 transition-colors duration-200 text-lg sm:text-xl font-medium flex items-center">
+                <a href="https://github.com/mdhgtushar" target="_blank" rel="noopener noreferrer" class="border-2 border-blue-600 text-blue-600 px-6 py-3 rounded-full text-lg sm:text-xl font-medium flex items-center shadow-lg hover:bg-blue-50 hover:text-blue-700 transition-all duration-300 transform hover:scale-105">
                     <i class="fab fa-github mr-2"></i>Github
                 </a>
-                <a href="https://www.linkedin.com/in/mdhgtushar/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 transition-colors duration-200 text-lg sm:text-xl font-medium flex items-center">
+                <a href="https://www.linkedin.com/in/mdhgtushar/" target="_blank" rel="noopener noreferrer" class="border-2 border-indigo-600 text-indigo-600 px-6 py-3 rounded-full text-lg sm:text-xl font-medium flex items-center shadow-lg hover:bg-indigo-50 hover:text-indigo-700 transition-all duration-300 transform hover:scale-105">
                     <i class="fab fa-linkedin mr-2"></i>LinkedIn
                 </a>
             </div>
@@ -180,87 +250,86 @@
     </header>
 
     <!-- Navigation Bar -->
-    <nav id="navbar" class="hidden md:block py-4">
-        <div class="container mx-auto flex justify-between items-center px-6">
+    <nav id="navbar" class="hidden md:block py-3">
+        <div class="container mx-auto flex justify-between items-center px-8">
             <!-- Logo -->
-            <a href="#home" class="text-2xl font-bold text-blue-700 hover:text-blue-900 transition-colors duration-200">
+            <a href="#home" class="text-2xl font-bold text-blue-800 hover:text-blue-900 transition-colors duration-200 tracking-wide">
                 Hobayer Golondaz
             </a>
             <!-- Navigation Links -->
-            <div class="flex space-x-8">
-                <a href="#career-objective" class="nav-link text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium px-3 py-2 rounded-md">Career Objective</a>
-                <a href="#skills" class="nav-link text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium px-3 py-2 rounded-md">Skills</a>
-                <a href="#projects" class="nav-link text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium px-3 py-2 rounded-md">Projects</a>
-                <a href="#services" class="nav-link text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium px-3 py-2 rounded-md">Services</a>
-                <a href="#contact" class="nav-link text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium px-3 py-2 rounded-md">Contact</a>
+            <div class="flex space-x-4">
+                <a href="#career-objective" class="nav-link">Career Objective</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#contact" class="nav-link">Contact</a>
             </div>
         </div>
     </nav>
 
     <main>
         <!-- Career Objective Section -->
-        <section id="career-objective" class="animated-section py-16 sm:py-20 md:py-24 my-0 bg-white shadow-sm">
-            <div class="container mx-auto max-w-6xl p-6 sm:p-8 rounded-lg flex flex-col md:flex-row items-center gap-8 md:gap-12 lg:gap-16">
+        <section id="career-objective" class="animated-section py-20 sm:py-24 md:py-28 bg-white my-16">
+            <div class="container mx-auto max-w-7xl px-6 sm:px-8 flex flex-col md:flex-row items-center gap-10 md:gap-16">
                 <div class="md:w-2/3 text-left order-2 md:order-1">
-                    <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">Career Objective</h2>
-                    <p class="text-lg leading-relaxed text-gray-700">
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 mb-8 leading-tight">My Professional Journey & <span class="text-blue-600">Ambition</span></h2>
+                    <p class="text-lg sm:text-xl leading-relaxed text-gray-700">
                         I am a passionate and detail-oriented Full-Stack Web Developer with proven experience in building secure, scalable, and visually engaging web applications. I specialize in crafting robust backend architectures and intuitive frontend interfaces, ensuring seamless user experiences. With a strong commitment to continuous learning and growth, I strive to deliver high-quality solutions and actively contribute to impactful projects within dynamic, collaborative teams.
                     </p>
                 </div>
                 <div class="md:w-1/3 flex justify-center order-1 md:order-2">
-                    <!-- Placeholder image for the photo -->
-                    <img src="https://avatars.githubusercontent.com/u/81422400?v=4" alt="Hobayer Golondaz Tushar" class="w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 rounded-full object-cover border-4 border-blue-200 shadow-lg">
+                    <img src="https://avatars.githubusercontent.com/u/81422400?v=4" alt="Hobayer Golondaz Tushar" class="w-56 h-56 sm:w-72 sm:h-72 md:w-80 md:h-80 rounded-full object-cover border-6 border-blue-300 shadow-xl ring-4 ring-blue-100">
                 </div>
             </div>
         </section>
 
         <!-- Skills Section -->
-        <section id="skills" class="animated-section py-16 sm:py-20 md:py-24 my-0 bg-gray-100 shadow-sm">
-            <div class="container mx-auto max-w-6xl p-6 sm:p-8">
-                <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 text-center mb-10">Skills</h2>
+        <section id="skills" class="animated-section py-20 sm:py-24 md:py-28 bg-gray-50 my-16">
+            <div class="container mx-auto max-w-7xl px-6 sm:px-8">
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 text-center mb-12">My <span class="text-blue-600">Expertise</span> & Technologies</h2>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                     <!-- Front-End Skills Card -->
-                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 transform hover:-translate-y-1">
-                        <h3 class="text-xl font-semibold text-blue-600 mb-4 flex items-center"><i class="fas fa-laptop-code mr-3"></i>Front-End</h3>
-                        <ul class="list-disc list-inside text-gray-700 space-y-2">
-                            <li class="skill-item"><i class="fab fa-react"></i>React</li>
-                            <li class="skill-item"><i class="fab fa-html5"></i>HTML5</li>
-                            <li class="skill-item"><i class="fab fa-css3-alt"></i>CSS3</li>
-                            <li class="skill-item"><i class="fab fa-js"></i>JavaScript</li>
-                            <li class="skill-item"><i class="fas fa-wind"></i>Tailwind CSS</li>
-                            <li class="skill-item"><i class="fas fa-drafting-compass"></i>Design-to-HTML/CSS conversion</li>
+                    <div class="bg-white p-7 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2 border border-gray-200">
+                        <h3 class="text-xl font-bold text-blue-700 mb-5 flex items-center"><i class="fas fa-laptop-code mr-3 text-blue-600 text-2xl"></i>Front-End</h3>
+                        <ul class="space-y-3">
+                            <li class="skill-item text-gray-700 text-lg"><i class="fab fa-react"></i>React.js</li>
+                            <li class="skill-item text-gray-700 text-lg"><i class="fab fa-html5"></i>HTML5</li>
+                            <li class="skill-item text-gray-700 text-lg"><i class="fab fa-css3-alt"></i>CSS3</li>
+                            <li class="skill-item text-gray-700 text-lg"><i class="fab fa-js"></i>JavaScript (ES6+)</li>
+                            <li class="skill-item text-gray-700 text-lg"><i class="fas fa-wind"></i>Tailwind CSS</li>
+                            <li class="skill-item text-gray-700 text-lg"><i class="fas fa-drafting-compass"></i>Design-to-Code Conversion</li>
                         </ul>
                     </div>
                     <!-- Back-End Skills Card -->
-                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 transform hover:-translate-y-1">
-                        <h3 class="text-xl font-semibold text-blue-600 mb-4 flex items-center"><i class="fas fa-server mr-3"></i>Back-End</h3>
-                        <ul class="list-disc list-inside text-gray-700 space-y-2">
-                            <li class="skill-item"><i class="fab fa-node-js"></i>Node.js</li>
-                            <li class="skill-item"><i class="fas fa-bolt"></i>Express.js</li>
-                            <li class="skill-item"><i class="fab fa-js"></i>JavaScript</li>
-                            <li class="skill-item"><i class="fab fa-php"></i>PHP</li>
-                            <li class="skill-item"><i class="fas fa-lock"></i>Building secure & scalable REST APIs</li>
+                    <div class="bg-white p-7 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2 border border-gray-200">
+                        <h3 class="text-xl font-bold text-blue-700 mb-5 flex items-center"><i class="fas fa-server mr-3 text-blue-600 text-2xl"></i>Back-End</h3>
+                        <ul class="space-y-3">
+                            <li class="skill-item text-gray-700 text-lg"><i class="fab fa-node-js"></i>Node.js</li>
+                            <li class="skill-item text-gray-700 text-lg"><i class="fas fa-bolt"></i>Express.js</li>
+                            <li class="skill-item text-gray-700 text-lg"><i class="fab fa-js"></i>JavaScript</li>
+                            <li class="skill-item text-gray-700 text-lg"><i class="fab fa-php"></i>PHP</li>
+                            <li class="skill-item text-gray-700 text-lg"><i class="fas fa-lock"></i>RESTful API Development</li>
                         </ul>
                     </div>
                     <!-- Database Skills Card -->
-                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 transform hover:-translate-y-1">
-                        <h3 class="text-xl font-semibold text-blue-600 mb-4 flex items-center"><i class="fas fa-database mr-3"></i>Database</h3>
-                        <ul class="list-disc list-inside text-gray-700 space-y-2">
-                            <li class="skill-item"><i class="fas fa-braille"></i>MySQL</li>
-                            <li class="skill-item"><i class="fas fa-leaf"></i>MongoDB</li>
+                    <div class="bg-white p-7 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2 border border-gray-200">
+                        <h3 class="text-xl font-bold text-blue-700 mb-5 flex items-center"><i class="fas fa-database mr-3 text-blue-600 text-2xl"></i>Database</h3>
+                        <ul class="space-y-3">
+                            <li class="skill-item text-gray-700 text-lg"><i class="fas fa-braille"></i>MySQL</li>
+                            <li class="skill-item text-gray-700 text-lg"><i class="fas fa-leaf"></i>MongoDB</li>
                         </ul>
                     </div>
                     <!-- Tools & Technologies Skills Card -->
-                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 transform hover:-translate-y-1">
-                        <h3 class="text-xl font-semibold text-blue-600 mb-4 flex items-center"><i class="fas fa-tools mr-3"></i>Tools & Technologies</h3>
-                        <ul class="list-disc list-inside text-gray-700 space-y-2">
-                            <li class="skill-item"><i class="fab fa-git-alt"></i>Git</li>
-                            <li class="skill-item"><i class="fab fa-github"></i>GitHub</li>
-                            <li class="skill-item"><i class="fas fa-code"></i>VS Code</li>
-                            <li class="skill-item"><i class="fas fa-paper-plane"></i>Postman</li>
-                            <li class="skill-item"><i class="fab fa-npm"></i>npm</li>
-                            <li class="skill-item"><i class="fas fa-wrench"></i>DevTools</li>
-                            <li class="skill-item"><i class="fas fa-server"></i>cPanel</li>
+                    <div class="bg-white p-7 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2 border border-gray-200">
+                        <h3 class="text-xl font-bold text-blue-700 mb-5 flex items-center"><i class="fas fa-tools mr-3 text-blue-600 text-2xl"></i>Tools & Tech</h3>
+                        <ul class="space-y-3">
+                            <li class="skill-item text-gray-700 text-lg"><i class="fab fa-git-alt"></i>Git</li>
+                            <li class="skill-item text-gray-700 text-lg"><i class="fab fa-github"></i>GitHub</li>
+                            <li class="skill-item text-gray-700 text-lg"><i class="fas fa-code"></i>VS Code</li>
+                            <li class="skill-item text-gray-700 text-lg"><i class="fas fa-paper-plane"></i>Postman</li>
+                            <li class="skill-item text-gray-700 text-lg"><i class="fab fa-npm"></i>NPM</li>
+                            <li class="skill-item text-gray-700 text-lg"><i class="fas fa-wrench"></i>Browser DevTools</li>
+                            <li class="skill-item text-gray-700 text-lg"><i class="fas fa-server"></i>cPanel</li>
                         </ul>
                     </div>
                 </div>
@@ -268,24 +337,26 @@
         </section>
 
         <!-- Projects Section (Boxed Design) -->
-        <section id="projects" class="animated-section py-16 sm:py-20 md:py-24 my-0 bg-gradient-to-br from-blue-50 to-gray-50 shadow-sm">
-            <div class="container mx-auto max-w-6xl p-6 sm:p-8">
-                <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 text-center mb-10">Projects</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <section id="projects" class="animated-section py-20 sm:py-24 md:py-28 bg-gradient-to-br from-blue-50 to-gray-50 my-16">
+            <div class="container mx-auto max-w-7xl px-6 sm:px-8">
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 text-center mb-12">My <span class="text-blue-600">Featured</span> Projects</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
                     <!-- Project 1: School Management System -->
                     <div class="project-card">
                         <div>
-                            <h3 class="text-xl sm:text-2xl"><i class="fas fa-school"></i>School Management System</h3>
+                            <h3 class="text-2xl sm:text-3xl"><i class="fas fa-school"></i>School Management System</h3>
+                            <p class="text-gray-600 mb-4">A comprehensive system for schools to manage student data, results, and more.</p>
                             <ul>
-                                <li><i class="fas fa-check-circle"></i>Online Result Process</li>
-                                <li><i class="fas fa-check-circle"></i>Full Dynamic website</li>
+                                <li><i class="fas fa-check-circle"></i>Online Result Processing</li>
+                                <li><i class="fas fa-check-circle"></i>Full Dynamic Website Capabilities</li>
                             </ul>
                         </div>
                     </div>
                     <!-- Project 2: Rubidsoft: Web Agency Management -->
                     <div class="project-card">
                         <div>
-                            <h3 class="text-xl sm:text-2xl"><i class="fas fa-building"></i>Rubidsoft: Web Agency Management</h3>
+                            <h3 class="text-2xl sm:text-3xl"><i class="fas fa-building"></i>Rubidsoft: Web Agency Management</h3>
+                            <p class="text-gray-600 mb-4">An integrated platform designed to streamline operations for web agencies.</p>
                             <ul>
                                 <li><i class="fas fa-check-circle"></i>Client Management</li>
                                 <li><i class="fas fa-check-circle"></i>Billing & Invoice Management</li>
@@ -296,24 +367,26 @@
                     <!-- Project 3: DMY System -->
                     <div class="project-card">
                         <div>
-                            <h3 class="text-xl sm:text-2xl"><i class="fas fa-tasks"></i>DMY System</h3>
+                            <h3 class="text-2xl sm:text-3xl"><i class="fas fa-tasks"></i>DMY System (Daily Management)</h3>
+                            <p class="text-gray-600 mb-4">A tool for tracking daily activities, tasks, and gaining a comprehensive overview.</p>
                             <ul>
-                                <li><i class="fas fa-check-circle"></i>Daily data management</li>
-                                <li><i class="fas fa-check-circle"></i>Daily activities tracking</li>
-                                <li><i class="fas fa-check-circle"></i>Task management</li>
-                                <li><i class="fas fa-check-circle"></i>Comprehensive overview</li>
+                                <li><i class="fas fa-check-circle"></i>Daily Data Management</li>
+                                <li><i class="fas fa-check-circle"></i>Daily Activities Tracking</li>
+                                <li><i class="fas fa-check-circle"></i>Task Management & Prioritization</li>
+                                <li><i class="fas fa-check-circle"></i>Comprehensive Overview Dashboard</li>
                             </ul>
                         </div>
                     </div>
                     <!-- Project 4: Cooking Platform -->
                     <div class="project-card">
                         <div>
-                            <h3 class="text-xl sm:text-2xl"><i class="fas fa-utensils"></i>Cooking Platform</h3>
+                            <h3 class="text-2xl sm:text-3xl"><i class="fas fa-utensils"></i>Cooking Platform</h3>
+                            <p class="text-gray-600 mb-4">An online platform for culinary education and certification.</p>
                             <ul>
-                                <li><i class="fas fa-check-circle"></i>Online cooking certification</li>
-                                <li><i class="fas fa-check-circle"></i>Online exam application</li>
-                                <li><i class="fas fa-check-circle"></i>Offline cooking exam scheduling</li>
-                                <li><i class="fas fa-check-circle"></i>Certification issuance</li>
+                                <li><i class="fas fa-check-circle"></i>Online Cooking Certification</li>
+                                <li><i class="fas fa-check-circle"></i>Online Exam Application</li>
+                                <li><i class="fas fa-check-circle"></i>Offline Cooking Exam Scheduling</li>
+                                <li><i class="fas fa-check-circle"></i>Certification Issuance & Tracking</li>
                             </ul>
                         </div>
                     </div>
@@ -322,50 +395,50 @@
         </section>
 
         <!-- Services Section -->
-        <section id="services" class="animated-section py-16 sm:py-20 md:py-24 my-0 bg-gray-100 shadow-sm">
-            <div class="container mx-auto max-w-6xl p-6 sm:p-8">
-                <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 text-center mb-10 flex items-center justify-center">
-                    <i class="fas fa-rocket text-blue-600 mr-4"></i>My Comprehensive Services
+        <section id="services" class="animated-section py-20 sm:py-24 md:py-28 bg-gray-50 my-16">
+            <div class="container mx-auto max-w-7xl px-6 sm:px-8">
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 text-center mb-12 flex items-center justify-center">
+                    <i class="fas fa-rocket text-blue-600 mr-4"></i>My Comprehensive <span class="text-blue-600 ml-2">Services</span>
                 </h2>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-lg text-gray-700">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-lg text-gray-700">
                     <!-- Service: Project Planning -->
-                    <div class="service-box bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 transform hover:-translate-y-1">
-                        <h3 class="font-semibold text-blue-600 mb-2 flex items-center"><i class="fas fa-clipboard-list mr-3"></i>Project Planning</h3>
+                    <div class="service-box">
+                        <h3 class="font-semibold text-blue-700 mb-2 flex items-center"><i class="fas fa-clipboard-list mr-3"></i>Project Planning</h3>
                         <p class="text-gray-700 text-sm">Detailed planning and strategizing for successful project execution from concept to launch.</p>
                     </div>
                     <!-- Service: Bug Fixing or Feature Additions -->
-                    <div class="service-box bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 transform hover:-translate-y-1">
-                        <h3 class="font-semibold text-blue-600 mb-2 flex items-center"><i class="fas fa-bug mr-3"></i>Bug Fixing or Feature Additions</h3>
+                    <div class="service-box">
+                        <h3 class="font-semibold text-blue-700 mb-2 flex items-center"><i class="fas fa-bug mr-3"></i>Bug Fixing & Feature Additions</h3>
                         <p class="text-gray-700 text-sm">Efficient identification and resolution of issues, along with seamless integration of new functionalities.</p>
                     </div>
                     <!-- Service: Backend Development -->
-                    <div class="service-box bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 transform hover:-translate-y-1">
-                        <h3 class="font-semibold text-blue-600 mb-2 flex items-center"><i class="fas fa-cogs mr-3"></i>Backend Development</h3>
-                        <p class="text-gray-700 text-sm">Building robust, scalable, and secure server-side logic and APIs for your applications.</p>
+                    <div class="service-box">
+                        <h3 class="font-semibold text-blue-700 mb-2 flex items-center"><i class="fas fa-cogs mr-3"></i>Backend Development</h3>
+                        <p class="text-700 text-sm">Building robust, scalable, and secure server-side logic and APIs for your applications.</p>
                     </div>
                     <!-- Service: Frontend Development -->
-                    <div class="service-box bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 transform hover:-translate-y-1">
-                        <h3 class="font-semibold text-blue-600 mb-2 flex items-center"><i class="fas fa-palette mr-3"></i>Frontend Development (PSD to HTML / HTML to React)</h3>
-                        <p class="text-gray-700 text-sm">Crafting intuitive and visually appealing user interfaces from design mockups or existing HTML.</p>
+                    <div class="service-box">
+                        <h3 class="font-semibold text-blue-700 mb-2 flex items-center"><i class="fas fa-palette mr-3"></i>Frontend Development</h3>
+                        <p class="text-gray-700 text-sm">Crafting intuitive and visually appealing user interfaces from design mockups (PSD to HTML / HTML to React).</p>
                     </div>
                     <!-- Service: Website Development -->
-                    <div class="service-box bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 transform hover:-translate-y-1">
-                        <h3 class="font-semibold text-blue-600 mb-2 flex items-center"><i class="fas fa-globe mr-3"></i>Website Development (WordPress or MERN, or PHP)</h3>
-                        <p class="text-gray-700 text-sm">Creating dynamic and responsive websites using popular platforms and frameworks.</p>
+                    <div class="service-box">
+                        <h3 class="font-semibold text-blue-700 mb-2 flex items-center"><i class="fas fa-globe mr-3"></i>Website Development</h3>
+                        <p class="text-gray-700 text-sm">Creating dynamic and responsive websites using popular platforms and frameworks (WordPress, MERN, PHP).</p>
                     </div>
                     <!-- Service: Web Application Development (MERN) -->
-                    <div class="service-box bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 transform hover:-translate-y-1">
-                        <h3 class="font-semibold text-blue-600 mb-2 flex items-center"><i class="fas fa-code-branch mr-3"></i>Web Application Development (MERN)</h3>
+                    <div class="service-box">
+                        <h3 class="font-semibold text-blue-700 mb-2 flex items-center"><i class="fas fa-code-branch mr-3"></i>Web Application Development (MERN)</h3>
                         <p class="text-gray-700 text-sm">Developing full-fledged web applications with the MongoDB, Express.js, React, Node.js stack.</p>
                     </div>
                     <!-- Service: SaaS Development (Highlighted) -->
-                    <div class="service-box highlighted-service p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 transform hover:-translate-y-1">
-                        <h3 class="font-semibold text-blue-800 mb-2 flex items-center"><i class="fas fa-cloud mr-3"></i>SaaS Development</h3>
-                        <p class="text-gray-800 text-sm">Building multi-tenant, scalable Software as a Service solutions tailored to your business needs.</p>
+                    <div class="service-box highlighted-service">
+                        <h3 class="font-semibold mb-2 flex items-center"><i class="fas fa-cloud mr-3"></i>SaaS Development</h3>
+                        <p class="text-sm">Building multi-tenant, scalable Software as a Service solutions tailored to your business needs.</p>
                     </div>
                     <!-- Service: WHMCS Development -->
-                    <div class="service-box bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 transform hover:-translate-y-1">
-                        <h3 class="font-semibold text-blue-600 mb-2 flex items-center"><i class="fas fa-server mr-3"></i>WHMCS Development</h3>
+                    <div class="service-box">
+                        <h3 class="font-semibold text-blue-700 mb-2 flex items-center"><i class="fas fa-server mr-3"></i>WHMCS Development</h3>
                         <p class="text-gray-700 text-sm">Customizing and extending WHMCS for billing, client management, and automation.</p>
                     </div>
                 </div>
@@ -373,30 +446,30 @@
         </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="animated-section py-16 sm:py-20 md:py-24 my-0 bg-white shadow-sm">
-            <div class="container mx-auto max-w-6xl p-6 sm:p-8 text-center">
-                <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-10 flex items-center justify-center">
-                    <i class="fas fa-headset text-blue-600 mr-4"></i>Get in Touch
+        <section id="contact" class="animated-section py-20 sm:py-24 md:py-28 bg-white my-12">
+            <div class="container mx-auto max-w-7xl px-6 sm:px-8 text-center">
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 mb-12 flex items-center justify-center">
+                    <i class="fas fa-headset text-blue-600 mr-4"></i>Get in <span class="text-blue-600 ml-2">Touch</span>
                 </h2>
-                <div class="space-y-4 text-lg text-gray-700 mb-8">
+                <div class="space-y-6 text-xl text-gray-700 mb-10">
                     <p class="flex items-center justify-center">
-                        <i class="fas fa-phone-alt text-blue-500 mr-3"></i><a href="tel:+8801302855453" class="hover:text-blue-600 transition-colors duration-200">+880 1302855453</a>
+                        <i class="fas fa-phone-alt text-blue-500 mr-3"></i><a href="tel:+8801302855453" class="hover:text-blue-700 transition-colors duration-200">+880 1302855453</a>
                     </p>
                     <p class="flex items-center justify-center">
-                        <i class="fas fa-envelope text-blue-500 mr-3"></i><a href="mailto:mdhgtushar@gmail.com" class="hover:text-blue-600 transition-colors duration-200">mdhgtushar@gmail.com</a>
+                        <i class="fas fa-envelope text-blue-500 mr-3"></i><a href="mailto:mdhgtushar@gmail.com" class="hover:text-blue-700 transition-colors duration-200">mdhgtushar@gmail.com</a>
                     </p>
                     <p class="flex items-center justify-center">
                         <i class="fas fa-map-marker-alt text-blue-500 mr-3"></i>Gafargaon, Mymensingh, Bangladesh.
                     </p>
                 </div>
-                <div class="flex justify-center space-x-6">
-                    <a href="https://mdhgtushar.github.io" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 transition-colors duration-200 text-xl">
+                <div class="flex justify-center space-x-8">
+                    <a href="https://mdhgtushar.github.io" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 transition-colors duration-200 text-3xl transform hover:scale-110">
                         <i class="fas fa-briefcase"></i>
                     </a>
-                    <a href="https://github.com/mdhgtushar" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 transition-colors duration-200 text-xl">
+                    <a href="https://github.com/mdhgtushar" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 transition-colors duration-200 text-3xl transform hover:scale-110">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/mdhgtushar/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 transition-colors duration-200 text-xl">
+                    <a href="https://www.linkedin.com/in/mdhgtushar/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 transition-colors duration-200 text-3xl transform hover:scale-110">
                         <i class="fab fa-linkedin"></i>
                     </a>
                 </div>
@@ -405,29 +478,28 @@
     </main>
 
     <!-- Footer Section -->
-    <footer id="contact-footer" class="bg-gray-800 text-white py-10 px-6 sm:px-8 rounded-t-lg">
+    <footer id="contact-footer" class="bg-gray-900 text-white py-12 px-6 sm:px-8 rounded-t-lg">
         <div class="container mx-auto flex flex-col sm:flex-row justify-between items-center">
-            <p class="text-lg mb-4 sm:mb-0 text-center sm:text-left">&copy; 2025 Hobayer Golondaz Tushar. All rights reserved.</p>
-            <div class="flex justify-center sm:justify-end space-x-4">
-                <a href="https://mdhgtushar.github.io" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-blue-400 transition-colors duration-200">
+            <p class="text-lg mb-4 sm:mb-0 text-center sm:text-left text-gray-300">&copy; 2025 Hobayer Golondaz Tushar. All rights reserved.</p>
+            <div class="flex justify-center sm:justify-end space-x-5">
+                <a href="https://mdhgtushar.github.io" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-blue-400 transition-colors duration-200">
                     <i class="fas fa-briefcase fa-xl"></i>
                 </a>
-                <a href="https://github.com/mdhgtushar" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-blue-400 transition-colors duration-200">
+                <a href="https://github.com/mdhgtushar" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-blue-400 transition-colors duration-200">
                     <i class="fab fa-github fa-xl"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/mdhgtushar/" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-blue-400 transition-colors duration-200">
+                <a href="https://www.linkedin.com/in/mdhgtushar/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-blue-400 transition-colors duration-200">
                     <i class="fab fa-linkedin fa-xl"></i>
                 </a>
-                <a href="mailto:mdhgtushar@gmail.com" class="text-gray-300 hover:text-blue-400 transition-colors duration-200">
+                <a href="mailto:mdhgtushar@gmail.com" class="text-gray-400 hover:text-blue-400 transition-colors duration-200">
                     <i class="fas fa-envelope fa-xl"></i>
                 </a>
-                <a href="tel:+8801302855453" class="text-gray-300 hover:text-blue-400 transition-colors duration-200">
+                <a href="tel:+8801302855453" class="text-gray-400 hover:text-blue-400 transition-colors duration-200">
                     <i class="fas fa-phone-alt fa-xl"></i>
                 </a>
             </div>
         </div>
     </footer>
-
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const navbar = document.getElementById('navbar');
@@ -438,23 +510,26 @@
             // Function to handle sticky navigation and active link highlighting
             const handleScroll = () => {
                 // Sticky Navbar
-                if (window.scrollY > heroSection.offsetHeight - navbar.offsetHeight) {
+                if (window.scrollY > heroSection.offsetHeight - navbar.offsetHeight - 50) { // Adjusted threshold
                     navbar.classList.add('sticky-nav');
-                    navbar.classList.remove('py-4'); // Remove padding when sticky
                 } else {
                     navbar.classList.remove('sticky-nav');
-                    navbar.classList.add('py-4'); // Add padding when not sticky
                 }
 
                 // Active Link Highlighting
-                let currentActive = 'home'; // Default to home if at the very top or no section is in view
+                let currentActive = '';
                 sections.forEach(section => {
-                    const sectionTop = section.offsetTop - navbar.offsetHeight - 50; // Adjust offset for navbar height
+                    const sectionTop = section.offsetTop - navbar.offsetHeight - 100; // Increased offset for better feel
                     const sectionBottom = sectionTop + section.offsetHeight;
                     if (window.scrollY >= sectionTop && window.scrollY < sectionBottom) {
                         currentActive = section.id;
                     }
                 });
+
+                if (window.scrollY < heroSection.offsetHeight - navbar.offsetHeight - 50) {
+                    currentActive = 'home'; // Explicitly set 'home' when at the top
+                }
+
 
                 navLinks.forEach(link => {
                     link.classList.remove('active');
@@ -486,16 +561,14 @@
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         entry.target.classList.add('is-visible');
-                        // No longer unobserve, allow re-animation on scroll up/down
-                        // observer.unobserve(entry.target);
                     } else {
                         // Optionally remove 'is-visible' when section leaves view to allow re-animation
                         entry.target.classList.remove('is-visible');
                     }
                 });
             }, {
-                threshold: 0.1, // Trigger when 10% of the section is visible
-                rootMargin: '0px 0px -50px 0px' // Adjust for smoother triggering
+                threshold: 0.15, // Trigger when 15% of the section is visible
+                rootMargin: '0px 0px -80px 0px' // Adjust for smoother triggering
             });
 
             animatedSections.forEach(section => {
