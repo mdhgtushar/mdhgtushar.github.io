@@ -269,212 +269,301 @@
 
     <main>
         <!-- Career Objective Section -->
-        <section id="career-objective" class="animated-section py-20 sm:py-24 md:py-28 bg-white my-16">
+        <section id="career-objective" class="animated-section py-20 sm:py-24 md:py-28 bg-blue-50 md:flex md:items-center md:h-screen">
             <div class="container mx-auto max-w-7xl px-6 sm:px-8 flex flex-col md:flex-row items-center gap-10 md:gap-16">
-                <div class="md:w-2/3 text-left order-2 md:order-1">
-                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 mb-8 leading-tight">My Professional Journey & <span class="text-blue-600">Ambition</span></h2>
-                    <p class="text-lg sm:text-xl leading-relaxed text-gray-700">
-                        I am a passionate and detail-oriented Full-Stack Web Developer with proven experience in building secure, scalable, and visually engaging web applications. I specialize in crafting robust backend architectures and intuitive frontend interfaces, ensuring seamless user experiences. With a strong commitment to continuous learning and growth, I strive to deliver high-quality solutions and actively contribute to impactful projects within dynamic, collaborative teams.
-                    </p>
-                </div>
+                <!-- Image -->
                 <div class="md:w-1/3 flex justify-center order-1 md:order-2">
-                    <img src="https://avatars.githubusercontent.com/u/81422400?v=4" alt="Hobayer Golondaz Tushar" class="w-56 h-56 sm:w-72 sm:h-72 md:w-80 md:h-80 rounded-full object-cover border-6 border-blue-300 shadow-xl ring-4 ring-blue-100">
+                    <img src="https://avatars.githubusercontent.com/u/81422400?v=4"
+                        alt="Hobayer Golondaz Tushar"
+                        class="w-56 h-56 sm:w-72 sm:h-72 md:w-80 md:h-80 rounded-full object-cover border-4 border-blue-500 shadow-xl ring-4 ring-blue-100">
+                </div>
+
+                <!-- Text Content -->
+                <div class="md:w-2/3 text-center md:text-left order-2 md:order-1">
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
+                        My Professional Journey & <span class="text-blue-600">Ambition</span>
+                    </h2>
+                    <p class="text-lg sm:text-xl leading-relaxed text-gray-700">
+                        I am a <strong class="text-blue-700">passionate</strong> and <strong class="text-blue-700">detail-oriented</strong> Full-Stack Web Developer with a strong foundation in creating
+                        <strong class="text-blue-700">secure</strong>, <strong class="text-blue-700">scalable</strong>, and <strong class="text-blue-700">user-centric</strong> applications. <br class="hidden sm:block my-2" />
+                        My expertise lies in designing <strong>robust backend architectures</strong> and developing <strong>intuitive frontend interfaces</strong> that ensure fluid and responsive user experiences across devices. <br class="hidden sm:block my-2" />
+                        I am deeply committed to <strong>continuous learning</strong> and <strong>professional excellence</strong>, always striving to contribute meaningfully to <strong>innovative</strong> and <strong>impactful</strong> projects within <strong>dynamic, collaborative teams</strong>.
+                    </p>
                 </div>
             </div>
         </section>
+
 
         <!-- Skills Section -->
-        <section id="skills" class="animated-section py-20 sm:py-24 md:py-28 bg-gray-50 my-16">
+        <section id="skills" class="animated-section py-20 sm:py-24 md:py-28 bg-white md:flex md:items-center md:h-screen">
             <div class="container mx-auto max-w-7xl px-6 sm:px-8">
-                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 text-center mb-12">My <span class="text-blue-600">Expertise</span> & Technologies</h2>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 text-center mb-12">
+                    My <span class="text-blue-600">Expertise</span> & Technologies
+                </h2>
+
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <!-- Front-End Skills Card -->
-                    <div class="bg-white p-7 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2 border border-gray-200">
-                        <h3 class="text-xl font-bold text-blue-700 mb-5 flex items-center"><i class="fas fa-laptop-code mr-3 text-blue-600 text-2xl"></i>Front-End</h3>
-                        <ul class="space-y-3">
-                            <li class="skill-item text-gray-700 text-lg"><i class="fab fa-react"></i>React.js</li>
-                            <li class="skill-item text-gray-700 text-lg"><i class="fab fa-html5"></i>HTML5</li>
-                            <li class="skill-item text-gray-700 text-lg"><i class="fab fa-css3-alt"></i>CSS3</li>
-                            <li class="skill-item text-gray-700 text-lg"><i class="fab fa-js"></i>JavaScript (ES6+)</li>
-                            <li class="skill-item text-gray-700 text-lg"><i class="fas fa-wind"></i>Tailwind CSS</li>
-                            <li class="skill-item text-gray-700 text-lg"><i class="fas fa-drafting-compass"></i>Design-to-Code Conversion</li>
+
+                    <!-- Front-End Skills -->
+                    <div class="bg-white p-6 rounded-md border border-gray-300 shadow-[0_8px_30px_rgba(0,0,0,0.3)] transform hover:scale-105 transition duration-300">
+                        <h3 class="text-xl font-bold text-blue-700 mb-5 flex items-center">
+                            <i class="fas fa-laptop-code mr-3 text-blue-600 text-2xl"></i>Front-End
+                        </h3>
+                        <ul class="space-y-3 text-gray-800 text-base font-semibold">
+                            <li><i class="fab fa-react text-blue-500 mr-2"></i>React.js</li>
+                            <li><i class="fab fa-html5 text-orange-500 mr-2"></i>HTML5</li>
+                            <li><i class="fab fa-css3-alt text-blue-400 mr-2"></i>CSS3</li>
+                            <li><i class="fab fa-js text-yellow-500 mr-2"></i>JavaScript (ES6+)</li>
+                            <li><i class="fas fa-wind text-cyan-500 mr-2"></i>Tailwind CSS</li>
+                            <li><i class="fas fa-drafting-compass text-pink-500 mr-2"></i>Design-to-Code</li>
                         </ul>
                     </div>
-                    <!-- Back-End Skills Card -->
-                    <div class="bg-white p-7 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2 border border-gray-200">
-                        <h3 class="text-xl font-bold text-blue-700 mb-5 flex items-center"><i class="fas fa-server mr-3 text-blue-600 text-2xl"></i>Back-End</h3>
-                        <ul class="space-y-3">
-                            <li class="skill-item text-gray-700 text-lg"><i class="fab fa-node-js"></i>Node.js</li>
-                            <li class="skill-item text-gray-700 text-lg"><i class="fas fa-bolt"></i>Express.js</li>
-                            <li class="skill-item text-gray-700 text-lg"><i class="fab fa-js"></i>JavaScript</li>
-                            <li class="skill-item text-gray-700 text-lg"><i class="fab fa-php"></i>PHP</li>
-                            <li class="skill-item text-gray-700 text-lg"><i class="fas fa-lock"></i>RESTful API Development</li>
+
+                    <!-- Back-End Skills -->
+                    <div class="bg-white p-6 rounded-md border border-gray-300 shadow-[0_8px_30px_rgba(0,0,0,0.3)] transform hover:scale-105 transition duration-300">
+                        <h3 class="text-xl font-bold text-blue-700 mb-5 flex items-center">
+                            <i class="fas fa-server mr-3 text-blue-600 text-2xl"></i>Back-End
+                        </h3>
+                        <ul class="space-y-3 text-gray-800 text-base font-semibold">
+                            <li><i class="fab fa-node-js text-green-600 mr-2"></i>Node.js</li>
+                            <li><i class="fas fa-bolt text-yellow-600 mr-2"></i>Express.js</li>
+                            <li><i class="fab fa-js text-yellow-500 mr-2"></i>JavaScript</li>
+                            <li><i class="fab fa-php text-indigo-600 mr-2"></i>PHP</li>
+                            <li><i class="fas fa-lock text-gray-700 mr-2"></i>RESTful APIs</li>
                         </ul>
                     </div>
-                    <!-- Database Skills Card -->
-                    <div class="bg-white p-7 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2 border border-gray-200">
-                        <h3 class="text-xl font-bold text-blue-700 mb-5 flex items-center"><i class="fas fa-database mr-3 text-blue-600 text-2xl"></i>Database</h3>
-                        <ul class="space-y-3">
-                            <li class="skill-item text-gray-700 text-lg"><i class="fas fa-braille"></i>MySQL</li>
-                            <li class="skill-item text-gray-700 text-lg"><i class="fas fa-leaf"></i>MongoDB</li>
+
+                    <!-- Database Skills -->
+                    <div class="bg-white p-6 rounded-md border border-gray-300 shadow-[0_8px_30px_rgba(0,0,0,0.3)] transform hover:scale-105 transition duration-300">
+                        <h3 class="text-xl font-bold text-blue-700 mb-5 flex items-center">
+                            <i class="fas fa-database mr-3 text-blue-600 text-2xl"></i>Database
+                        </h3>
+                        <ul class="space-y-3 text-gray-800 text-base font-semibold">
+                            <li><i class="fas fa-braille text-blue-400 mr-2"></i>MySQL</li>
+                            <li><i class="fas fa-leaf text-green-700 mr-2"></i>MongoDB</li>
                         </ul>
                     </div>
-                    <!-- Tools & Technologies Skills Card -->
-                    <div class="bg-white p-7 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2 border border-gray-200">
-                        <h3 class="text-xl font-bold text-blue-700 mb-5 flex items-center"><i class="fas fa-tools mr-3 text-blue-600 text-2xl"></i>Tools & Tech</h3>
-                        <ul class="space-y-3">
-                            <li class="skill-item text-gray-700 text-lg"><i class="fab fa-git-alt"></i>Git</li>
-                            <li class="skill-item text-gray-700 text-lg"><i class="fab fa-github"></i>GitHub</li>
-                            <li class="skill-item text-gray-700 text-lg"><i class="fas fa-code"></i>VS Code</li>
-                            <li class="skill-item text-gray-700 text-lg"><i class="fas fa-paper-plane"></i>Postman</li>
-                            <li class="skill-item text-gray-700 text-lg"><i class="fab fa-npm"></i>NPM</li>
-                            <li class="skill-item text-gray-700 text-lg"><i class="fas fa-wrench"></i>Browser DevTools</li>
-                            <li class="skill-item text-gray-700 text-lg"><i class="fas fa-server"></i>cPanel</li>
+
+                    <!-- Tools & Tech -->
+                    <div class="bg-white p-6 rounded-md border border-gray-300 shadow-[0_8px_30px_rgba(0,0,0,0.3)] transform hover:scale-105 transition duration-300">
+                        <h3 class="text-xl font-bold text-blue-700 mb-5 flex items-center">
+                            <i class="fas fa-tools mr-3 text-blue-600 text-2xl"></i>Tools & Tech
+                        </h3>
+                        <ul class="space-y-3 text-gray-800 text-base font-semibold">
+                            <li><i class="fab fa-git-alt text-red-600 mr-2"></i>Git</li>
+                            <li><i class="fab fa-github text-black mr-2"></i>GitHub</li>
+                            <li><i class="fas fa-code text-purple-600 mr-2"></i>VS Code</li>
+                            <li><i class="fas fa-paper-plane text-orange-500 mr-2"></i>Postman</li>
+                            <li><i class="fab fa-npm text-red-500 mr-2"></i>NPM</li>
+                            <li><i class="fas fa-wrench text-gray-700 mr-2"></i>DevTools</li>
+                            <li><i class="fas fa-server text-green-800 mr-2"></i>cPanel</li>
                         </ul>
                     </div>
+
                 </div>
             </div>
         </section>
+
 
         <!-- Projects Section (Boxed Design) -->
-        <section id="projects" class="animated-section py-20 sm:py-24 md:py-28 bg-gradient-to-br from-blue-50 to-gray-50 my-16">
+        <section id="projects" class="animated-section py-20 sm:py-24 md:py-28 bg-gradient-to-br from-blue-50 to-purple-50">
             <div class="container mx-auto max-w-7xl px-6 sm:px-8">
-                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 text-center mb-12">My <span class="text-blue-600">Featured</span> Projects</h2>
+
+                <!-- Section Title -->
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 text-center mb-16">
+                    My <span class="text-blue-600">Featured</span> Projects
+                </h2>
+
+                <!-- Project Cards -->
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-                    <!-- Project 1: School Management System -->
-                    <div class="project-card">
-                        <div>
-                            <h3 class="text-2xl sm:text-3xl"><i class="fas fa-school"></i>School Management System</h3>
-                            <p class="text-gray-600 mb-4">A comprehensive system for schools to manage student data, results, and more.</p>
-                            <ul>
-                                <li><i class="fas fa-check-circle"></i>Online Result Processing</li>
-                                <li><i class="fas fa-check-circle"></i>Full Dynamic Website Capabilities</li>
-                            </ul>
-                        </div>
+
+                    <!-- Project Card -->
+                    <div class="bg-white p-8 rounded-2xl shadow-[0_6px_25px_rgba(0,0,0,0.15)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.25)] transition-shadow duration-300">
+                        <h3 class="text-2xl sm:text-3xl font-bold text-blue-700 mb-3 flex items-center gap-3">
+                            <i class="fas fa-school text-blue-600 text-xl"></i>School Management System
+                        </h3>
+                        <p class="text-gray-600 mb-4">A comprehensive system for schools to manage student data, results, and more.</p>
+                        <ul class="space-y-2 text-gray-700 text-sm sm:text-base">
+                            <li class="flex items-center gap-2"><i class="fas fa-check-circle text-green-500"></i>Online Result Processing</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check-circle text-green-500"></i>Full Dynamic Website Capabilities</li>
+                        </ul>
                     </div>
-                    <!-- Project 2: Rubidsoft: Web Agency Management -->
-                    <div class="project-card">
-                        <div>
-                            <h3 class="text-2xl sm:text-3xl"><i class="fas fa-building"></i>Rubidsoft: Web Agency Management</h3>
-                            <p class="text-gray-600 mb-4">An integrated platform designed to streamline operations for web agencies.</p>
-                            <ul>
-                                <li><i class="fas fa-check-circle"></i>Client Management</li>
-                                <li><i class="fas fa-check-circle"></i>Billing & Invoice Management</li>
-                                <li><i class="fas fa-check-circle"></i>Marketing Management</li>
-                            </ul>
-                        </div>
+
+                    <!-- Rubidsoft -->
+                    <div class="bg-white p-8 rounded-2xl shadow-[0_6px_25px_rgba(0,0,0,0.15)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.25)] transition-shadow duration-300">
+                        <h3 class="text-2xl sm:text-3xl font-bold text-blue-700 mb-3 flex items-center gap-3">
+                            <i class="fas fa-building text-blue-600 text-xl"></i>Rubidsoft: Web Agency Management
+                        </h3>
+                        <p class="text-gray-600 mb-4">An integrated platform designed to streamline operations for web agencies.</p>
+                        <ul class="space-y-2 text-gray-700 text-sm sm:text-base">
+                            <li class="flex items-center gap-2"><i class="fas fa-check-circle text-green-500"></i>Client Management</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check-circle text-green-500"></i>Billing & Invoice Management</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check-circle text-green-500"></i>Marketing Management</li>
+                        </ul>
                     </div>
-                    <!-- Project 3: DMY System -->
-                    <div class="project-card">
-                        <div>
-                            <h3 class="text-2xl sm:text-3xl"><i class="fas fa-tasks"></i>DMY System (Daily Management)</h3>
-                            <p class="text-gray-600 mb-4">A tool for tracking daily activities, tasks, and gaining a comprehensive overview.</p>
-                            <ul>
-                                <li><i class="fas fa-check-circle"></i>Daily Data Management</li>
-                                <li><i class="fas fa-check-circle"></i>Daily Activities Tracking</li>
-                                <li><i class="fas fa-check-circle"></i>Task Management & Prioritization</li>
-                                <li><i class="fas fa-check-circle"></i>Comprehensive Overview Dashboard</li>
-                            </ul>
-                        </div>
+
+                    <!-- DMY System -->
+                    <div class="bg-white p-8 rounded-2xl shadow-[0_6px_25px_rgba(0,0,0,0.15)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.25)] transition-shadow duration-300">
+                        <h3 class="text-2xl sm:text-3xl font-bold text-blue-700 mb-3 flex items-center gap-3">
+                            <i class="fas fa-tasks text-blue-600 text-xl"></i>DMY System (Daily Management)
+                        </h3>
+                        <p class="text-gray-600 mb-4">A tool for tracking daily activities, tasks, and gaining a comprehensive overview.</p>
+                        <ul class="space-y-2 text-gray-700 text-sm sm:text-base">
+                            <li class="flex items-center gap-2"><i class="fas fa-check-circle text-green-500"></i>Daily Data Management</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check-circle text-green-500"></i>Daily Activities Tracking</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check-circle text-green-500"></i>Task Management & Prioritization</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check-circle text-green-500"></i>Comprehensive Overview Dashboard</li>
+                        </ul>
                     </div>
-                    <!-- Project 4: Cooking Platform -->
-                    <div class="project-card">
-                        <div>
-                            <h3 class="text-2xl sm:text-3xl"><i class="fas fa-utensils"></i>Cooking Platform</h3>
-                            <p class="text-gray-600 mb-4">An online platform for culinary education and certification.</p>
-                            <ul>
-                                <li><i class="fas fa-check-circle"></i>Online Cooking Certification</li>
-                                <li><i class="fas fa-check-circle"></i>Online Exam Application</li>
-                                <li><i class="fas fa-check-circle"></i>Offline Cooking Exam Scheduling</li>
-                                <li><i class="fas fa-check-circle"></i>Certification Issuance & Tracking</li>
-                            </ul>
-                        </div>
+
+                    <!-- Cooking Platform -->
+                    <div class="bg-white p-8 rounded-2xl shadow-[0_6px_25px_rgba(0,0,0,0.15)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.25)] transition-shadow duration-300">
+                        <h3 class="text-2xl sm:text-3xl font-bold text-blue-700 mb-3 flex items-center gap-3">
+                            <i class="fas fa-utensils text-blue-600 text-xl"></i>Cooking Platform
+                        </h3>
+                        <p class="text-gray-600 mb-4">An online platform for culinary education and certification.</p>
+                        <ul class="space-y-2 text-gray-700 text-sm sm:text-base">
+                            <li class="flex items-center gap-2"><i class="fas fa-check-circle text-green-500"></i>Online Cooking Certification</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check-circle text-green-500"></i>Online Exam Application</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check-circle text-green-500"></i>Offline Cooking Exam Scheduling</li>
+                            <li class="flex items-center gap-2"><i class="fas fa-check-circle text-green-500"></i>Certification Issuance & Tracking</li>
+                        </ul>
                     </div>
+
                 </div>
             </div>
         </section>
+
 
         <!-- Services Section -->
-        <section id="services" class="animated-section py-20 sm:py-24 md:py-28 bg-gray-50 my-16">
+        <section id="services" class="animated-section py-20 sm:py-24 md:py-28 bg-white">
             <div class="container mx-auto max-w-7xl px-6 sm:px-8">
-                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 text-center mb-12 flex items-center justify-center">
-                    <i class="fas fa-rocket text-blue-600 mr-4"></i>My Comprehensive <span class="text-blue-600 ml-2">Services</span>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 text-center mb-16 flex items-center justify-center gap-3 flex-wrap">
+                    <i class="fas fa-rocket text-blue-600 text-4xl"></i>
+                    My Comprehensive <span class="text-blue-600">Services</span>
                 </h2>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-lg text-gray-700">
-                    <!-- Service: Project Planning -->
-                    <div class="service-box">
-                        <h3 class="font-semibold text-blue-700 mb-2 flex items-center"><i class="fas fa-clipboard-list mr-3"></i>Project Planning</h3>
-                        <p class="text-gray-700 text-sm">Detailed planning and strategizing for successful project execution from concept to launch.</p>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+
+                    <!-- Service Card -->
+                    <div class="bg-white p-6 rounded-md border border-gray-200 shadow-[0_8px_30px_rgba(0,0,0,0.2)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.3)] transition duration-300">
+                        <h3 class="text-lg font-semibold text-blue-700 mb-3 flex items-center"><i class="fas fa-clipboard-list mr-3 text-blue-500 text-xl"></i>Project Planning</h3>
+                        <p class="text-sm text-gray-700 leading-relaxed">Detailed planning and strategizing for successful project execution from concept to launch.</p>
                     </div>
-                    <!-- Service: Bug Fixing or Feature Additions -->
-                    <div class="service-box">
-                        <h3 class="font-semibold text-blue-700 mb-2 flex items-center"><i class="fas fa-bug mr-3"></i>Bug Fixing & Feature Additions</h3>
-                        <p class="text-gray-700 text-sm">Efficient identification and resolution of issues, along with seamless integration of new functionalities.</p>
+
+                    <!-- Service Card -->
+                    <div class="bg-white p-6 rounded-md border border-gray-200 shadow-[0_8px_30px_rgba(0,0,0,0.2)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.3)] transition duration-300">
+                        <h3 class="text-lg font-semibold text-blue-700 mb-3 flex items-center"><i class="fas fa-bug mr-3 text-red-500 text-xl"></i>Bug Fixing & Feature Additions</h3>
+                        <p class="text-sm text-gray-700 leading-relaxed">Efficient identification and resolution of issues, along with seamless integration of new functionalities.</p>
                     </div>
-                    <!-- Service: Backend Development -->
-                    <div class="service-box">
-                        <h3 class="font-semibold text-blue-700 mb-2 flex items-center"><i class="fas fa-cogs mr-3"></i>Backend Development</h3>
-                        <p class="text-700 text-sm">Building robust, scalable, and secure server-side logic and APIs for your applications.</p>
+
+                    <!-- Service Card -->
+                    <div class="bg-white p-6 rounded-md border border-gray-200 shadow-[0_8px_30px_rgba(0,0,0,0.2)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.3)] transition duration-300">
+                        <h3 class="text-lg font-semibold text-blue-700 mb-3 flex items-center"><i class="fas fa-cogs mr-3 text-gray-700 text-xl"></i>Backend Development</h3>
+                        <p class="text-sm text-gray-700 leading-relaxed">Building robust, scalable, and secure server-side logic and APIs for your applications.</p>
                     </div>
-                    <!-- Service: Frontend Development -->
-                    <div class="service-box">
-                        <h3 class="font-semibold text-blue-700 mb-2 flex items-center"><i class="fas fa-palette mr-3"></i>Frontend Development</h3>
-                        <p class="text-gray-700 text-sm">Crafting intuitive and visually appealing user interfaces from design mockups (PSD to HTML / HTML to React).</p>
+
+                    <!-- Service Card -->
+                    <div class="bg-white p-6 rounded-md border border-gray-200 shadow-[0_8px_30px_rgba(0,0,0,0.2)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.3)] transition duration-300">
+                        <h3 class="text-lg font-semibold text-blue-700 mb-3 flex items-center"><i class="fas fa-palette mr-3 text-pink-500 text-xl"></i>Frontend Development</h3>
+                        <p class="text-sm text-gray-700 leading-relaxed">Crafting intuitive and visually appealing user interfaces from design mockups (PSD to HTML / HTML to React).</p>
                     </div>
-                    <!-- Service: Website Development -->
-                    <div class="service-box">
-                        <h3 class="font-semibold text-blue-700 mb-2 flex items-center"><i class="fas fa-globe mr-3"></i>Website Development</h3>
-                        <p class="text-gray-700 text-sm">Creating dynamic and responsive websites using popular platforms and frameworks (WordPress, MERN, PHP).</p>
+
+                    <!-- Service Card -->
+                    <div class="bg-white p-6 rounded-md border border-gray-200 shadow-[0_8px_30px_rgba(0,0,0,0.2)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.3)] transition duration-300">
+                        <h3 class="text-lg font-semibold text-blue-700 mb-3 flex items-center"><i class="fas fa-globe mr-3 text-green-600 text-xl"></i>Website Development</h3>
+                        <p class="text-sm text-gray-700 leading-relaxed">Creating dynamic and responsive websites using popular platforms and frameworks (WordPress, MERN, PHP).</p>
                     </div>
-                    <!-- Service: Web Application Development (MERN) -->
-                    <div class="service-box">
-                        <h3 class="font-semibold text-blue-700 mb-2 flex items-center"><i class="fas fa-code-branch mr-3"></i>Web Application Development (MERN)</h3>
-                        <p class="text-gray-700 text-sm">Developing full-fledged web applications with the MongoDB, Express.js, React, Node.js stack.</p>
+
+                    <!-- Service Card -->
+                    <div class="bg-white p-6 rounded-md border border-gray-200 shadow-[0_8px_30px_rgba(0,0,0,0.2)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.3)] transition duration-300">
+                        <h3 class="text-lg font-semibold text-blue-700 mb-3 flex items-center"><i class="fas fa-code-branch mr-3 text-blue-500 text-xl"></i>Web App Development (MERN)</h3>
+                        <p class="text-sm text-gray-700 leading-relaxed">Developing full-fledged web applications with the MongoDB, Express.js, React, Node.js stack.</p>
                     </div>
-                    <!-- Service: SaaS Development (Highlighted) -->
-                    <div class="service-box highlighted-service">
-                        <h3 class="font-semibold mb-2 flex items-center"><i class="fas fa-cloud mr-3"></i>SaaS Development</h3>
-                        <p class="text-sm">Building multi-tenant, scalable Software as a Service solutions tailored to your business needs.</p>
+
+                    <!-- Service Card - Highlighted -->
+                    <div class="bg-gradient-to-br from-blue-600 to-blue-800 text-white p-6 rounded-md shadow-[0_8px_30px_rgba(0,0,0,0.4)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.5)] transition duration-300">
+                        <h3 class="text-lg font-semibold mb-3 flex items-center"><i class="fas fa-cloud mr-3 text-white text-xl"></i>SaaS Development</h3>
+                        <p class="text-sm leading-relaxed">Building multi-tenant, scalable Software as a Service solutions tailored to your business needs.</p>
                     </div>
-                    <!-- Service: WHMCS Development -->
-                    <div class="service-box">
-                        <h3 class="font-semibold text-blue-700 mb-2 flex items-center"><i class="fas fa-server mr-3"></i>WHMCS Development</h3>
-                        <p class="text-gray-700 text-sm">Customizing and extending WHMCS for billing, client management, and automation.</p>
+
+                    <!-- Service Card -->
+                    <div class="bg-white p-6 rounded-md border border-gray-200 shadow-[0_8px_30px_rgba(0,0,0,0.2)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.3)] transition duration-300">
+                        <h3 class="text-lg font-semibold text-blue-700 mb-3 flex items-center"><i class="fas fa-server mr-3 text-indigo-600 text-xl"></i>WHMCS Development</h3>
+                        <p class="text-sm text-gray-700 leading-relaxed">Customizing and extending WHMCS for billing, client management, and automation.</p>
                     </div>
+
                 </div>
             </div>
         </section>
 
+
         <!-- Contact Section -->
-        <section id="contact" class="animated-section py-20 sm:py-24 md:py-28 bg-white my-12">
-            <div class="container mx-auto max-w-7xl px-6 sm:px-8 text-center">
-                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 mb-12 flex items-center justify-center">
-                    <i class="fas fa-headset text-blue-600 mr-4"></i>Get in <span class="text-blue-600 ml-2">Touch</span>
-                </h2>
-                <div class="space-y-6 text-xl text-gray-700 mb-10">
-                    <p class="flex items-center justify-center">
-                        <i class="fas fa-phone-alt text-blue-500 mr-3"></i><a href="tel:+8801302855453" class="hover:text-blue-700 transition-colors duration-200">+880 1302855453</a>
-                    </p>
-                    <p class="flex items-center justify-center">
-                        <i class="fas fa-envelope text-blue-500 mr-3"></i><a href="mailto:mdhgtushar@gmail.com" class="hover:text-blue-700 transition-colors duration-200">mdhgtushar@gmail.com</a>
-                    </p>
-                    <p class="flex items-center justify-center">
-                        <i class="fas fa-map-marker-alt text-blue-500 mr-3"></i>Gafargaon, Mymensingh, Bangladesh.
+        <section id="contact" class="min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-50 to-pink-50 px-6 py-20 sm:py-24 md:py-28">
+            <div class="max-w-3xl w-full text-center">
+
+                <!-- Top Title & Intro Text -->
+                <div class="mb-14">
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 mb-6 flex items-center justify-center gap-3 flex-wrap">
+                        <i class="fas fa-headset text-blue-600 text-4xl"></i>
+                        Get in <span class="text-blue-600">Touch</span>
+                    </h2>
+                    <p class="text-gray-600 text-base sm:text-lg max-w-xl mx-auto">
+                        I’m always open to discussing new projects, creative ideas, or opportunities to be part of your visions. Let’s connect and build something amazing together.
                     </p>
                 </div>
-                <div class="flex justify-center space-x-8">
-                    <a href="https://mdhgtushar.github.io" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 transition-colors duration-200 text-3xl transform hover:scale-110">
+
+                <!-- Contact Info List (aligned properly) -->
+                <div class="flex flex-col items-center text-left text-gray-700 text-base sm:text-lg space-y-6 mb-12">
+
+                    <div class="flex items-center w-full max-w-md">
+                        <span class="w-10 text-blue-600 text-xl text-center">
+                            <i class="fas fa-phone-alt"></i>
+                        </span>
+                        <a href="tel:+8801302855453" class="ml-3 hover:text-blue-700 font-medium transition-colors duration-200">
+                            +880 1302 855 453
+                        </a>
+                    </div>
+
+                    <div class="flex items-center w-full max-w-md">
+                        <span class="w-10 text-blue-600 text-xl text-center">
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                        <a href="mailto:mdhgtushar@gmail.com" class="ml-3 hover:text-blue-700 font-medium transition-colors duration-200">
+                            mdhgtushar@gmail.com
+                        </a>
+                    </div>
+
+                    <div class="flex items-center w-full max-w-md">
+                        <span class="w-10 text-blue-600 text-xl text-center">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </span>
+                        <span class="ml-3 font-medium">
+                            Gafargaon, Mymensingh, Bangladesh
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Social Links -->
+                <div class="flex justify-center gap-8">
+                    <a href="https://mdhgtushar.github.io" target="_blank" rel="noopener noreferrer"
+                        class="text-blue-600 hover:text-blue-800 transition-all duration-300 text-3xl transform hover:scale-125">
                         <i class="fas fa-briefcase"></i>
                     </a>
-                    <a href="https://github.com/mdhgtushar" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 transition-colors duration-200 text-3xl transform hover:scale-110">
+
+                    <a href="https://github.com/mdhgtushar" target="_blank" rel="noopener noreferrer"
+                        class="text-blue-600 hover:text-blue-800 transition-all duration-300 text-3xl transform hover:scale-125">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/mdhgtushar/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 transition-colors duration-200 text-3xl transform hover:scale-110">
+
+                    <a href="https://www.linkedin.com/in/mdhgtushar/" target="_blank" rel="noopener noreferrer"
+                        class="text-blue-600 hover:text-blue-800 transition-all duration-300 text-3xl transform hover:scale-125">
                         <i class="fab fa-linkedin"></i>
                     </a>
                 </div>
+
             </div>
         </section>
+
     </main>
 
     <!-- Footer Section -->
