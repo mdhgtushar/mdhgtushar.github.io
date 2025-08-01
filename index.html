@@ -364,74 +364,433 @@
         </section>
 
 
-        <!-- Projects Section (Boxed Design) -->
-        <section id="projects" class="animated-section py-20 sm:py-24 md:py-28 bg-gradient-to-br from-blue-50 to-purple-50">
-            <div class="container mx-auto max-w-7xl px-6 sm:px-8">
+            <!-- 
+      This is a self-contained HTML component.
+      To use it, paste this code inside the <body> tag of your existing HTML file.
+      Ensure your main HTML file includes the Tailwind CSS CDN and the Inter font link.
+    -->
 
-                <!-- Section Title -->
-                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 text-center mb-16">
-                    My <span class="text-blue-600">Featured</span> Projects
-                </h2>
+    <style>
+      /* Custom styles to hide scrollbar for carousels */
+      .carousel-container {
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none;  /* Internet Explorer 10+ */
+      }
+      .carousel-container::-webkit-scrollbar {
+        width: 0;  /* Safari and Chrome */
+        height: 0;
+      }
+      /* Fade-in animation for modal */
+      .modal-enter-active, .modal-leave-active {
+        transition: opacity 0.3s ease;
+      }
+      .modal-enter-from, .modal-leave-to {
+        opacity: 0;
+      }
+      /* Scale-up animation for modal content */
+      .modal-content-enter-active, .modal-content-leave-active {
+        transition: transform 0.3s ease;
+      }
+      .modal-content-enter-from, .modal-content-leave-to {
+        transform: scale(0.95);
+      }
+    </style>
 
-                <!-- Project Cards -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+    <!-- Main project list section starts here -->
+    <section class="bg-gray-100 py-12 px-4 sm:px-6 lg:px-8 min-h-screen">
+      <div class="mx-auto">
+        <h2 class="text-4xl font-bold text-gray-800 mb-8 text-center">Featured Full-Stack Projects</h2>
+        
+        <!-- Project Grid -->
+        <div class="grid grid-cols-1 gap-12">
+          <!-- Project 1: E-commerce Platform -->
+          <div data-project-id="1" class="project-card bg-white rounded-xl shadow overflow-hidden flex flex-col md:flex-row md:h-96 hover:shadow-xl transition-shadow duration-300">
+            <!-- Carousel for images -->
+            <div class="carousel-container relative w-full md:w-2/5 h-64 md:h-full overflow-hidden">
+              <div class="carousel-track flex h-full transition-transform duration-500 ease-in-out">
+                <img src="https://placehold.co/600x450/B91C1C/ffffff?text=E-commerce+UI+1" alt="E-commerce UI" class="w-full flex-shrink-0 object-cover">
+                <img src="https://placehold.co/600x450/B91C1C/ffffff?text=E-commerce+UI+2" alt="E-commerce UI" class="w-full flex-shrink-0 object-cover">
+                <img src="https://placehold.co/600x450/B91C1C/ffffff?text=E-commerce+UI+3" alt="E-commerce UI" class="w-full flex-shrink-0 object-cover">
+              </div>
+              <button class="carousel-prev absolute left-2 top-1/2 -translate-y-1/2 p-2 rounded-full bg-black bg-opacity-30 text-white hover:bg-opacity-50 transition-colors">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+              </button>
+              <button class="carousel-next absolute right-2 top-1/2 -translate-y-1/2 p-2 rounded-full bg-black bg-opacity-30 text-white hover:bg-opacity-50 transition-colors">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+              </button>
+            </div>
+            <!-- Project content -->
+            <div class="p-6 flex flex-col md:w-3/5 h-full">
+              <h3 class="text-3xl font-bold text-gray-900 mb-2">Project 1: E-commerce Platform</h3>
+              <p class="text-gray-700 text-lg flex-grow">A comprehensive e-commerce platform from the ground up, designed to provide a seamless shopping experience. It features a robust backend for managing products and orders and a dynamic, responsive front end for customers.</p>
+              
+              <div class="mt-6">
+                <h4 class="text-xl font-bold text-gray-900">Tech Stack</h4>
+                <div class="mt-2 flex flex-wrap gap-2">
+                  <span class="bg-gray-200 text-gray-800 text-sm font-medium px-2.5 py-0.5 rounded-full">React</span>
+                  <span class="bg-gray-200 text-gray-800 text-sm font-medium px-2.5 py-0.5 rounded-full">Node.js</span>
+                  <span class="bg-gray-200 text-gray-800 text-sm font-medium px-2.5 py-0.5 rounded-full">Express.js</span>
+                  <span class="bg-gray-200 text-gray-800 text-sm font-medium px-2.5 py-0.5 rounded-full">MongoDB</span>
+                  <span class="bg-gray-200 text-gray-800 text-sm font-medium px-2.5 py-0.5 rounded-full">Stripe API</span>
+                </div>
+              </div>
 
-                    <!-- Project Card -->
-                    <div class="bg-white p-8 rounded-2xl shadow-[0_6px_25px_rgba(0,0,0,0.15)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.25)] transition-shadow duration-300">
-                        <h3 class="text-2xl sm:text-3xl font-bold text-blue-700 mb-3 flex items-center gap-3">
-                            <i class="fas fa-school text-blue-600 text-xl"></i>School Management System
-                        </h3>
-                        <p class="text-gray-600 mb-4">A comprehensive system for schools to manage student data, results, and more.</p>
-                        <ul class="space-y-2 text-gray-700 text-sm sm:text-base">
-                            <li class="flex items-center gap-2"><i class="fas fa-check-circle text-green-500"></i>Online Result Processing</li>
-                            <li class="flex items-center gap-2"><i class="fas fa-check-circle text-green-500"></i>Full Dynamic Website Capabilities</li>
-                        </ul>
+              <div class="mt-4 pt-4 border-t">
+                <button class="view-project-btn bg-blue-600 text-white font-medium py-2 px-4 rounded-full hover:bg-blue-700 transition-colors duration-200" data-project-id="1">Read More...</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Real-time Chat App -->
+          <div data-project-id="2" class="project-card bg-white rounded-xl shadow overflow-hidden flex flex-col md:flex-row md:h-96 hover:shadow-xl transition-shadow duration-300">
+            <div class="carousel-container relative w-full md:w-2/5 h-64 md:h-full overflow-hidden">
+              <div class="carousel-track flex h-full transition-transform duration-500 ease-in-out">
+                <img src="https://placehold.co/600x450/4C1D95/ffffff?text=Chat+App+UI+1" alt="Chat App UI" class="w-full flex-shrink-0 object-cover">
+                <img src="https://placehold.co/600x450/4C1D95/ffffff?text=Chat+App+UI+2" alt="Chat App UI" class="w-full flex-shrink-0 object-cover">
+                <img src="https://placehold.co/600x450/4C1D95/ffffff?text=Chat+App+UI+3" alt="Chat App UI" class="w-full flex-shrink-0 object-cover">
+              </div>
+              <button class="carousel-prev absolute left-2 top-1/2 -translate-y-1/2 p-2 rounded-full bg-black bg-opacity-30 text-white hover:bg-opacity-50 transition-colors">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+              </button>
+              <button class="carousel-next absolute right-2 top-1/2 -translate-y-1/2 p-2 rounded-full bg-black bg-opacity-30 text-white hover:bg-opacity-50 transition-colors">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+              </button>
+            </div>
+            <div class="p-6 flex flex-col md:w-3/5 h-full">
+              <h3 class="text-3xl font-bold text-gray-900 mb-2">Project 2: Real-time Chat App</h3>
+              <p class="text-gray-700 text-lg flex-grow">A dynamic, real-time messaging application designed to connect users instantly. The app utilizes WebSockets to handle real-time communication efficiently and provides a seamless and responsive chat experience.</p>
+              
+              <div class="mt-6">
+                <h4 class="text-xl font-bold text-gray-900">Tech Stack</h4>
+                <div class="mt-2 flex flex-wrap gap-2">
+                  <span class="bg-gray-200 text-gray-800 text-sm font-medium px-2.5 py-0.5 rounded-full">WebSockets</span>
+                  <span class="bg-gray-200 text-gray-800 text-sm font-medium px-2.5 py-0.5 rounded-full">React</span>
+                  <span class="bg-gray-200 text-gray-800 text-sm font-medium px-2.5 py-0.5 rounded-full">Node.js</span>
+                  <span class="bg-gray-200 text-gray-800 text-sm font-medium px-2.5 py-0.5 rounded-full">Express.js</span>
+                  <span class="bg-gray-200 text-gray-800 text-sm font-medium px-2.5 py-0.5 rounded-full">MongoDB</span>
+                </div>
+              </div>
+
+              <div class="mt-4 pt-4 border-t">
+                <button class="view-project-btn bg-blue-600 text-white font-medium py-2 px-4 rounded-full hover:bg-blue-700 transition-colors duration-200" data-project-id="2">Read More...</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: Fitness Tracker -->
+          <div data-project-id="3" class="project-card bg-white rounded-xl shadow overflow-hidden flex flex-col md:flex-row md:h-96 hover:shadow-xl transition-shadow duration-300">
+            <div class="carousel-container relative w-full md:w-2/5 h-64 md:h-full overflow-hidden">
+              <div class="carousel-track flex h-full transition-transform duration-500 ease-in-out">
+                <img src="https://placehold.co/600x450/065F46/ffffff?text=Fitness+App+UI+1" alt="Fitness App UI" class="w-full flex-shrink-0 object-cover">
+                <img src="https://placehold.co/600x450/065F46/ffffff?text=Fitness+App+UI+2" alt="Fitness App UI" class="w-full flex-shrink-0 object-cover">
+                <img src="https://placehold.co/600x450/065F46/ffffff?text=Fitness+App+UI+3" alt="Fitness App UI" class="w-full flex-shrink-0 object-cover">
+              </div>
+              <button class="carousel-prev absolute left-2 top-1/2 -translate-y-1/2 p-2 rounded-full bg-black bg-opacity-30 text-white hover:bg-opacity-50 transition-colors">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+              </button>
+              <button class="carousel-next absolute right-2 top-1/2 -translate-y-1/2 p-2 rounded-full bg-black bg-opacity-30 text-white hover:bg-opacity-50 transition-colors">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+              </button>
+            </div>
+            <div class="p-6 flex flex-col md:w-3/5 h-full">
+              <h3 class="text-3xl font-bold text-gray-900 mb-2">Project 3: Fitness Tracker</h3>
+              <p class="text-gray-700 text-lg flex-grow">A full-stack application designed to help users log workouts, set goals, and monitor their progress. It provides an intuitive interface for tracking exercise data and visualizing progress with interactive charts.</p>
+              
+              <div class="mt-6">
+                <h4 class="text-xl font-bold text-gray-900">Tech Stack</h4>
+                <div class="mt-2 flex flex-wrap gap-2">
+                  <span class="bg-gray-200 text-gray-800 text-sm font-medium px-2.5 py-0.5 rounded-full">Vue.js</span>
+                  <span class="bg-gray-200 text-gray-800 text-sm font-medium px-2.5 py-0.5 rounded-full">Node.js</span>
+                  <span class="bg-gray-200 text-gray-800 text-sm font-medium px-2.5 py-0.5 rounded-full">Express.js</span>
+                  <span class="bg-gray-200 text-gray-800 text-sm font-medium px-2.5 py-0.5 rounded-full">SQL Database</span>
+                  <span class="bg-gray-200 text-gray-800 text-sm font-medium px-2.5 py-0.5 rounded-full">Chart.js</span>
+                </div>
+              </div>
+
+              <div class="mt-4 pt-4 border-t">
+                <button class="view-project-btn bg-blue-600 text-white font-medium py-2 px-4 rounded-full hover:bg-blue-700 transition-colors duration-200" data-project-id="3">Read More...</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Full-screen Modal for Project Preview -->
+    <div id="project-modal" class="fixed inset-0 z-50 bg-black bg-opacity-70 flex items-center justify-center p-4 hidden">
+        <div class="bg-white rounded-xl shadow-2xl overflow-hidden relative w-full max-w-5xl max-h-full flex flex-col">
+            <!-- Modal Header -->
+            <div class="flex justify-between items-center p-4 bg-gray-100 border-b">
+                <h3 id="modal-title" class="text-2xl font-bold text-gray-900">Project Title</h3>
+                <button id="close-modal-btn" class="text-gray-500 hover:text-gray-900 transition-colors duration-200">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+            </div>
+            <!-- Modal Body -->
+            <div class="flex-grow overflow-y-auto p-6 flex flex-col lg:flex-row gap-6">
+                <!-- Large Carousel in Modal -->
+                <div class="carousel-container relative w-full lg:w-3/5 aspect-video overflow-hidden rounded-lg">
+                  <div id="modal-carousel-track" class="carousel-track flex transition-transform duration-500 ease-in-out">
+                    <!-- Images will be dynamically added here by the JavaScript -->
+                  </div>
+                  <button id="prev-btn" class="absolute left-2 top-1/2 -translate-y-1/2 p-2 rounded-full bg-black bg-opacity-30 text-white hover:bg-opacity-50 transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                  </button>
+                  <button id="next-btn" class="absolute right-2 top-1/2 -translate-y-1/2 p-2 rounded-full bg-black bg-opacity-30 text-white hover:bg-opacity-50 transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                  </button>
+                </div>
+                <!-- Project Details in Modal -->
+                <div class="flex-grow lg:w-2/5">
+                    <p id="modal-description" class="text-gray-800 text-lg mb-4">Project description goes here.</p>
+                    
+                    <div class="mt-6">
+                      <h4 class="text-xl font-bold text-gray-900">Key Features</h4>
+                      <ul id="modal-features" class="list-disc list-inside text-gray-700 mt-2 space-y-1">
+                          <!-- Features will be dynamically added here by the JavaScript -->
+                      </ul>
                     </div>
 
-                    <!-- Rubidsoft -->
-                    <div class="bg-white p-8 rounded-2xl shadow-[0_6px_25px_rgba(0,0,0,0.15)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.25)] transition-shadow duration-300">
-                        <h3 class="text-2xl sm:text-3xl font-bold text-blue-700 mb-3 flex items-center gap-3">
-                            <i class="fas fa-building text-blue-600 text-xl"></i>Rubidsoft: Web Agency Management
-                        </h3>
-                        <p class="text-gray-600 mb-4">An integrated platform designed to streamline operations for web agencies.</p>
-                        <ul class="space-y-2 text-gray-700 text-sm sm:text-base">
-                            <li class="flex items-center gap-2"><i class="fas fa-check-circle text-green-500"></i>Client Management</li>
-                            <li class="flex items-center gap-2"><i class="fas fa-check-circle text-green-500"></i>Billing & Invoice Management</li>
-                            <li class="flex items-center gap-2"><i class="fas fa-check-circle text-green-500"></i>Marketing Management</li>
-                        </ul>
+                    <div class="mt-6">
+                      <h4 class="text-xl font-bold text-gray-900">Role & Contributions</h4>
+                      <p id="modal-role" class="text-gray-700 mt-2">Role goes here.</p>
                     </div>
 
-                    <!-- DMY System -->
-                    <div class="bg-white p-8 rounded-2xl shadow-[0_6px_25px_rgba(0,0,0,0.15)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.25)] transition-shadow duration-300">
-                        <h3 class="text-2xl sm:text-3xl font-bold text-blue-700 mb-3 flex items-center gap-3">
-                            <i class="fas fa-tasks text-blue-600 text-xl"></i>DMY System (Daily Management)
-                        </h3>
-                        <p class="text-gray-600 mb-4">A tool for tracking daily activities, tasks, and gaining a comprehensive overview.</p>
-                        <ul class="space-y-2 text-gray-700 text-sm sm:text-base">
-                            <li class="flex items-center gap-2"><i class="fas fa-check-circle text-green-500"></i>Daily Data Management</li>
-                            <li class="flex items-center gap-2"><i class="fas fa-check-circle text-green-500"></i>Daily Activities Tracking</li>
-                            <li class="flex items-center gap-2"><i class="fas fa-check-circle text-green-500"></i>Task Management & Prioritization</li>
-                            <li class="flex items-center gap-2"><i class="fas fa-check-circle text-green-500"></i>Comprehensive Overview Dashboard</li>
-                        </ul>
+                    <div class="mt-4">
+                      <h4 class="text-xl font-bold text-gray-900">Project Duration</h4>
+                      <p id="modal-duration" class="text-gray-700 mt-2">Duration goes here.</p>
+                    </div>
+                    
+                    <div id="modal-tech-stack" class="mt-6 flex flex-wrap gap-2 pt-4 border-t">
+                        <!-- Tech stack badges will be dynamically added here by the JavaScript -->
                     </div>
 
-                    <!-- Cooking Platform -->
-                    <div class="bg-white p-8 rounded-2xl shadow-[0_6px_25px_rgba(0,0,0,0.15)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.25)] transition-shadow duration-300">
-                        <h3 class="text-2xl sm:text-3xl font-bold text-blue-700 mb-3 flex items-center gap-3">
-                            <i class="fas fa-utensils text-blue-600 text-xl"></i>Cooking Platform
-                        </h3>
-                        <p class="text-gray-600 mb-4">An online platform for culinary education and certification.</p>
-                        <ul class="space-y-2 text-gray-700 text-sm sm:text-base">
-                            <li class="flex items-center gap-2"><i class="fas fa-check-circle text-green-500"></i>Online Cooking Certification</li>
-                            <li class="flex items-center gap-2"><i class="fas fa-check-circle text-green-500"></i>Online Exam Application</li>
-                            <li class="flex items-center gap-2"><i class="fas fa-check-circle text-green-500"></i>Offline Cooking Exam Scheduling</li>
-                            <li class="flex items-center gap-2"><i class="fas fa-check-circle text-green-500"></i>Certification Issuance & Tracking</li>
-                        </ul>
+                    <div class="mt-6 flex flex-col gap-2">
+                        <a id="modal-project-link" href="#" target="_blank" class="text-blue-600 hover:underline font-medium text-lg inline-block">View Live Project →</a>
+                        <a id="modal-github-link" href="#" target="_blank" class="text-blue-600 hover:underline font-medium text-lg inline-block">View GitHub Repository →</a>
                     </div>
-
                 </div>
             </div>
-        </section>
+        </div>
+    </div>
+
+    <!-- JavaScript for dynamic functionality -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Project data to be displayed
+            const projectsData = [
+                {
+                    id: 1,
+                    title: "E-commerce Platform",
+                    description: "A comprehensive e-commerce platform from the ground up, designed to provide a seamless shopping experience. It features a robust backend for managing products and orders and a dynamic, responsive front end for customers.",
+                    features: [
+                        "Secure user authentication and authorization.",
+                        "Product catalog with search, filtering, and sorting.",
+                        "Shopping cart and a secure checkout process with a Stripe payment gateway.",
+                        "Admin dashboard for product and order management.",
+                        "Responsive design for mobile and desktop users."
+                    ],
+                    duration: "3 months",
+                    role: "Lead Full-Stack Developer",
+                    link: "#",
+                    github: "#",
+                    images: [
+                        "https://placehold.co/600x450/B91C1C/ffffff?text=E-commerce+UI+1",
+                        "https://placehold.co/600x450/B91C1C/ffffff?text=E-commerce+UI+2",
+                        "https://placehold.co/600x450/B91C1C/ffffff?text=E-commerce+UI+3"
+                    ],
+                    tech: ["React", "Node.js", "Express.js", "MongoDB", "Stripe API"]
+                },
+                {
+                    id: 2,
+                    title: "Real-time Chat App",
+                    description: "A dynamic, real-time messaging application designed to connect users instantly. The app utilizes WebSockets to handle real-time communication efficiently and provides a seamless and responsive chat experience.",
+                    features: [
+                        "Real-time messaging with WebSockets.",
+                        "User authentication and profile management.",
+                        "Private messaging and group chats.",
+                        "Message history persistence using MongoDB.",
+                        "Typing indicators and online status."
+                    ],
+                    duration: "2 months",
+                    role: "Full-Stack Developer",
+                    link: "#",
+                    github: "#",
+                    images: [
+                        "https://placehold.co/600x450/4C1D95/ffffff?text=Chat+App+UI+1",
+                        "https://placehold.co/600x450/4C1D95/ffffff?text=Chat+App+UI+2",
+                        "https://placehold.co/600x450/4C1D95/ffffff?text=Chat+App+UI+3"
+                    ],
+                    tech: ["WebSockets", "React", "Node.js", "Express.js", "MongoDB"]
+                },
+                {
+                    id: 3,
+                    title: "Fitness Tracker",
+                    description: "A full-stack application designed to help users log workouts, set goals, and monitor their progress. It provides an intuitive interface for tracking exercise data and visualizing progress with interactive charts.",
+                    features: [
+                        "User profiles with personalized workout logs.",
+                        "Ability to set and track fitness goals.",
+                        "Progress charts and dashboards for data visualization.",
+                        "Responsive interface for use on both mobile and desktop.",
+                        "Secure data storage and retrieval."
+                    ],
+                    duration: "4 months",
+                    role: "Front-end & Backend Developer",
+                    link: "#",
+                    github: "#",
+                    images: [
+                        "https://placehold.co/600x450/065F46/ffffff?text=Fitness+App+UI+1",
+                        "https://placehold.co/600x450/065F46/ffffff?text=Fitness+App+UI+2",
+                        "https://placehold.co/600x450/065F46/ffffff?text=Fitness+App+UI+3"
+                    ],
+                    tech: ["Vue.js", "Node.js", "Express.js", "SQL Database", "Chart.js"]
+                },
+            ];
+
+            const modal = document.getElementById('project-modal');
+            const modalTitle = document.getElementById('modal-title');
+            const modalDescription = document.getElementById('modal-description');
+            const modalFeatures = document.getElementById('modal-features');
+            const modalRole = document.getElementById('modal-role');
+            const modalDuration = document.getElementById('modal-duration');
+            const modalCarouselTrack = document.getElementById('modal-carousel-track');
+            const modalProjectLink = document.getElementById('modal-project-link');
+            const modalGithubLink = document.getElementById('modal-github-link');
+            const modalTechStack = document.getElementById('modal-tech-stack');
+            const closeModalBtn = document.getElementById('close-modal-btn');
+            const prevBtn = document.getElementById('prev-btn');
+            const nextBtn = document.getElementById('next-btn');
+
+            let currentModalProject;
+            let currentImageIndex = 0;
+
+            // Function to update the carousel position
+            const updateCarousel = (track, index) => {
+                if (track.firstElementChild) {
+                    const imageWidth = track.firstElementChild.clientWidth;
+                    track.style.transform = `translateX(-${index * imageWidth}px)`;
+                }
+            };
+            
+            // Function to populate the modal with project details
+            const populateModal = (projectId) => {
+                const project = projectsData.find(p => p.id == projectId);
+                if (!project) return;
+
+                currentModalProject = project;
+                currentImageIndex = 0;
+
+                modalTitle.textContent = project.title;
+                modalDescription.textContent = project.description;
+                modalRole.textContent = project.role;
+                modalDuration.textContent = project.duration;
+                modalProjectLink.href = project.link;
+                modalGithubLink.href = project.github;
+
+                // Populate carousel images
+                modalCarouselTrack.innerHTML = '';
+                project.images.forEach(imgSrc => {
+                    const img = document.createElement('img');
+                    img.src = imgSrc;
+                    img.alt = `Screenshot of ${project.title}`;
+                    img.className = 'w-full flex-shrink-0 object-cover rounded-lg h-full';
+                    img.onerror = () => { img.src = `https://placehold.co/600x450/CCCCCC/000000?text=Image+Not+Found`; }
+                    modalCarouselTrack.appendChild(img);
+                });
+
+                // Populate key features
+                modalFeatures.innerHTML = '';
+                project.features.forEach(feature => {
+                    const li = document.createElement('li');
+                    li.textContent = feature;
+                    modalFeatures.appendChild(li);
+                });
+
+                // Populate tech stack
+                modalTechStack.innerHTML = '';
+                project.tech.forEach(tech => {
+                    const badge = document.createElement('span');
+                    badge.textContent = tech;
+                    badge.className = 'bg-gray-200 text-gray-800 text-sm font-medium px-2.5 py-0.5 rounded-full';
+                    modalTechStack.appendChild(badge);
+                });
+
+                updateCarousel(modalCarouselTrack, currentImageIndex);
+            };
+
+            // Event listener to open modal when a "Read More" button is clicked
+            document.querySelectorAll('.view-project-btn').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const projectId = e.target.closest('.project-card').dataset.projectId;
+                    populateModal(projectId);
+                    modal.classList.remove('hidden');
+                    document.body.style.overflow = 'hidden'; // Prevent scrolling on the main page
+                });
+            });
+
+            // Event listeners for modal carousel navigation
+            prevBtn.addEventListener('click', () => {
+                if (!currentModalProject) return;
+                currentImageIndex = (currentImageIndex > 0) ? currentImageIndex - 1 : currentModalProject.images.length - 1;
+                updateCarousel(modalCarouselTrack, currentImageIndex);
+            });
+
+            nextBtn.addEventListener('click', () => {
+                if (!currentModalProject) return;
+                currentImageIndex = (currentImageIndex < currentModalProject.images.length - 1) ? currentImageIndex + 1 : 0;
+                updateCarousel(modalCarouselTrack, currentImageIndex);
+            });
+
+            // Event listener to close modal
+            closeModalBtn.addEventListener('click', () => {
+                modal.classList.add('hidden');
+                document.body.style.overflow = ''; // Restore scrolling
+            });
+
+            // Close modal on click outside of the modal content
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    modal.classList.add('hidden');
+                    document.body.style.overflow = '';
+                }
+            });
+
+            // Keyboard support for modal
+            document.addEventListener('keydown', (e) => {
+                if (!modal.classList.contains('hidden')) {
+                    if (e.key === 'Escape') {
+                        modal.classList.add('hidden');
+                        document.body.style.overflow = '';
+                    } else if (e.key === 'ArrowLeft') {
+                        prevBtn.click();
+                    } else if (e.key === 'ArrowRight') {
+                        nextBtn.click();
+                    }
+                }
+            });
+
+            // Add carousel functionality to the main project cards
+            document.querySelectorAll('.project-card').forEach(card => {
+                const track = card.querySelector('.carousel-track');
+                const prev = card.querySelector('.carousel-prev');
+                const next = card.querySelector('.carousel-next');
+                let currentIndex = 0;
+                const imagesCount = track.children.length;
+
+                prev.addEventListener('click', () => {
+                    currentIndex = (currentIndex > 0) ? currentIndex - 1 : imagesCount - 1;
+                    updateCarousel(track, currentIndex);
+                });
+
+                next.addEventListener('click', () => {
+                    currentIndex = (currentIndex < imagesCount - 1) ? currentIndex + 1 : 0;
+                    updateCarousel(track, currentIndex);
+                });
+            });
+        });
+    </script>
+
 
 
         <!-- Services Section -->
