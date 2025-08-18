@@ -215,45 +215,101 @@
 </head>
 <body class="text-gray-800">
 
-    <!-- Hero Section -->
-    <header id="home" class="min-h-screen flex items-center justify-center text-center p-6 sm:p-8 md:p-12 lg:p-16 relative overflow-hidden bg-gradient-to-tr from-blue-100 to-pink-200">
-        <div class="space-y-6 z-10">
-            <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-gray-900 leading-tight animate-name drop-shadow-lg">
-                Hobayer Golondaz Tushar
-            </h1>
-            <p class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-blue-700 animate-title">
-                Full-Stack Web Developer
-            </p>
-            <div class="text-base sm:text-lg text-gray-700 flex flex-wrap justify-center gap-x-6 gap-y-3 mt-6">
-                <p class="flex items-center">
-                    <i class="fas fa-phone-alt text-blue-500 mr-2"></i><a href="tel:+8801302855453" class="hover:text-blue-700 transition-colors duration-200">+880 1302855453</a>
+    <div class="bg-gradient-to-tr from-blue-100 to-pink-200" id="home" >
+        <!-- Hero Section -->
+        <header class="relative overflow-hidden">
+          <!-- Background accents -->
+          <div aria-hidden class="absolute -top-40 -right-32 h-96 w-96 rounded-full bg-gradient-to-tr from-indigo-200 to-indigo-500/40 blur-3xl opacity-50"></div>
+          <div aria-hidden class="absolute -bottom-40 -left-32 h-[28rem] w-[28rem] rounded-full bg-gradient-to-tr from-cyan-200 to-cyan-500/40 blur-3xl opacity-50"></div>
+      
+          <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-20 pb-16 relative h-screen flex items-center justify-center">
+            <div class="grid items-center gap-10 lg:grid-cols-2">
+              <!-- Text Content -->
+              <div class="text-center lg:text-left">
+                <span class="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-600 shadow-sm">
+                  <span class="inline-block h-2 w-2 rounded-full bg-green-500"></span>
+                  Welcome to My Portfolio
+                </span>
+                <h1 class="mt-4 text-4xl font-extrabold tracking-tight text-slate-900 md:text-5xl">
+                  Hi, I'm <br>Hobayer Golondaz Tushar
+                </h1>
+                <p class="mt-3 text-lg text-slate-600 md:text-xl">
+                  A passionate Web Developer & Designer crafting modern, user‑friendly digital experiences.
                 </p>
-                <p class="flex items-center">
-                    <i class="fas fa-envelope text-blue-500 mr-2"></i><a href="mailto:mdhgtushar@gmail.com" class="hover:text-blue-700 transition-colors duration-200">mdhgtushar@gmail.com</a>
-                </p>
-                <p class="flex items-center">
-                    <i class="fas fa-map-marker-alt text-blue-500 mr-2"></i>Gafargaon, Mymensingh, Bangladesh.
-                </p>
+                <p class="mt-1 text-sm text-slate-500">Specialized in React, Tailwind CSS, and full‑stack development.</p>
+      
+                <div class="mt-8 flex flex-col items-center gap-3 sm:flex-row lg:justify-start">
+                  <a href="#projects" class="inline-flex items-center justify-center rounded-2xl px-5 py-3 text-base font-semibold shadow-sm bg-slate-900 text-white hover:bg-slate-800">
+                    View My Projects →
+                  </a>
+                  <a href="#contact" class="inline-flex items-center justify-center rounded-2xl px-5 py-3 text-base font-semibold shadow-sm bg-white text-slate-900 border border-slate-200 hover:bg-slate-50">
+                    Get In Touch
+                  </a>
+                </div>
+      
+                <!-- Highlights -->
+                <div class="mt-8 grid w-full grid-cols-3 items-center gap-4 rounded-2xl border border-slate-200 bg-white/70 p-4 backdrop-blur-sm shadow-sm max-w-lg mx-auto lg:mx-0">
+                  <div class="text-center">
+                    <div class="text-2xl font-extrabold text-slate-900">5+</div>
+                    <div class="text-xs text-slate-500">Years Experience</div>
+                  </div>
+                  <div class="text-center">
+                    <div class="text-2xl font-extrabold text-slate-900">20+</div>
+                    <div class="text-xs text-slate-500">Projects Done</div>
+                  </div>
+                  <div class="text-center">
+                    <div class="text-2xl font-extrabold text-slate-900">15+</div>
+                    <div class="text-xs text-slate-500">Happy Clients</div>
+                  </div>
+                </div>
+      
+                <!-- Skills -->
+                <div class="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+                  <div class="inline-flex items-center gap-3 rounded-2xl border border-slate-200 bg-white px-3 py-2 shadow-sm">
+                    <svg class="h-5 w-5 text-indigo-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
+                    <div>
+                      <div class="text-sm font-semibold text-slate-900">Web Development</div>
+                      <div class="text-xs text-slate-500">Frontend & Backend</div>
+                    </div>
+                  </div>
+                  <div class="inline-flex items-center gap-3 rounded-2xl border border-slate-200 bg-white px-3 py-2 shadow-sm">
+                    <svg class="h-5 w-5 text-cyan-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 20h9"/><path stroke-linecap="round" stroke-linejoin="round" d="M12 4h9"/><path stroke-linecap="round" stroke-linejoin="round" d="M4 9h16M4 15h16"/></svg>
+                    <div>
+                      <div class="text-sm font-semibold text-slate-900">UI/UX Design</div>
+                      <div class="text-xs text-slate-500">Clean & Modern</div>
+                    </div>
+                  </div>
+                  <div class="inline-flex items-center gap-3 rounded-2xl border border-slate-200 bg-white px-3 py-2 shadow-sm">
+                    <svg class="h-5 w-5 text-green-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4"/></svg>
+                    <div>
+                      <div class="text-sm font-semibold text-slate-900">Problem Solving</div>
+                      <div class="text-xs text-slate-500">Efficient Solutions</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <!-- Profile Image -->
+              <div class="relative mx-auto h-[420px] w-full max-w-md ">
+                <div class="absolute inset-0 -rotate-3 rounded-[2rem] border border-slate-200 bg-white p-5 shadow-xl">
+                  <div class="h-full rounded-2xl bg-gradient-to-br from-slate-50 to-slate-100 flex items-center justify-center">
+                    <img src="img/theme.png" alt="Profile" class="rounded-2xl shadow-lg" />
+                  </div>
+                </div>
+                <!-- Glow -->
+                <div class="absolute -inset-6 -z-10 rounded-[2rem] bg-gradient-to-tr from-indigo-200/60 via-white to-cyan-200/60 blur-2xl"></div>
+              </div>
             </div>
-            <div class="flex flex-wrap justify-center gap-6 mt-8">
-                <a href="https://mdhgtushar.github.io" target="_blank" rel="noopener noreferrer" class="bg-blue-600 text-white px-6 py-3 rounded-full text-lg sm:text-xl font-medium flex items-center shadow-lg hover:bg-blue-700 transition-colors duration-300 transform hover:scale-105">
-                    <i class="fas fa-briefcase mr-2"></i>Portfolio
-                </a>
-                <a href="https://github.com/mdhgtushar" target="_blank" rel="noopener noreferrer" class="border-2 border-blue-600 text-blue-600 px-6 py-3 rounded-full text-lg sm:text-xl font-medium flex items-center shadow-lg hover:bg-blue-50 hover:text-blue-700 transition-all duration-300 transform hover:scale-105">
-                    <i class="fab fa-github mr-2"></i>Github
-                </a>
-                <a href="https://www.linkedin.com/in/mdhgtushar/" target="_blank" rel="noopener noreferrer" class="border-2 border-indigo-600 text-indigo-600 px-6 py-3 rounded-full text-lg sm:text-xl font-medium flex items-center shadow-lg hover:bg-indigo-50 hover:text-indigo-700 transition-all duration-300 transform hover:scale-105">
-                    <i class="fab fa-linkedin mr-2"></i>LinkedIn
-                </a>
-            </div>
-        </div>
-    </header>
+          </div>
+        </header>
+      </div>
 
+     
     <!-- Navigation Bar -->
-    <nav id="navbar" class="hidden md:block py-3">
+    <nav id="navbar" class="hidden md:block py-4">
         <div class="container mx-auto flex justify-between items-center px-8">
             <!-- Logo -->
-            <a href="#home" class="text-2xl font-bold text-blue-800 hover:text-blue-900 transition-colors duration-200 tracking-wide">
+            <a href="#home" class="text-2xl font-bold text-slate-900 hover:text-slate-700 transition-colors duration-200 tracking-wide">
                 Hobayer Golondaz
             </a>
             <!-- Navigation Links -->
@@ -269,21 +325,37 @@
 
     <main>
         <!-- Career Objective Section -->
-        <section id="career-objective" class="animated-section py-20 sm:py-24 md:py-28 bg-blue-50 md:flex md:items-center md:h-screen">
-            <div class="container mx-auto max-w-7xl px-6 sm:px-8 flex flex-col md:flex-row items-center gap-10 md:gap-16">
+        <section id="career-objective" class="animated-section py-20 sm:py-24 md:py-28 bg-gradient-to-br from-slate-50 to-blue-50 relative overflow-hidden md:flex md:items-center md:h-screen">
+            <!-- Background accents -->
+            <div aria-hidden class="absolute -top-40 -right-32 h-96 w-96 rounded-full bg-gradient-to-tr from-indigo-200 to-indigo-500/20 blur-3xl opacity-50"></div>
+            <div aria-hidden class="absolute -bottom-40 -left-32 h-[28rem] w-[28rem] rounded-full bg-gradient-to-tr from-cyan-200 to-cyan-500/20 blur-3xl opacity-50"></div>
+            
+            <div class="container mx-auto max-w-7xl px-6 sm:px-8 flex flex-col md:flex-row items-center gap-10 md:gap-16 relative z-10">
                 <!-- Image -->
                 <div class="md:w-1/3 flex justify-center order-1 md:order-2">
-                    <img src="https://avatars.githubusercontent.com/u/81422400?v=4"
-                        alt="Hobayer Golondaz Tushar"
-                        class="w-56 h-56 sm:w-72 sm:h-72 md:w-80 md:h-80 rounded-full object-cover border-4 border-blue-500 shadow-xl ring-4 ring-blue-100">
+                    <div class="relative">
+                        <div class="absolute inset-0 -rotate-3 rounded-[2rem] border border-slate-200 bg-white p-5 shadow-xl">
+                            <div class="h-full rounded-2xl bg-gradient-to-br from-slate-50 to-slate-100 flex items-center justify-center">
+                                <img src="https://avatars.githubusercontent.com/u/81422400?v=4"
+                                    alt="Hobayer Golondaz Tushar"
+                                    class="w-56 h-56 sm:w-72 sm:h-72 md:w-80 md:h-80 rounded-2xl object-cover shadow-lg">
+                            </div>
+                        </div>
+                        <!-- Glow -->
+                        <div class="absolute -inset-6 -z-10 rounded-[2rem] bg-gradient-to-tr from-indigo-200/60 via-white to-cyan-200/60 blur-2xl"></div>
+                    </div>
                 </div>
 
                 <!-- Text Content -->
                 <div class="md:w-2/3 text-center md:text-left order-2 md:order-1">
-                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
+                    <span class="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-600 shadow-sm mb-6">
+                        <span class="inline-block h-2 w-2 rounded-full bg-blue-500"></span>
+                        Professional Journey
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 mb-6 leading-tight">
                         My Professional Journey & <span class="text-blue-600">Ambition</span>
                     </h2>
-                    <p class="text-lg sm:text-xl leading-relaxed text-gray-700">
+                    <p class="text-lg sm:text-xl leading-relaxed text-slate-600">
                         I am a <strong class="text-blue-700">passionate</strong> and <strong class="text-blue-700">detail-oriented</strong> Full-Stack Web Developer with a strong foundation in creating
                         <strong class="text-blue-700">secure</strong>, <strong class="text-blue-700">scalable</strong>, and <strong class="text-blue-700">user-centric</strong> applications. <br class="hidden sm:block my-2" />
                         My expertise lies in designing <strong>robust backend architectures</strong> and developing <strong>intuitive frontend interfaces</strong> that ensure fluid and responsive user experiences across devices. <br class="hidden sm:block my-2" />
@@ -295,67 +367,80 @@
 
 
         <!-- Skills Section -->
-        <section id="skills" class="animated-section py-20 sm:py-24 md:py-28 bg-white md:flex md:items-center md:h-screen">
-            <div class="container mx-auto max-w-7xl px-6 sm:px-8">
-                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 text-center mb-12">
-                    My <span class="text-blue-600">Expertise</span> & Technologies
-                </h2>
+        <section id="skills" class="animated-section py-20 sm:py-24 md:py-28 bg-gradient-to-br from-white to-slate-50 relative overflow-hidden md:flex md:items-center md:h-screen">
+            <!-- Background accents -->
+            <div aria-hidden class="absolute -top-40 -left-32 h-96 w-96 rounded-full bg-gradient-to-tr from-blue-200 to-blue-500/20 blur-3xl opacity-50"></div>
+            <div aria-hidden class="absolute -bottom-40 -right-32 h-[28rem] w-[28rem] rounded-full bg-gradient-to-tr from-indigo-200 to-indigo-500/20 blur-3xl opacity-50"></div>
+            
+            <div class="container mx-auto max-w-7xl px-6 sm:px-8 relative z-10">
+                <div class="text-center mb-16">
+                    <span class="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-600 shadow-sm mb-6">
+                        <span class="inline-block h-2 w-2 rounded-full bg-blue-500"></span>
+                        Technical Expertise
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 mb-4">
+                        My <span class="text-blue-600">Expertise</span> & Technologies
+                    </h2>
+                    <p class="text-lg text-slate-600 max-w-2xl mx-auto">
+                        A comprehensive toolkit of modern technologies and frameworks I use to build exceptional digital experiences.
+                    </p>
+                </div>
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
 
                     <!-- Front-End Skills -->
-                    <div class="bg-white p-6 rounded-md border border-gray-300 shadow-[0_8px_30px_rgba(0,0,0,0.3)] transform hover:scale-105 transition duration-300">
-                        <h3 class="text-xl font-bold text-blue-700 mb-5 flex items-center">
+                    <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                        <h3 class="text-xl font-bold text-slate-900 mb-6 flex items-center">
                             <i class="fas fa-laptop-code mr-3 text-blue-600 text-2xl"></i>Front-End
                         </h3>
-                        <ul class="space-y-3 text-gray-800 text-base font-semibold">
-                            <li><i class="fab fa-react text-blue-500 mr-2"></i>React.js</li>
-                            <li><i class="fab fa-html5 text-orange-500 mr-2"></i>HTML5</li>
-                            <li><i class="fab fa-css3-alt text-blue-400 mr-2"></i>CSS3</li>
-                            <li><i class="fab fa-js text-yellow-500 mr-2"></i>JavaScript (ES6+)</li>
-                            <li><i class="fas fa-wind text-cyan-500 mr-2"></i>Tailwind CSS</li>
-                            <li><i class="fas fa-drafting-compass text-pink-500 mr-2"></i>Design-to-Code</li>
+                        <ul class="space-y-4 text-slate-700 text-base font-medium">
+                            <li class="flex items-center"><i class="fab fa-react text-blue-500 mr-3 text-lg"></i>React.js</li>
+                            <li class="flex items-center"><i class="fab fa-html5 text-orange-500 mr-3 text-lg"></i>HTML5</li>
+                            <li class="flex items-center"><i class="fab fa-css3-alt text-blue-400 mr-3 text-lg"></i>CSS3</li>
+                            <li class="flex items-center"><i class="fab fa-js text-yellow-500 mr-3 text-lg"></i>JavaScript (ES6+)</li>
+                            <li class="flex items-center"><i class="fas fa-wind text-cyan-500 mr-3 text-lg"></i>Tailwind CSS</li>
+                            <li class="flex items-center"><i class="fas fa-drafting-compass text-pink-500 mr-3 text-lg"></i>Design-to-Code</li>
                         </ul>
                     </div>
 
                     <!-- Back-End Skills -->
-                    <div class="bg-white p-6 rounded-md border border-gray-300 shadow-[0_8px_30px_rgba(0,0,0,0.3)] transform hover:scale-105 transition duration-300">
-                        <h3 class="text-xl font-bold text-blue-700 mb-5 flex items-center">
+                    <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                        <h3 class="text-xl font-bold text-slate-900 mb-6 flex items-center">
                             <i class="fas fa-server mr-3 text-blue-600 text-2xl"></i>Back-End
                         </h3>
-                        <ul class="space-y-3 text-gray-800 text-base font-semibold">
-                            <li><i class="fab fa-node-js text-green-600 mr-2"></i>Node.js</li>
-                            <li><i class="fas fa-bolt text-yellow-600 mr-2"></i>Express.js</li>
-                            <li><i class="fab fa-js text-yellow-500 mr-2"></i>JavaScript</li>
-                            <li><i class="fab fa-php text-indigo-600 mr-2"></i>PHP</li>
-                            <li><i class="fas fa-lock text-gray-700 mr-2"></i>RESTful APIs</li>
+                        <ul class="space-y-4 text-slate-700 text-base font-medium">
+                            <li class="flex items-center"><i class="fab fa-node-js text-green-600 mr-3 text-lg"></i>Node.js</li>
+                            <li class="flex items-center"><i class="fab fa-bolt text-yellow-600 mr-3 text-lg"></i>Express.js</li>
+                            <li class="flex items-center"><i class="fab fa-js text-yellow-500 mr-3 text-lg"></i>JavaScript</li>
+                            <li class="flex items-center"><i class="fab fa-php text-indigo-600 mr-3 text-lg"></i>PHP</li>
+                            <li class="flex items-center"><i class="fab fa-lock text-slate-700 mr-3 text-lg"></i>RESTful APIs</li>
                         </ul>
                     </div>
 
                     <!-- Database Skills -->
-                    <div class="bg-white p-6 rounded-md border border-gray-300 shadow-[0_8px_30px_rgba(0,0,0,0.3)] transform hover:scale-105 transition duration-300">
-                        <h3 class="text-xl font-bold text-blue-700 mb-5 flex items-center">
+                    <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                        <h3 class="text-xl font-bold text-slate-900 mb-6 flex items-center">
                             <i class="fas fa-database mr-3 text-blue-600 text-2xl"></i>Database
                         </h3>
-                        <ul class="space-y-3 text-gray-800 text-base font-semibold">
-                            <li><i class="fas fa-braille text-blue-400 mr-2"></i>MySQL</li>
-                            <li><i class="fas fa-leaf text-green-700 mr-2"></i>MongoDB</li>
+                        <ul class="space-y-4 text-slate-700 text-base font-medium">
+                            <li class="flex items-center"><i class="fas fa-braille text-blue-400 mr-3 text-lg"></i>MySQL</li>
+                            <li class="flex items-center"><i class="fas fa-leaf text-green-700 mr-3 text-lg"></i>MongoDB</li>
                         </ul>
                     </div>
 
                     <!-- Tools & Tech -->
-                    <div class="bg-white p-6 rounded-md border border-gray-300 shadow-[0_8px_30px_rgba(0,0,0,0.3)] transform hover:scale-105 transition duration-300">
-                        <h3 class="text-xl font-bold text-blue-700 mb-5 flex items-center">
+                    <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                        <h3 class="text-xl font-bold text-slate-900 mb-6 flex items-center">
                             <i class="fas fa-tools mr-3 text-blue-600 text-2xl"></i>Tools & Tech
                         </h3>
-                        <ul class="space-y-3 text-gray-800 text-base font-semibold">
-                            <li><i class="fab fa-git-alt text-red-600 mr-2"></i>Git</li>
-                            <li><i class="fab fa-github text-black mr-2"></i>GitHub</li>
-                            <li><i class="fas fa-code text-purple-600 mr-2"></i>VS Code</li>
-                            <li><i class="fas fa-paper-plane text-orange-500 mr-2"></i>Postman</li>
-                            <li><i class="fab fa-npm text-red-500 mr-2"></i>NPM</li>
-                            <li><i class="fas fa-wrench text-gray-700 mr-2"></i>DevTools</li>
-                            <li><i class="fas fa-server text-green-800 mr-2"></i>cPanel</li>
+                        <ul class="space-y-4 text-slate-700 text-base font-medium">
+                            <li class="flex items-center"><i class="fab fa-git-alt text-red-600 mr-3 text-lg"></i>Git</li>
+                            <li class="flex items-center"><i class="fab fa-github text-black mr-3 text-lg"></i>GitHub</li>
+                            <li class="flex items-center"><i class="fas fa-code text-purple-600 mr-3 text-lg"></i>VS Code</li>
+                            <li class="flex items-center"><i class="fas fa-paper-plane text-orange-500 mr-3 text-lg"></i>Postman</li>
+                            <li class="flex items-center"><i class="fab fa-npm text-red-500 mr-3 text-lg"></i>NPM</li>
+                            <li class="flex items-center"><i class="fas fa-wrench text-slate-700 mr-3 text-lg"></i>DevTools</li>
+                            <li class="flex items-center"><i class="fas fa-server text-green-800 mr-3 text-lg"></i>cPanel</li>
                         </ul>
                     </div>
 
@@ -364,586 +449,395 @@
         </section>
 
 
-            <!-- 
-      This is a self-contained HTML component.
-      To use it, paste this code inside the <body> tag of your existing HTML file.
-      Ensure your main HTML file includes the Tailwind CSS CDN and the Inter font link.
-    -->
-
-    <style>
-      /* Custom styles to hide scrollbar for carousels */
-      .carousel-container {
-        scrollbar-width: none; /* Firefox */
-        -ms-overflow-style: none;  /* Internet Explorer 10+ */
-      }
-      .carousel-container::-webkit-scrollbar {
-        width: 0;  /* Safari and Chrome */
-        height: 0;
-      }
-      /* Fade-in animation for modal */
-      .modal-enter-active, .modal-leave-active {
-        transition: opacity 0.3s ease;
-      }
-      .modal-enter-from, .modal-leave-to {
-        opacity: 0;
-      }
-      /* Scale-up animation for modal content */
-      .modal-content-enter-active, .modal-content-leave-active {
-        transition: transform 0.3s ease;
-      }
-      .modal-content-enter-from, .modal-content-leave-to {
-        transform: scale(0.95);
-      }
-    </style>
-
-    <!-- Main project list section starts here -->
-    <section class="bg-gray-100 py-12 px-4 sm:px-6 lg:px-8 min-h-screen">
-      <div class="container mx-auto max-w-7xl px-6 sm:px-8">
-        <h2 class="text-4xl font-bold text-gray-800 mb-8 text-center">Featured Full-Stack Projects</h2>
-        
-        <!-- Project Grid -->
-        <div class="grid grid-cols-1 gap-12">
-          <!-- Project 1: E-commerce Platform -->
-          <div data-project-id="1" class="project-card bg-white rounded-xl shadow overflow-hidden flex flex-col md:flex-row md:h-96 hover:shadow-xl transition-shadow duration-300">
-            <!-- Carousel for images -->
-            <div class="carousel-container relative w-full md:w-2/5 h-64 md:h-full overflow-hidden">
-              <div class="carousel-track flex h-full transition-transform duration-500 ease-in-out">
-                <img src="https://placehold.co/600x450/B91C1C/ffffff?text=E-commerce+UI+1" alt="E-commerce UI" class="w-full flex-shrink-0 object-cover">
-                <img src="https://placehold.co/600x450/B91C1C/ffffff?text=E-commerce+UI+2" alt="E-commerce UI" class="w-full flex-shrink-0 object-cover">
-                <img src="https://placehold.co/600x450/B91C1C/ffffff?text=E-commerce+UI+3" alt="E-commerce UI" class="w-full flex-shrink-0 object-cover">
-              </div>
-              <button class="carousel-prev absolute left-2 top-1/2 -translate-y-1/2 p-2 rounded-full bg-black bg-opacity-30 text-white hover:bg-opacity-50 transition-colors">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
-              </button>
-              <button class="carousel-next absolute right-2 top-1/2 -translate-y-1/2 p-2 rounded-full bg-black bg-opacity-30 text-white hover:bg-opacity-50 transition-colors">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-              </button>
-            </div>
-            <!-- Project content -->
-            <div class="p-6 flex flex-col md:w-3/5 h-full">
-              <h3 class="text-3xl font-bold text-gray-900 mb-2">Project 1: E-commerce Platform</h3>
-              <p class="text-gray-700 text-lg flex-grow">A comprehensive e-commerce platform from the ground up, designed to provide a seamless shopping experience. It features a robust backend for managing products and orders and a dynamic, responsive front end for customers.</p>
-              
-              <div class="mt-6">
-                <h4 class="text-xl font-bold text-gray-900">Tech Stack</h4>
-                <div class="mt-2 flex flex-wrap gap-2">
-                  <span class="bg-gray-200 text-gray-800 text-sm font-medium px-2.5 py-0.5 rounded-full">React</span>
-                  <span class="bg-gray-200 text-gray-800 text-sm font-medium px-2.5 py-0.5 rounded-full">Node.js</span>
-                  <span class="bg-gray-200 text-gray-800 text-sm font-medium px-2.5 py-0.5 rounded-full">Express.js</span>
-                  <span class="bg-gray-200 text-gray-800 text-sm font-medium px-2.5 py-0.5 rounded-full">MongoDB</span>
-                  <span class="bg-gray-200 text-gray-800 text-sm font-medium px-2.5 py-0.5 rounded-full">Stripe API</span>
-                </div>
-              </div>
-
-              <div class="mt-4 pt-4 border-t">
-                <button class="view-project-btn bg-blue-600 text-white font-medium py-2 px-4 rounded-full hover:bg-blue-700 transition-colors duration-200" data-project-id="1">Read More...</button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 2: Real-time Chat App -->
-          <div data-project-id="2" class="project-card bg-white rounded-xl shadow overflow-hidden flex flex-col md:flex-row md:h-96 hover:shadow-xl transition-shadow duration-300">
-            <div class="carousel-container relative w-full md:w-2/5 h-64 md:h-full overflow-hidden">
-              <div class="carousel-track flex h-full transition-transform duration-500 ease-in-out">
-                <img src="https://placehold.co/600x450/4C1D95/ffffff?text=Chat+App+UI+1" alt="Chat App UI" class="w-full flex-shrink-0 object-cover">
-                <img src="https://placehold.co/600x450/4C1D95/ffffff?text=Chat+App+UI+2" alt="Chat App UI" class="w-full flex-shrink-0 object-cover">
-                <img src="https://placehold.co/600x450/4C1D95/ffffff?text=Chat+App+UI+3" alt="Chat App UI" class="w-full flex-shrink-0 object-cover">
-              </div>
-              <button class="carousel-prev absolute left-2 top-1/2 -translate-y-1/2 p-2 rounded-full bg-black bg-opacity-30 text-white hover:bg-opacity-50 transition-colors">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
-              </button>
-              <button class="carousel-next absolute right-2 top-1/2 -translate-y-1/2 p-2 rounded-full bg-black bg-opacity-30 text-white hover:bg-opacity-50 transition-colors">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-              </button>
-            </div>
-            <div class="p-6 flex flex-col md:w-3/5 h-full">
-              <h3 class="text-3xl font-bold text-gray-900 mb-2">Project 2: Real-time Chat App</h3>
-              <p class="text-gray-700 text-lg flex-grow">A dynamic, real-time messaging application designed to connect users instantly. The app utilizes WebSockets to handle real-time communication efficiently and provides a seamless and responsive chat experience.</p>
-              
-              <div class="mt-6">
-                <h4 class="text-xl font-bold text-gray-900">Tech Stack</h4>
-                <div class="mt-2 flex flex-wrap gap-2">
-                  <span class="bg-gray-200 text-gray-800 text-sm font-medium px-2.5 py-0.5 rounded-full">WebSockets</span>
-                  <span class="bg-gray-200 text-gray-800 text-sm font-medium px-2.5 py-0.5 rounded-full">React</span>
-                  <span class="bg-gray-200 text-gray-800 text-sm font-medium px-2.5 py-0.5 rounded-full">Node.js</span>
-                  <span class="bg-gray-200 text-gray-800 text-sm font-medium px-2.5 py-0.5 rounded-full">Express.js</span>
-                  <span class="bg-gray-200 text-gray-800 text-sm font-medium px-2.5 py-0.5 rounded-full">MongoDB</span>
-                </div>
-              </div>
-
-              <div class="mt-4 pt-4 border-t">
-                <button class="view-project-btn bg-blue-600 text-white font-medium py-2 px-4 rounded-full hover:bg-blue-700 transition-colors duration-200" data-project-id="2">Read More...</button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 3: Fitness Tracker -->
-          <div data-project-id="3" class="project-card bg-white rounded-xl shadow overflow-hidden flex flex-col md:flex-row md:h-96 hover:shadow-xl transition-shadow duration-300">
-            <div class="carousel-container relative w-full md:w-2/5 h-64 md:h-full overflow-hidden">
-              <div class="carousel-track flex h-full transition-transform duration-500 ease-in-out">
-                <img src="https://placehold.co/600x450/065F46/ffffff?text=Fitness+App+UI+1" alt="Fitness App UI" class="w-full flex-shrink-0 object-cover">
-                <img src="https://placehold.co/600x450/065F46/ffffff?text=Fitness+App+UI+2" alt="Fitness App UI" class="w-full flex-shrink-0 object-cover">
-                <img src="https://placehold.co/600x450/065F46/ffffff?text=Fitness+App+UI+3" alt="Fitness App UI" class="w-full flex-shrink-0 object-cover">
-              </div>
-              <button class="carousel-prev absolute left-2 top-1/2 -translate-y-1/2 p-2 rounded-full bg-black bg-opacity-30 text-white hover:bg-opacity-50 transition-colors">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
-              </button>
-              <button class="carousel-next absolute right-2 top-1/2 -translate-y-1/2 p-2 rounded-full bg-black bg-opacity-30 text-white hover:bg-opacity-50 transition-colors">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-              </button>
-            </div>
-            <div class="p-6 flex flex-col md:w-3/5 h-full">
-              <h3 class="text-3xl font-bold text-gray-900 mb-2">Project 3: Fitness Tracker</h3>
-              <p class="text-gray-700 text-lg flex-grow">A full-stack application designed to help users log workouts, set goals, and monitor their progress. It provides an intuitive interface for tracking exercise data and visualizing progress with interactive charts.</p>
-              
-              <div class="mt-6">
-                <h4 class="text-xl font-bold text-gray-900">Tech Stack</h4>
-                <div class="mt-2 flex flex-wrap gap-2">
-                  <span class="bg-gray-200 text-gray-800 text-sm font-medium px-2.5 py-0.5 rounded-full">Vue.js</span>
-                  <span class="bg-gray-200 text-gray-800 text-sm font-medium px-2.5 py-0.5 rounded-full">Node.js</span>
-                  <span class="bg-gray-200 text-gray-800 text-sm font-medium px-2.5 py-0.5 rounded-full">Express.js</span>
-                  <span class="bg-gray-200 text-gray-800 text-sm font-medium px-2.5 py-0.5 rounded-full">SQL Database</span>
-                  <span class="bg-gray-200 text-gray-800 text-sm font-medium px-2.5 py-0.5 rounded-full">Chart.js</span>
-                </div>
-              </div>
-
-              <div class="mt-4 pt-4 border-t">
-                <button class="view-project-btn bg-blue-600 text-white font-medium py-2 px-4 rounded-full hover:bg-blue-700 transition-colors duration-200" data-project-id="3">Read More...</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Full-screen Modal for Project Preview -->
-    <div id="project-modal" class="fixed inset-0 z-50 bg-black bg-opacity-70 flex items-center justify-center p-4 hidden">
-        <div class="bg-white rounded-xl shadow-2xl overflow-hidden relative w-full max-w-5xl max-h-full flex flex-col">
-            <!-- Modal Header -->
-            <div class="flex justify-between items-center p-4 bg-gray-100 border-b">
-                <h3 id="modal-title" class="text-2xl font-bold text-gray-900">Project Title</h3>
-                <button id="close-modal-btn" class="text-gray-500 hover:text-gray-900 transition-colors duration-200">
-                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-                </button>
-            </div>
-            <!-- Modal Body -->
-            <div class="flex-grow overflow-y-auto p-6 flex flex-col lg:flex-row gap-6">
-                <!-- Large Carousel in Modal -->
-                <div class="carousel-container relative w-full lg:w-3/5 aspect-video overflow-hidden rounded-lg">
-                  <div id="modal-carousel-track" class="carousel-track flex transition-transform duration-500 ease-in-out">
-                    <!-- Images will be dynamically added here by the JavaScript -->
-                  </div>
-                  <button id="prev-btn" class="absolute left-2 top-1/2 -translate-y-1/2 p-2 rounded-full bg-black bg-opacity-30 text-white hover:bg-opacity-50 transition-colors">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
-                  </button>
-                  <button id="next-btn" class="absolute right-2 top-1/2 -translate-y-1/2 p-2 rounded-full bg-black bg-opacity-30 text-white hover:bg-opacity-50 transition-colors">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                  </button>
-                </div>
-                <!-- Project Details in Modal -->
-                <div class="flex-grow lg:w-2/5">
-                    <p id="modal-description" class="text-gray-800 text-lg mb-4">Project description goes here.</p>
-                    
-                    <div class="mt-6">
-                      <h4 class="text-xl font-bold text-gray-900">Key Features</h4>
-                      <ul id="modal-features" class="list-disc list-inside text-gray-700 mt-2 space-y-1">
-                          <!-- Features will be dynamically added here by the JavaScript -->
-                      </ul>
-                    </div>
-
-                    <div class="mt-6">
-                      <h4 class="text-xl font-bold text-gray-900">Role & Contributions</h4>
-                      <p id="modal-role" class="text-gray-700 mt-2">Role goes here.</p>
-                    </div>
-
-                    <div class="mt-4">
-                      <h4 class="text-xl font-bold text-gray-900">Project Duration</h4>
-                      <p id="modal-duration" class="text-gray-700 mt-2">Duration goes here.</p>
-                    </div>
-                    
-                    <div id="modal-tech-stack" class="mt-6 flex flex-wrap gap-2 pt-4 border-t">
-                        <!-- Tech stack badges will be dynamically added here by the JavaScript -->
-                    </div>
-
-                    <div class="mt-6 flex flex-col gap-2">
-                        <a id="modal-project-link" href="#" target="_blank" class="text-blue-600 hover:underline font-medium text-lg inline-block">View Live Project →</a>
-                        <a id="modal-github-link" href="#" target="_blank" class="text-blue-600 hover:underline font-medium text-lg inline-block">View GitHub Repository →</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- JavaScript for dynamic functionality -->
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            // Project data to be displayed
-            const projectsData = [
-                {
-                    id: 1,
-                    title: "E-commerce Platform",
-                    description: "A comprehensive e-commerce platform from the ground up, designed to provide a seamless shopping experience. It features a robust backend for managing products and orders and a dynamic, responsive front end for customers.",
-                    features: [
-                        "Secure user authentication and authorization.",
-                        "Product catalog with search, filtering, and sorting.",
-                        "Shopping cart and a secure checkout process with a Stripe payment gateway.",
-                        "Admin dashboard for product and order management.",
-                        "Responsive design for mobile and desktop users."
-                    ],
-                    duration: "3 months",
-                    role: "Lead Full-Stack Developer",
-                    link: "#",
-                    github: "#",
-                    images: [
-                        "https://placehold.co/600x450/B91C1C/ffffff?text=E-commerce+UI+1",
-                        "https://placehold.co/600x450/B91C1C/ffffff?text=E-commerce+UI+2",
-                        "https://placehold.co/600x450/B91C1C/ffffff?text=E-commerce+UI+3"
-                    ],
-                    tech: ["React", "Node.js", "Express.js", "MongoDB", "Stripe API"]
-                },
-                {
-                    id: 2,
-                    title: "Real-time Chat App",
-                    description: "A dynamic, real-time messaging application designed to connect users instantly. The app utilizes WebSockets to handle real-time communication efficiently and provides a seamless and responsive chat experience.",
-                    features: [
-                        "Real-time messaging with WebSockets.",
-                        "User authentication and profile management.",
-                        "Private messaging and group chats.",
-                        "Message history persistence using MongoDB.",
-                        "Typing indicators and online status."
-                    ],
-                    duration: "2 months",
-                    role: "Full-Stack Developer",
-                    link: "#",
-                    github: "#",
-                    images: [
-                        "https://placehold.co/600x450/4C1D95/ffffff?text=Chat+App+UI+1",
-                        "https://placehold.co/600x450/4C1D95/ffffff?text=Chat+App+UI+2",
-                        "https://placehold.co/600x450/4C1D95/ffffff?text=Chat+App+UI+3"
-                    ],
-                    tech: ["WebSockets", "React", "Node.js", "Express.js", "MongoDB"]
-                },
-                {
-                    id: 3,
-                    title: "Fitness Tracker",
-                    description: "A full-stack application designed to help users log workouts, set goals, and monitor their progress. It provides an intuitive interface for tracking exercise data and visualizing progress with interactive charts.",
-                    features: [
-                        "User profiles with personalized workout logs.",
-                        "Ability to set and track fitness goals.",
-                        "Progress charts and dashboards for data visualization.",
-                        "Responsive interface for use on both mobile and desktop.",
-                        "Secure data storage and retrieval."
-                    ],
-                    duration: "4 months",
-                    role: "Front-end & Backend Developer",
-                    link: "#",
-                    github: "#",
-                    images: [
-                        "https://placehold.co/600x450/065F46/ffffff?text=Fitness+App+UI+1",
-                        "https://placehold.co/600x450/065F46/ffffff?text=Fitness+App+UI+2",
-                        "https://placehold.co/600x450/065F46/ffffff?text=Fitness+App+UI+3"
-                    ],
-                    tech: ["Vue.js", "Node.js", "Express.js", "SQL Database", "Chart.js"]
-                },
-            ];
-
-            const modal = document.getElementById('project-modal');
-            const modalTitle = document.getElementById('modal-title');
-            const modalDescription = document.getElementById('modal-description');
-            const modalFeatures = document.getElementById('modal-features');
-            const modalRole = document.getElementById('modal-role');
-            const modalDuration = document.getElementById('modal-duration');
-            const modalCarouselTrack = document.getElementById('modal-carousel-track');
-            const modalProjectLink = document.getElementById('modal-project-link');
-            const modalGithubLink = document.getElementById('modal-github-link');
-            const modalTechStack = document.getElementById('modal-tech-stack');
-            const closeModalBtn = document.getElementById('close-modal-btn');
-            const prevBtn = document.getElementById('prev-btn');
-            const nextBtn = document.getElementById('next-btn');
-
-            let currentModalProject;
-            let currentImageIndex = 0;
-
-            // Function to update the carousel position
-            const updateCarousel = (track, index) => {
-                if (track.firstElementChild) {
-                    const imageWidth = track.firstElementChild.clientWidth;
-                    track.style.transform = `translateX(-${index * imageWidth}px)`;
-                }
-            };
+        <!-- Projects Section -->
+        <section id="projects" class="py-20 sm:py-24 md:py-28 bg-gradient-to-br from-slate-50 to-white relative overflow-hidden">
+            <!-- Background accents -->
+            <div aria-hidden class="absolute -top-40 -right-32 h-96 w-96 rounded-full bg-gradient-to-tr from-pink-200 to-pink-500/20 blur-3xl opacity-50"></div>
+            <div aria-hidden class="absolute -bottom-40 -left-32 h-[28rem] w-[28rem] rounded-full bg-gradient-to-tr from-purple-200 to-purple-500/20 blur-3xl opacity-50"></div>
             
-            // Function to populate the modal with project details
-            const populateModal = (projectId) => {
-                const project = projectsData.find(p => p.id == projectId);
-                if (!project) return;
-
-                currentModalProject = project;
-                currentImageIndex = 0;
-
-                modalTitle.textContent = project.title;
-                modalDescription.textContent = project.description;
-                modalRole.textContent = project.role;
-                modalDuration.textContent = project.duration;
-                modalProjectLink.href = project.link;
-                modalGithubLink.href = project.github;
-
-                // Populate carousel images
-                modalCarouselTrack.innerHTML = '';
-                project.images.forEach(imgSrc => {
-                    const img = document.createElement('img');
-                    img.src = imgSrc;
-                    img.alt = `Screenshot of ${project.title}`;
-                    img.className = 'w-full flex-shrink-0 object-cover rounded-lg h-full';
-                    img.onerror = () => { img.src = `https://placehold.co/600x450/CCCCCC/000000?text=Image+Not+Found`; }
-                    modalCarouselTrack.appendChild(img);
-                });
-
-                // Populate key features
-                modalFeatures.innerHTML = '';
-                project.features.forEach(feature => {
-                    const li = document.createElement('li');
-                    li.textContent = feature;
-                    modalFeatures.appendChild(li);
-                });
-
-                // Populate tech stack
-                modalTechStack.innerHTML = '';
-                project.tech.forEach(tech => {
-                    const badge = document.createElement('span');
-                    badge.textContent = tech;
-                    badge.className = 'bg-gray-200 text-gray-800 text-sm font-medium px-2.5 py-0.5 rounded-full';
-                    modalTechStack.appendChild(badge);
-                });
-
-                updateCarousel(modalCarouselTrack, currentImageIndex);
-            };
-
-            // Event listener to open modal when a "Read More" button is clicked
-            document.querySelectorAll('.view-project-btn').forEach(btn => {
-                btn.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    const projectId = e.target.closest('.project-card').dataset.projectId;
-                    populateModal(projectId);
-                    modal.classList.remove('hidden');
-                    document.body.style.overflow = 'hidden'; // Prevent scrolling on the main page
-                });
-            });
-
-            // Event listeners for modal carousel navigation
-            prevBtn.addEventListener('click', () => {
-                if (!currentModalProject) return;
-                currentImageIndex = (currentImageIndex > 0) ? currentImageIndex - 1 : currentModalProject.images.length - 1;
-                updateCarousel(modalCarouselTrack, currentImageIndex);
-            });
-
-            nextBtn.addEventListener('click', () => {
-                if (!currentModalProject) return;
-                currentImageIndex = (currentImageIndex < currentModalProject.images.length - 1) ? currentImageIndex + 1 : 0;
-                updateCarousel(modalCarouselTrack, currentImageIndex);
-            });
-
-            // Event listener to close modal
-            closeModalBtn.addEventListener('click', () => {
-                modal.classList.add('hidden');
-                document.body.style.overflow = ''; // Restore scrolling
-            });
-
-            // Close modal on click outside of the modal content
-            modal.addEventListener('click', (e) => {
-                if (e.target === modal) {
-                    modal.classList.add('hidden');
-                    document.body.style.overflow = '';
-                }
-            });
-
-            // Keyboard support for modal
-            document.addEventListener('keydown', (e) => {
-                if (!modal.classList.contains('hidden')) {
-                    if (e.key === 'Escape') {
-                        modal.classList.add('hidden');
-                        document.body.style.overflow = '';
-                    } else if (e.key === 'ArrowLeft') {
-                        prevBtn.click();
-                    } else if (e.key === 'ArrowRight') {
-                        nextBtn.click();
-                    }
-                }
-            });
-
-            // Add carousel functionality to the main project cards
-            document.querySelectorAll('.project-card').forEach(card => {
-                const track = card.querySelector('.carousel-track');
-                const prev = card.querySelector('.carousel-prev');
-                const next = card.querySelector('.carousel-next');
-                let currentIndex = 0;
-                const imagesCount = track.children.length;
-
-                prev.addEventListener('click', () => {
-                    currentIndex = (currentIndex > 0) ? currentIndex - 1 : imagesCount - 1;
-                    updateCarousel(track, currentIndex);
-                });
-
-                next.addEventListener('click', () => {
-                    currentIndex = (currentIndex < imagesCount - 1) ? currentIndex + 1 : 0;
-                    updateCarousel(track, currentIndex);
-                });
-            });
-        });
-    </script>
-
-
-
-        <!-- Services Section -->
-        <section id="services" class="animated-section py-20 sm:py-24 md:py-28 bg-white">
-            <div class="container mx-auto max-w-7xl px-6 sm:px-8">
-                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 text-center mb-16 flex items-center justify-center gap-3 flex-wrap">
-                    <i class="fas fa-rocket text-blue-600 text-4xl"></i>
-                    My Comprehensive <span class="text-blue-600">Services</span>
-                </h2>
-
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-
-                    <!-- Service Card -->
-                    <div class="bg-white p-6 rounded-md border border-gray-200 shadow-[0_8px_30px_rgba(0,0,0,0.2)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.3)] transition duration-300">
-                        <h3 class="text-lg font-semibold text-blue-700 mb-3 flex items-center"><i class="fas fa-clipboard-list mr-3 text-blue-500 text-xl"></i>Project Planning</h3>
-                        <p class="text-sm text-gray-700 leading-relaxed">Detailed planning and strategizing for successful project execution from concept to launch.</p>
-                    </div>
-
-                    <!-- Service Card -->
-                    <div class="bg-white p-6 rounded-md border border-gray-200 shadow-[0_8px_30px_rgba(0,0,0,0.2)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.3)] transition duration-300">
-                        <h3 class="text-lg font-semibold text-blue-700 mb-3 flex items-center"><i class="fas fa-bug mr-3 text-red-500 text-xl"></i>Bug Fixing & Feature Additions</h3>
-                        <p class="text-sm text-gray-700 leading-relaxed">Efficient identification and resolution of issues, along with seamless integration of new functionalities.</p>
-                    </div>
-
-                    <!-- Service Card -->
-                    <div class="bg-white p-6 rounded-md border border-gray-200 shadow-[0_8px_30px_rgba(0,0,0,0.2)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.3)] transition duration-300">
-                        <h3 class="text-lg font-semibold text-blue-700 mb-3 flex items-center"><i class="fas fa-cogs mr-3 text-gray-700 text-xl"></i>Backend Development</h3>
-                        <p class="text-sm text-gray-700 leading-relaxed">Building robust, scalable, and secure server-side logic and APIs for your applications.</p>
-                    </div>
-
-                    <!-- Service Card -->
-                    <div class="bg-white p-6 rounded-md border border-gray-200 shadow-[0_8px_30px_rgba(0,0,0,0.2)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.3)] transition duration-300">
-                        <h3 class="text-lg font-semibold text-blue-700 mb-3 flex items-center"><i class="fas fa-palette mr-3 text-pink-500 text-xl"></i>Frontend Development</h3>
-                        <p class="text-sm text-gray-700 leading-relaxed">Crafting intuitive and visually appealing user interfaces from design mockups (PSD to HTML / HTML to React).</p>
-                    </div>
-
-                    <!-- Service Card -->
-                    <div class="bg-white p-6 rounded-md border border-gray-200 shadow-[0_8px_30px_rgba(0,0,0,0.2)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.3)] transition duration-300">
-                        <h3 class="text-lg font-semibold text-blue-700 mb-3 flex items-center"><i class="fas fa-globe mr-3 text-green-600 text-xl"></i>Website Development</h3>
-                        <p class="text-sm text-gray-700 leading-relaxed">Creating dynamic and responsive websites using popular platforms and frameworks (WordPress, MERN, PHP).</p>
-                    </div>
-
-                    <!-- Service Card -->
-                    <div class="bg-white p-6 rounded-md border border-gray-200 shadow-[0_8px_30px_rgba(0,0,0,0.2)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.3)] transition duration-300">
-                        <h3 class="text-lg font-semibold text-blue-700 mb-3 flex items-center"><i class="fas fa-code-branch mr-3 text-blue-500 text-xl"></i>Web App Development (MERN)</h3>
-                        <p class="text-sm text-gray-700 leading-relaxed">Developing full-fledged web applications with the MongoDB, Express.js, React, Node.js stack.</p>
-                    </div>
-
-                    <!-- Service Card - Highlighted -->
-                    <div class="bg-gradient-to-br from-blue-600 to-blue-800 text-white p-6 rounded-md shadow-[0_8px_30px_rgba(0,0,0,0.4)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.5)] transition duration-300">
-                        <h3 class="text-lg font-semibold mb-3 flex items-center"><i class="fas fa-cloud mr-3 text-white text-xl"></i>SaaS Development</h3>
-                        <p class="text-sm leading-relaxed">Building multi-tenant, scalable Software as a Service solutions tailored to your business needs.</p>
-                    </div>
-
-                    <!-- Service Card -->
-                    <div class="bg-white p-6 rounded-md border border-gray-200 shadow-[0_8px_30px_rgba(0,0,0,0.2)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.3)] transition duration-300">
-                        <h3 class="text-lg font-semibold text-blue-700 mb-3 flex items-center"><i class="fas fa-server mr-3 text-indigo-600 text-xl"></i>WHMCS Development</h3>
-                        <p class="text-sm text-gray-700 leading-relaxed">Customizing and extending WHMCS for billing, client management, and automation.</p>
-                    </div>
-
+            <div class="container mx-auto max-w-7xl px-6 sm:px-8 relative z-10">
+                <div class="text-center mb-16">
+                    <span class="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-600 shadow-sm mb-6">
+                        <span class="inline-block h-2 w-2 rounded-full bg-purple-500"></span>
+                        Portfolio Showcase
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 mb-4">
+                        My Portfolio <span class="text-blue-600">Projects</span>
+                    </h2>
+                    <p class="text-lg text-slate-600 max-w-2xl mx-auto">
+                        A collection of my professional full-stack web development projects, 
+                        showcasing creativity, functionality, and real-world problem-solving.
+                    </p>
                 </div>
+                
+                <!-- Portfolio Grid -->
+                <div id="portfolioGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"></div>
             </div>
         </section>
+        
+          <!-- Popup Modal -->
+          <div id="popup" class="hidden fixed inset-0 bg-white flex flex-col p-8 transition-all duration-500 overflow-y-auto" style="z-index: 50000;">
+            <button id="closePopup" class="absolute top-6 right-6 text-3xl font-bold text-slate-600 hover:text-slate-800 transition-colors duration-200">✕</button>
+            <div id="popupContent" class="mt-12 max-w-3xl mx-auto"></div>
+          </div>
+        
+          <script>
+            const projects = [
+              { 
+                title: "HOBAYER GOLONDAZ TUSHAR Portfolio", 
+                tagline: "Personal Portfolio Website", 
+                description: "Showcasing my skills, projects, and career journey.", 
+                audience: "Clients, Employers", 
+                stack: "HTML, CSS, JS, React", 
+                image: "img/Hobayer Golondaz Tushar.png",
+                features: [
+                  { name: "Responsive Design", detail: "Optimized for mobile and desktop views." },
+                  { name: "Dynamic Projects", detail: "Portfolio projects load dynamically from data." }
+                ],
+                live: "https://example.com/portfolio",
+                contact: "contact@tushar.dev"
+              },
+              { 
+                title: "Rubidsoft Comprehensive IT Services", 
+                tagline: "Corporate Website", 
+                description: "A company site offering tailored IT solutions.", 
+                audience: "SMBs, Startups", 
+                stack: "MERN Stack", 
+                image: "img/rubidsoft.png",
+                features: [
+                  { name: "Service Catalog", detail: "Detailed list of IT services offered." },
+                  { name: "Client Portal", detail: "Clients can log in to manage their services." }
+                ],
+                live: "https://example.com/rubidsoft",
+                contact: "info@rubidsoft.com"
+              },
+              { 
+                title: "School Management System", 
+                tagline: "Education Platform", 
+                description: "Manage results, students, teachers, and more.", 
+                audience: "Schools, Colleges", 
+                stack: "MERN, REST API", 
+                image: "img/School.jpg",
+                features: [
+                  { name: "Result Management", detail: "Generate and publish results online." },
+                  { name: "Attendance Tracking", detail: "Daily and monthly attendance reports." }
+                ],
+                live: "https://example.com/school",
+                contact: "school@support.com"
+              },
+              { 
+                title: "Locked Project (ONON)", 
+                tagline: "Locked Tagline", 
+                description: "Locked Description", 
+                audience: "General Consumers", 
+                stack: "React, Node.js, MongoDB", 
+                image: "img/locked.png",
+                features: [
+                  { name: "Shopping Cart", detail: "Add to cart and checkout system." },
+                  { name: "Payment Integration", detail: "Supports multiple online payments." }
+                ],
+                live: "https://example.com/onnopurna",
+                contact: "support@onnopurna.com"
+              },
+              { 
+                title: "Cooking Certification Project", 
+                tagline: "Online Certification Platform", 
+                description: "Platform for cooking enthusiasts to get certified.", 
+                audience: "Chefs, Students", 
+                stack: "Laravel, MySQL", 
+                image: "img/cooking.png",
+                features: [
+                  { name: "Certification", detail: "Courses and certification options." },
+                  { name: "Progress Tracking", detail: "Track your learning progress." }
+                ],
+                live: "https://example.com/cooking",
+                contact: "info@cookingcert.com"
+              },
+              { 
+                title: "DMY System", 
+                tagline: "Management Platform", 
+                description: "Digital management for organizations.", 
+                audience: "Companies, Teams", 
+                stack: "Django, PostgreSQL", 
+                image: "img/dmysystem.png",
+                features: [
+                  { name: "User Roles", detail: "Different access levels for different users." },
+                  { name: "Analytics", detail: "Track data and generate insights." }
+                ],
+                live: "https://example.com/dmy",
+                contact: "support@dmy.com"
+              },
+              { 
+                title: "MHS Earn BD", 
+                tagline: "Earning Platform", 
+                description: "A platform to earn by completing tasks.", 
+                audience: "Freelancers, Students", 
+                stack: "React Native, Firebase", 
+                image: "img/mhs.png",
+                features: [
+                  { name: "Task System", detail: "Complete tasks to earn money." },
+                  { name: "Leaderboard", detail: "Rankings of top earners." }
+                ],
+                live: "https://example.com/mhas",
+                contact: "help@mhs.com"
+              },
+              { 
+                title: "Cherrfy E-commerce", 
+                tagline: "E-commerce Website", 
+                description: "Full-fledged e-commerce solution.", 
+                audience: "Shoppers", 
+                stack: "Next.js, Node.js, MongoDB", 
+                image: "img/cherrfy.jpg",
+                features: [
+                  { name: "Product Filters", detail: "Filter products by category, price, and more." },
+                  { name: "Wishlist", detail: "Save products for later." }
+                ],
+                live: "https://example.com/cherrfy",
+                contact: "contact@cherrfy.com"
+              },
+              { 
+                title: "Hosting Website", 
+                tagline: "Web Hosting Platform", 
+                description: "Provide shared and VPS hosting services.", 
+                audience: "Developers, Companies", 
+                stack: "PHP, MySQL", 
+                image: "img/hosting.png",
+                features: [
+                  { name: "Hosting Plans", detail: "Multiple hosting plans with different pricing." },
+                  { name: "Domain Registration", detail: "Register domains directly." }
+                ],
+                live: "https://example.com/hosting",
+                contact: "support@hosting.com"
+              },
+              { 
+                title: "ISP Laser", 
+                tagline: "ISP Management Platform", 
+                description: "Manage internet services for ISPs.", 
+                audience: "Internet Providers", 
+                stack: "Vue.js, Node.js", 
+                image: "img/isp-laser.png",
+                features: [
+                  { name: "Customer Management", detail: "Manage customer subscriptions." },
+                  { name: "Billing System", detail: "Generate bills and handle payments." }
+                ],
+                live: "https://example.com/isp",
+                contact: "info@isp.com"
+              },
+            ];
+        
+            const grid = document.getElementById("portfolioGrid");
+            const popup = document.getElementById("popup");
+            const popupContent = document.getElementById("popupContent");
+            const closePopup = document.getElementById("closePopup");
+        
+            // Build Grid
+            projects.forEach((project) => {
+              const card = document.createElement("div");
+              card.className = "bg-white border border-slate-200 group overflow-hidden hover:shadow-xl transition-all duration-300 cursor-pointer flex flex-col rounded-2xl transform hover:scale-105";
+              card.innerHTML = `
+                <div class='relative'>
+                  <img src='${project.image}' alt='${project.title}' class='w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500'>
+                  <div class='absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-70'></div>
+                  <h2 class='absolute bottom-3 left-3 text-white text-lg font-semibold'>${project.title}</h2>
+                </div>
+                <div class='bg-slate-50 p-6 flex-1 flex flex-col justify-between'>
+                  <div>
+                    <p class='text-sm text-slate-700 mb-2 italic'>${project.tagline}</p>
+                    <p class='text-xs text-slate-500 mb-3'><strong>Stack:</strong> ${project.stack}</p>
+                  </div>
+                  <button class='text-blue-600 font-medium hover:text-blue-700 mt-auto transition-colors duration-200'>View Details →</button>
+                </div>
+              `;
+              card.querySelector("button").onclick = () => openPopup(project);
+              grid.appendChild(card);
+            });
+        
+            function openPopup(project) {
+              popup.classList.remove("hidden");
+              let featuresHTML = "";
+              if (project.features) {
+                featuresHTML = `<div class='mb-6'><h4 class='text-xl font-semibold mb-3 text-slate-900'>Features:</h4><ul class='list-disc ml-6 text-slate-700 space-y-2'>${project.features.map(f => `<li><strong>${f.name}:</strong> ${f.detail}</li>`).join("")}</ul></div>`;
+              }
+        
+              popupContent.innerHTML = `
+                <img src='${project.image}' alt='${project.title}' class='w-full h-64 object-cover mb-6 rounded-2xl shadow-lg'>
+                <h2 class='text-3xl font-bold mb-3 text-slate-900'>${project.title}</h2>
+                <h3 class='text-lg text-slate-600 mb-4 italic'>${project.tagline}</h3>
+                <p class='mb-6 text-slate-700 text-lg leading-relaxed'>${project.description}</p>
+                <ul class='list-disc ml-6 mb-6 text-slate-700 space-y-2'>
+                  <li><strong>Audience:</strong> ${project.audience}</li>
+                  <li><strong>Tech Stack:</strong> ${project.stack}</li>
+                </ul>
+                ${featuresHTML}
+                <div class='flex items-center space-x-4 mt-8'>
+                  <a href='${project.live}' target='_blank' class='px-6 py-3 bg-blue-600 text-white text-sm font-medium hover:bg-blue-700 transition-all duration-200 rounded-xl shadow-lg hover:shadow-xl'>Live View</a>
+                  <a href='mailto:${project.contact}' class='px-6 py-3 bg-slate-200 text-slate-700 text-sm font-medium hover:bg-slate-300 transition-all duration-200 rounded-xl'>Contact</a>
+                </div>
+              `;
+            }
+        
+            closePopup.onclick = () => {
+              popup.classList.add("hidden");
+            };
+          </script>
 
-
-        <!-- Contact Section -->
-        <section id="contact" class="min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-50 to-pink-50 px-6 py-20 sm:py-24 md:py-28">
-            <div class="max-w-3xl w-full text-center">
-
-                <!-- Top Title & Intro Text -->
-                <div class="mb-14">
-                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 mb-6 flex items-center justify-center gap-3 flex-wrap">
-                        <i class="fas fa-headset text-blue-600 text-4xl"></i>
-                        Get in <span class="text-blue-600">Touch</span>
+        <!-- Services Section -->
+        <section id="services" class="animated-section py-20 sm:py-24 md:py-28 bg-gradient-to-br from-white to-slate-50 relative overflow-hidden">
+            <!-- Background accents -->
+            <div aria-hidden class="absolute -top-40 -left-32 h-96 w-96 rounded-full bg-gradient-to-tr from-green-200 to-green-500/20 blur-3xl opacity-50"></div>
+            <div aria-hidden class="absolute -bottom-40 -right-32 h-[28rem] w-[28rem] rounded-full bg-gradient-to-tr from-blue-200 to-blue-500/20 blur-3xl opacity-50"></div>
+            
+            <div class="container mx-auto max-w-7xl px-6 sm:px-8 relative z-10">
+                <div class="text-center mb-16">
+                    <span class="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-600 shadow-sm mb-6">
+                        <span class="inline-block h-2 w-2 rounded-full bg-green-500"></span>
+                        What I Offer
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 mb-4 flex items-center justify-center gap-3 flex-wrap">
+                        <i class="fas fa-rocket text-blue-600 text-4xl"></i>
+                        My Comprehensive <span class="text-blue-600">Services</span>
                     </h2>
-                    <p class="text-gray-600 text-base sm:text-lg max-w-xl mx-auto">
-                        I’m always open to discussing new projects, creative ideas, or opportunities to be part of your visions. Let’s connect and build something amazing together.
+                    <p class="text-lg text-slate-600 max-w-2xl mx-auto mt-4">
+                        From concept to deployment, I provide end-to-end solutions that drive your digital success.
                     </p>
                 </div>
 
-                <!-- Contact Info List (aligned properly) -->
-                <div class="flex flex-col items-center text-left text-gray-700 text-base sm:text-lg space-y-6 mb-12">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
-                    <div class="flex items-center w-full max-w-md">
-                        <span class="w-10 text-blue-600 text-xl text-center">
-                            <i class="fas fa-phone-alt"></i>
-                        </span>
-                        <a href="tel:+8801302855453" class="ml-3 hover:text-blue-700 font-medium transition-colors duration-200">
-                            +880 1302 855 453
-                        </a>
+                    <!-- Service Card -->
+                    <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                        <h3 class="text-lg font-semibold text-slate-900 mb-4 flex items-center"><i class="fas fa-clipboard-list mr-3 text-blue-500 text-xl"></i>Project Planning</h3>
+                        <p class="text-slate-600 leading-relaxed">Detailed planning and strategizing for successful project execution from concept to launch.</p>
                     </div>
 
-                    <div class="flex items-center w-full max-w-md">
-                        <span class="w-10 text-blue-600 text-xl text-center">
-                            <i class="fas fa-envelope"></i>
-                        </span>
-                        <a href="mailto:mdhgtushar@gmail.com" class="ml-3 hover:text-blue-700 font-medium transition-colors duration-200">
-                            mdhgtushar@gmail.com
-                        </a>
+                    <!-- Service Card -->
+                    <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                        <h3 class="text-lg font-semibold text-slate-900 mb-4 flex items-center"><i class="fas fa-bug mr-3 text-red-500 text-xl"></i>Bug Fixing & Feature Additions</h3>
+                        <p class="text-slate-600 leading-relaxed">Efficient identification and resolution of issues, along with seamless integration of new functionalities.</p>
                     </div>
 
-                    <div class="flex items-center w-full max-w-md">
-                        <span class="w-10 text-blue-600 text-xl text-center">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </span>
-                        <span class="ml-3 font-medium">
-                            Gafargaon, Mymensingh, Bangladesh
-                        </span>
+                    <!-- Service Card -->
+                    <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                        <h3 class="text-lg font-semibold text-slate-900 mb-4 flex items-center"><i class="fas fa-cogs mr-3 text-slate-700 text-xl"></i>Backend Development</h3>
+                        <p class="text-slate-600 leading-relaxed">Building robust, scalable, and secure server-side logic and APIs for your applications.</p>
                     </div>
+
+                    <!-- Service Card -->
+                    <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                        <h3 class="text-lg font-semibold text-slate-900 mb-4 flex items-center"><i class="fas fa-palette mr-3 text-pink-500 text-xl"></i>Frontend Development</h3>
+                        <p class="text-slate-600 leading-relaxed">Crafting intuitive and visually appealing user interfaces from design mockups (PSD to HTML / HTML to React).</p>
+                    </div>
+
+                    <!-- Service Card -->
+                    <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                        <h3 class="text-lg font-semibold text-slate-900 mb-4 flex items-center"><i class="fas fa-globe mr-3 text-green-600 text-xl"></i>Website Development</h3>
+                        <p class="text-slate-600 leading-relaxed">Creating dynamic and responsive websites using popular platforms and frameworks (WordPress, MERN, PHP).</p>
+                    </div>
+
+                    <!-- Service Card -->
+                    <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                        <h3 class="text-lg font-semibold text-slate-900 mb-4 flex items-center"><i class="fas fa-code-branch mr-3 text-blue-500 text-xl"></i>Web App Development (MERN)</h3>
+                        <p class="text-slate-600 leading-relaxed">Developing full-fledged web applications with the MongoDB, Express.js, React, Node.js stack.</p>
+                    </div>
+
+                    <!-- Service Card - Highlighted -->
+                    <div class="bg-gradient-to-br from-blue-600 to-blue-800 text-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
+                        <h3 class="text-lg font-semibold mb-4 flex items-center"><i class="fas fa-cloud mr-3 text-white text-xl"></i>SaaS Development</h3>
+                        <p class="leading-relaxed">Building multi-tenant, scalable Software as a Service solutions tailored to your business needs.</p>
+                    </div>
+
+                    <!-- Service Card -->
+                    <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                        <h3 class="text-lg font-semibold text-slate-900 mb-4 flex items-center"><i class="fas fa-server mr-3 text-indigo-600 text-xl"></i>WHMCS Development</h3>
+                        <p class="text-slate-600 leading-relaxed">Customizing and extending WHMCS for billing, client management, and automation.</p>
+                    </div>
+
                 </div>
-
-                <!-- Social Links -->
-                <div class="flex justify-center gap-8">
-                    <a href="https://mdhgtushar.github.io" target="_blank" rel="noopener noreferrer"
-                        class="text-blue-600 hover:text-blue-800 transition-all duration-300 text-3xl transform hover:scale-125">
-                        <i class="fas fa-briefcase"></i>
-                    </a>
-
-                    <a href="https://github.com/mdhgtushar" target="_blank" rel="noopener noreferrer"
-                        class="text-blue-600 hover:text-blue-800 transition-all duration-300 text-3xl transform hover:scale-125">
-                        <i class="fab fa-github"></i>
-                    </a>
-
-                    <a href="https://www.linkedin.com/in/mdhgtushar/" target="_blank" rel="noopener noreferrer"
-                        class="text-blue-600 hover:text-blue-800 transition-all duration-300 text-3xl transform hover:scale-125">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                </div>
-
             </div>
         </section>
+
+
+      <!-- Contact Section -->
+            <section id="contact" class="py-20 sm:py-24 md:py-28 bg-gradient-to-br from-purple-50 to-pink-50 relative overflow-hidden">
+        <!-- Background accents -->
+        <div aria-hidden class="absolute -top-40 -right-32 h-96 w-96 rounded-full bg-gradient-to-tr from-purple-200 to-purple-500/20 blur-3xl opacity-50"></div>
+        <div aria-hidden class="absolute -bottom-40 -left-32 h-[28rem] w-[28rem] rounded-full bg-gradient-to-tr from-pink-200 to-pink-500/20 blur-3xl opacity-50"></div>
+        
+        <div class="max-w-3xl w-full mx-auto text-center relative z-10">
+  
+          <!-- Section Title & Intro -->
+          <div class="mb-16">
+            <span class="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-600 shadow-sm mb-6">
+              <span class="inline-block h-2 w-2 rounded-full bg-purple-500"></span>
+              Let's Connect
+            </span>
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 mb-4 flex items-center justify-center gap-3 flex-wrap">
+              <i class="fas fa-headset text-blue-600 text-4xl"></i>
+              Get in <span class="text-blue-600">Touch</span>
+            </h2>
+        <p class="text-gray-600 text-base sm:text-lg max-w-xl mx-auto">
+          I’m always open to discussing new projects, creative ideas, or opportunities to be part of your visions. Let’s connect and build something amazing together.
+        </p>
+      </div>
+  
+          <!-- Contact Info -->
+          <div class="flex flex-col items-center text-slate-700 text-base sm:text-lg space-y-6 mb-16">
+            <div class="flex items-center w-full max-w-md bg-white shadow-lg rounded-2xl px-6 py-4 hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+              <span class="w-12 text-blue-600 text-xl text-center"><i class="fas fa-phone-alt"></i></span>
+              <a href="tel:+8801302855453" class="ml-4 hover:text-blue-700 font-medium transition-colors duration-200">+880 1302 855 453</a>
+            </div>
+            <div class="flex items-center w-full max-w-md bg-white shadow-lg rounded-2xl px-6 py-4 hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+              <span class="w-12 text-blue-600 text-xl text-center"><i class="fas fa-envelope"></i></span>
+              <a href="mailto:mdhgtushar@gmail.com" class="ml-4 hover:text-blue-700 font-medium transition-colors duration-200">mdhgtushar@gmail.com</a>
+            </div>
+            <div class="flex items-center w-full max-w-md bg-white shadow-lg rounded-2xl px-6 py-4 hover:scale-105 transition-all duration-300 transform hover:shadow-xl">
+              <span class="w-12 text-blue-600 text-xl text-center"><i class="fas fa-map-marker-alt"></i></span>
+              <span class="ml-4 font-medium">Gafargaon, Mymensingh, Bangladesh</span>
+            </div>
+          </div>
+  
+          <!-- Social Links -->
+          <div class="flex justify-center gap-8">
+            <a href="https://mdhgtushar.github.io" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 transition-all duration-300 text-3xl transform hover:scale-125">
+              <i class="fas fa-briefcase"></i>
+            </a>
+            <a href="https://github.com/mdhgtushar" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 transition-all duration-300 text-3xl transform hover:scale-125">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/mdhgtushar/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 transition-all duration-300 text-3xl transform hover:scale-125">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+  
+    </div>
+  </section>
+  
 
     </main>
 
     <!-- Footer Section -->
-    <footer id="contact-footer" class="bg-gray-900 text-white py-12 px-6 sm:px-8 rounded-t-lg">
-        <div class="container mx-auto flex flex-col sm:flex-row justify-between items-center">
-            <p class="text-lg mb-4 sm:mb-0 text-center sm:text-left text-gray-300">&copy; 2025 Hobayer Golondaz Tushar. All rights reserved.</p>
-            <div class="flex justify-center sm:justify-end space-x-5">
-                <a href="https://mdhgtushar.github.io" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-blue-400 transition-colors duration-200">
-                    <i class="fas fa-briefcase fa-xl"></i>
+    <footer id="contact-footer" class="bg-slate-900 text-white py-16 px-6 sm:px-8 relative overflow-hidden">
+        <!-- Background accents -->
+        <div aria-hidden class="absolute -top-40 -left-32 h-96 w-96 rounded-full bg-gradient-to-tr from-slate-700 to-slate-500/20 blur-3xl opacity-50"></div>
+        <div aria-hidden class="absolute -bottom-40 -right-32 h-[28rem] w-[28rem] rounded-full bg-gradient-to-tr from-blue-700 to-blue-500/20 blur-3xl opacity-50"></div>
+        
+        <div class="container mx-auto flex flex-col sm:flex-row justify-between items-center relative z-10">
+            <p class="text-lg mb-4 sm:mb-0 text-center sm:text-left text-slate-300">&copy; 2025 Hobayer Golondaz Tushar. All rights reserved.</p>
+            <div class="flex justify-center sm:justify-end space-x-6">
+                <a href="https://mdhgtushar.github.io" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-blue-400 transition-all duration-300 text-2xl transform hover:scale-125">
+                    <i class="fas fa-briefcase"></i>
                 </a>
-                <a href="https://github.com/mdhgtushar" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-blue-400 transition-colors duration-200">
-                    <i class="fab fa-github fa-xl"></i>
+                <a href="https://github.com/mdhgtushar" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-blue-400 transition-all duration-300 text-2xl transform hover:scale-125">
+                    <i class="fab fa-github"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/mdhgtushar/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-blue-400 transition-colors duration-200">
-                    <i class="fab fa-linkedin fa-xl"></i>
+                <a href="https://www.linkedin.com/in/mdhgtushar/" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-blue-400 transition-all duration-300 text-2xl transform hover:scale-125">
+                    <i class="fab fa-linkedin"></i>
                 </a>
-                <a href="mailto:mdhgtushar@gmail.com" class="text-gray-400 hover:text-blue-400 transition-colors duration-200">
-                    <i class="fas fa-envelope fa-xl"></i>
+                <a href="mailto:mdhgtushar@gmail.com" class="text-slate-400 hover:text-blue-400 transition-all duration-300 text-2xl transform hover:scale-125">
+                    <i class="fas fa-envelope"></i>
                 </a>
-                <a href="tel:+8801302855453" class="text-gray-400 hover:text-blue-400 transition-colors duration-200">
-                    <i class="fas fa-phone-alt fa-xl"></i>
+                <a href="tel:+8801302855453" class="text-slate-400 hover:text-blue-400 transition-all duration-300 text-2xl transform hover:scale-125">
+                    <i class="fas fa-phone-alt"></i>
                 </a>
             </div>
         </div>
